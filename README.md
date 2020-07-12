@@ -1,10 +1,27 @@
-This is the Range Selection Filtering Slider:
+This is the Range Selection Filtering (RSF) Slider:
 We presented it supports the users getting multiple levels of overview of the data being analyzed and filtering according to multiple ranges.
 We combined the features of multiple slider types, i.e., histogram, interactive legends, standard, and multi-thumb sliders.
 Moreover, we increased its usefulness and its ease of use by repositioning the thumbs to overcome the overlapping of thumbs and adapting 
 the orientation of the thumbs’ icons and introducing the cascading effect concept and applying it. This led to reducing the amount of interaction.
 The paper can be found in the CGCVIP proceedings.
+
 The code is provided for public usage and any further improvements are very welcome.
+
+The functionality of the RSF slider in comparison to the multi thumb slider and some additional functionalities can be found at: 
+
+https://www.youtube.com/watch?v=XRDAYXLw1uc
+
+https://www.youtube.com/watch?v=eSszduKBAes
+
+https://www.youtube.com/watch?v=B8kS-UDsIpM
+
+https://www.youtube.com/watch?v=lbKTfKxZyPE
+
+https://www.youtube.com/watch?v=p5r-stjn6u8
+
+https://www.youtube.com/watch?v=szpBCNhv3PI
+
+https://www.youtube.com/watch?v=lRCUruYo4Ms
 
 
 Please do not forget to cite my work using the following bibtex:
