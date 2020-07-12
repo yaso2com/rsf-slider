@@ -7,7 +7,7 @@ The paper can be found in the CGCVIP proceedings.
 
 The code is provided for public usage and any further improvements are very welcome.
 
-The functionality of the RSF slider in comparison to the multi thumb slider and some additional functionalities can be found at: 
+The functionality of the RSF slider in comparison to the multi thumb slider (code at https://gitlab.com/yaso2com/java-swing-multi-thumb-slider) and some additional functionalities can be found at: 
 
 https://www.youtube.com/watch?v=XRDAYXLw1uc
 
