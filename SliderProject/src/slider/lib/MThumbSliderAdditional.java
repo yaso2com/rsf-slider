@@ -15,13 +15,13 @@ import java.awt.*;
 public interface MThumbSliderAdditional
 {
 
-    public Rectangle getTrackRect();
+    Rectangle getTrackRect();
 
-    public Dimension getThumbSize();
+    Dimension getThumbSize();
 
-    public int xPositionForValue(int value);
+    int xPositionForValue(int value);
 
-    public int yPositionForValue(int value);
+    int yPositionForValue(int value);
 
 }
 

@@ -2,8 +2,6 @@
 package slider.lib;
 
 import javax.swing.*;
-import javax.swing.event.ChangeEvent;
-import javax.swing.event.ChangeListener;
 import javax.swing.event.MouseInputAdapter;
 import javax.swing.plaf.basic.BasicSliderUI;
 import java.awt.*;
@@ -15,13 +13,12 @@ import java.awt.event.MouseEvent;
 public class MThumbSliderAdditionalUI
 {
 
-    MThumbSlider mSlider;
-    BasicSliderUI ui;
-    Rectangle[] thumbRects;
-    int thumbNum;
+    private MThumbSlider mSlider;
+    private BasicSliderUI ui;
+    private Rectangle[] thumbRects;
+    private int thumbNum;
     private transient boolean isDragging;
-    Rectangle trackRect;
-    ChangeHandler changeHandler;
+    private Rectangle trackRect;
     TrackListener trackListener;
     private static Rectangle unionRect = new Rectangle();
 
@@ -41,14 +38,12 @@ public class MThumbSliderAdditionalUI
         }
         isDragging = false;
         trackListener = new MThumbSliderAdditionalUI.TrackListener(mSlider);
-        changeHandler = new ChangeHandler();
     }
 
     public void uninstallUI(JComponent c)
     {
         thumbRects = null;
         trackListener = null;
-        changeHandler = null;
     }
 
     protected void calculateThumbsSize()
@@ -212,28 +207,6 @@ public class MThumbSliderAdditionalUI
     public Rectangle getTrackRect()
     {
         return ((MThumbSliderAdditional) ui).getTrackRect();
-    }
-
-    /**
-     * Internal class for tracking changes+
-     */
-    public class ChangeHandler
-            implements ChangeListener
-    {
-
-        @Override
-        /** State changed.
-         *
-         * @param e change event
-         */
-        public void stateChanged(ChangeEvent e)
-        {
-            if (!isDragging)
-            {
-                //calculateThumbsLocation();
-                //mSlider.repaint();
-            }
-        }
     }
 
     /**

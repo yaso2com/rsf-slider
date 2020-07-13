@@ -22,9 +22,9 @@ public class SkinMThumbSliderUI
     protected final int TICK_BUFFER = 4;
     protected boolean filledSlider = false;
 
-    MThumbSliderAdditionalUI additionalUi;
-    MouseInputAdapter mThumbTrackListener;
-    final MThumbSlider parent;
+    private MThumbSliderAdditionalUI additionalUi;
+    private MouseInputAdapter mThumbTrackListener;
+    private final MThumbSlider parent;
 
     public static ComponentUI createUI(JComponent c)
     {
@@ -64,12 +64,6 @@ public class SkinMThumbSliderUI
     protected TrackListener createTrackListener(JSlider slider)
     {
         return null;
-    }
-
-    @Override
-    protected ChangeListener createChangeListener(JSlider slider)
-    {
-        return additionalUi.changeHandler;
     }
 
     @Override

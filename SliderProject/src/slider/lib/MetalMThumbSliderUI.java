@@ -63,12 +63,6 @@ public class MetalMThumbSliderUI
     }
 
     @Override
-    protected ChangeListener createChangeListener(JSlider slider)
-    {
-        return additionalUi.changeHandler;
-    }
-
-    @Override
     protected void installListeners(JSlider slider)
     {
         slider.addMouseListener(mThumbTrackListener);
