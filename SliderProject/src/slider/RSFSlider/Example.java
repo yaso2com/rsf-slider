@@ -5,9 +5,6 @@
  */
 package slider.RSFSlider;
 
-/**
- * @author zeckzer
- */
 public class Example
 {
 
