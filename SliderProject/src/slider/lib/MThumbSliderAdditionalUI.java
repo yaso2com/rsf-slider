@@ -133,7 +133,14 @@ public class MThumbSliderAdditionalUI
         return thumbRects;
     }
 
-    // this is the method for the cascading effect
+    /**
+     * This is the method for the cascading effect
+     * @param x is the x location of the thumb number index
+     * @param y is the y location of the thumb number index
+     * @param index is the index of the thumb whose location should be changed
+     * @param slider is the slider to change
+      */
+
     public void setThumbLocationAt(int x,
                                    int y,
                                    int index,
