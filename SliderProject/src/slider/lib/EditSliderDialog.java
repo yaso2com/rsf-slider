@@ -10,9 +10,6 @@ import java.awt.event.ActionEvent;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * @author GuestAGHagen
- */
 public class EditSliderDialog
         extends JDialog
 {
@@ -53,9 +50,9 @@ public class EditSliderDialog
     /**
      * Confirm Button Action
      *
-     * @param e
+     *
      */
-    protected void confirmActionPerformed(ActionEvent e)
+    protected void confirmActionPerformed()
     {
 
         SpinnerNumberModel model = (SpinnerNumberModel) newNumberOfThumbs.getModel();
@@ -81,7 +78,7 @@ public class EditSliderDialog
         this.bConfirm = new JButton("Confirm");
         this.bConfirm.addActionListener((ActionEvent e) ->
         {
-            confirmActionPerformed(e);
+            confirmActionPerformed();
         });
 
         this.numberOfThumbs = new JLabel("Number of Thumbs");
@@ -91,7 +88,6 @@ public class EditSliderDialog
         cbLogScale.addActionListener((ActionEvent e) ->
         {
             sliderParameters.setLogScale(cbLogScale.isSelected());
-            //System.err.println(sliderParameters.isLogScale());
         });
 
         GridBagConstraints gbc = new GridBagConstraints();
@@ -133,7 +129,7 @@ public class EditSliderDialog
     /**
      * Color choosing action
      *
-     * @param ev
+     * @param ev is an action event that stores the action command when a button is pressed. is a string.
      */
     private void colorButtonActionPerformed(ActionEvent ev)
     {

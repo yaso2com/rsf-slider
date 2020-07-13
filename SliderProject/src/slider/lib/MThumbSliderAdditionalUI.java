@@ -133,6 +133,7 @@ public class MThumbSliderAdditionalUI
         return thumbRects;
     }
 
+    // this is the method for the cascading effect
     public void setThumbLocationAt(int x,
                                    int y,
                                    int index,
@@ -147,58 +148,28 @@ public class MThumbSliderAdditionalUI
 
         switch (slider.getOrientation())
         {
+            // this is not used in the examples "a vertical slider, but it is possible"
             case JSlider.VERTICAL:
                 if (index < thumbRects.length - 1 && unionRect.y > thumbRects[index + 1].y)
                 {
-                    //if (index < thumbRects.length - 1 && rect.y > thumbRects[index + 1].y) {
                     setThumbLocationAt(y, thumbRects[index + 1].x, index + 1, slider);
-          /*
-          System.err.println("MThumbSliderAdditionalUI.setThumbLocationAt " + ui.valueForYPosition(y) + " - " + (index + 1));
-          if (ui.valueForYPosition(y) != mSlider.getIntValueAt(index + 1)) {
-            mSlider.setIntValueAt(ui.valueForYPosition(y),
-                                  index + 1);
-          }
-          */
                 }
 
                 if (index > 0 && unionRect.y < thumbRects[index - 1].y)
                 {
                     setThumbLocationAt(y, thumbRects[index - 1].x, index - 1, slider);
-          /*
-          System.err.println("MThumbSliderAdditionalUI.setThumbLocationAt " + ui.valueForYPosition(y) + " - " + (index - 1));
-          if (ui.valueForYPosition(y) != mSlider.getIntValueAt(index - 1)) {
-            mSlider.setIntValueAt(ui.valueForYPosition(y),
-                                  index - 1);
-          }
-          */
                 }
                 break;
 
             case JSlider.HORIZONTAL:
-                //if (index < thumbRects.length - 1 && unionRect.x > thumbRects[index + 1].x) {
                 if (index < thumbRects.length - 1 && thumbRects[index].x > thumbRects[index + 1].x)
                 {
                     setThumbLocationAt(x, thumbRects[index + 1].y, index + 1, slider);
-          /*
-          System.err.println("MThumbSliderAdditionalUI.setThumbLocationAt " + ui.valueForXPosition(x) + " - " + (index + 1));
-          if (ui.valueForXPosition(x) != mSlider.getIntValueAt(index + 1)) {
-            mSlider.setIntValueAt(ui.valueForXPosition(x),
-                                  index + 1);
-          }
-          */
                 }
 
-                //if (index > 0 && unionRect.x < thumbRects[index - 1].x) {
                 if (index > 0 && thumbRects[index].x < thumbRects[index - 1].x)
                 {
                     setThumbLocationAt(x, thumbRects[index - 1].y, index - 1, slider);
-          /*
-          System.err.println("MThumbSliderAdditionalUI.setThumbLocationAt " + ui.valueForXPosition(x) + " - " + (index - 1));
-          if (ui.valueForXPosition(x) != mSlider.getIntValueAt(index - 1)) {
-            mSlider.setIntValueAt(ui.valueForXPosition(x),
-                                  index - 1);
-          }
-          */
                 }
                 break;
         }
@@ -422,11 +393,6 @@ public class MThumbSliderAdditionalUI
                     }
                     break;
             }
-        }
-
-        public boolean shouldScroll(int direction)
-        {
-            return false;
         }
     }
 }
