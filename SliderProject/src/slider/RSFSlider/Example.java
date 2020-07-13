@@ -6,12 +6,13 @@
 package slider.RSFSlider;
 
 /**
- *
  * @author zeckzer
  */
-public class Example {
+public class Example
+{
 
-    public static void main(String args[]) {
+    public static void main(String args[])
+    {
         ExampleFrame exampleFrame = new ExampleFrame();
         exampleFrame.setVisible(true);
         exampleFrame.repaint();

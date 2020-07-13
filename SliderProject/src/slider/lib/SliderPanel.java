@@ -1,24 +1,17 @@
 package slider.lib;
 
-import javax.swing.JLabel;
-import javax.swing.JPanel;
-import java.awt.GridBagLayout;
-import java.awt.GridBagConstraints;
-
-import java.awt.Graphics;
-import java.awt.Insets;
+import javax.swing.*;
+import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.util.ArrayList;
 import java.util.List;
-
-import javax.swing.JButton;
 
 @SuppressWarnings("serial")
 /**
  */
 public class SliderPanel
-    extends JPanel {
+        extends JPanel
+{
 
     // Gui elements
     private JLabel text;
@@ -29,11 +22,11 @@ public class SliderPanel
     private MThumbSlider slider = null;
 
     /**
-     *
      * @param sliderParameters
      */
     public SliderPanel(
-        SliderParameters sliderParameters) {
+            SliderParameters sliderParameters)
+    {
         this.sliderParameters = sliderParameters;
 
         this.setLayout(new GridBagLayout());
@@ -45,12 +38,15 @@ public class SliderPanel
         c.insets = new Insets(0, 0, 0, 0);
         this.add(text, c);
 
-        if (sliderParameters.isShowDialog()) {
+        if (sliderParameters.isShowDialog())
+        {
             this.dialog = new EditSliderDialog(sliderParameters);
 
             this.bEdit = new JButton("Edit");
-            this.bEdit.addActionListener(new ActionListener() {
-                public void actionPerformed(ActionEvent e) {
+            this.bEdit.addActionListener(new ActionListener()
+            {
+                public void actionPerformed(ActionEvent e)
+                {
                     editButtonClicked(e);
                 }
             });
@@ -79,42 +75,51 @@ public class SliderPanel
         this.add(slider, c);
     }
 
-    public void setMThumbSliderColors(int colorCode) {
+    public void setMThumbSliderColors(int colorCode)
+    {
         this.sliderParameters.setSliderColors(colorCode);
     }
 
-    public double getMinimum() {
+    public double getMinimum()
+    {
         return this.sliderParameters.sliderValueToValue(this.slider.getMinimumValue());
     }
 
-    public double getMaximum() {
+    public double getMaximum()
+    {
         return this.sliderParameters.sliderValueToValue(this.slider.getMaximumValue());
     }
 
-    public int getTicks() {
+    public int getTicks()
+    {
         return this.slider.getTicks();
     }
 
-    public SliderParameters getSliderParameters() {
+    public SliderParameters getSliderParameters()
+    {
         return sliderParameters;
     }
 
     public void setValue(double value,
-                         int index) {
+                         int index)
+    {
         this.slider.setValueAt((int) sliderParameters.valueToSliderValue(value), index, true);
     }
 
-    public double getValue(int index) {
+    public double getValue(int index)
+    {
         return sliderParameters.sliderValueToValue(this.slider.getValueAt(index));
     }
 
-    public int getIntValue(int index) {
+    public int getIntValue(int index)
+    {
         return (int) this.slider.getValueAt(index);
     }
 
     public void setRange(
-        double minimum,
-        double maximum) {
+            double minimum,
+            double maximum)
+    {
         this.sliderParameters.setRange(minimum, maximum);
         /*
     this.slider.setMinimum(this.sliderParameters.getSliderMinimum());
@@ -132,15 +137,19 @@ public class SliderPanel
     }
          */
 
-        try {
+        try
+        {
             invalidate();
             repaint();
-        } catch (Exception ex) {
+        }
+        catch (Exception ex)
+        {
             System.err.println("SliderPanel.setRange -> invalidate, repaint");
         }
     }
 
-    public void setMinimum(double minimum) {
+    public void setMinimum(double minimum)
+    {
         this.sliderParameters.setMinimum(minimum);
         /*
     this.slider.setMinimum(this.sliderParameters.getSliderMinimum());
@@ -158,15 +167,19 @@ public class SliderPanel
     }
          */
 
-        try {
+        try
+        {
             invalidate();
             repaint();
-        } catch (Exception ex) {
+        }
+        catch (Exception ex)
+        {
             System.err.println("SliderPanel.setMinimum -> invalidate, repaint");
         }
     }
 
-    public void setMaximum(double maximum) {
+    public void setMaximum(double maximum)
+    {
         this.sliderParameters.setMaximum(maximum);
         /*
     this.slider.setMinimum(this.sliderParameters.getSliderMinimum());
@@ -184,40 +197,49 @@ public class SliderPanel
     }
          */
 
-        try {
+        try
+        {
             invalidate();
             repaint();
-        } catch (Exception ex) {
+        }
+        catch (Exception ex)
+        {
             System.err.println("SliderPanel.setMaximum -> invalidate, repaint");
         }
     }
 
     public void setNumberInRange(
-        List<Integer> box,
-        List<Integer> numberInRange
-    ) {
+            List<Integer> box,
+            List<Integer> numberInRange
+    )
+    {
         this.slider.setNumberInRange(box, numberInRange);
         invalidate();
         repaint();
     }
 
-    public int getNumberInRange(int box) {
+    public int getNumberInRange(int box)
+    {
         return this.slider.getNumberInRange(box);
     }
 
-    public void paint(Graphics g) {
+    public void paint(Graphics g)
+    {
         super.paint(g);
     }
 
-    private void editButtonClicked(ActionEvent e) {
-        if (sliderParameters.isShowDialog()) {
+    private void editButtonClicked(ActionEvent e)
+    {
+        if (sliderParameters.isShowDialog())
+        {
             sliderParameters.setSlider(slider);
             dialog.setLocation(400, 0);// to have the edit dialog next to the slider dialog not above it
             dialog.setVisible(true);
         }
     }
 
-    public List<Integer> getTickValues() {
+    public List<Integer> getTickValues()
+    {
         return slider.getTickValues();
     }
 }

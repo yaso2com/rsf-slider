@@ -8,28 +8,28 @@ package slider.RSFSlider;
 import slider.lib.SliderPanel;
 import slider.lib.SliderParameters;
 
-import java.awt.Dimension;
-import java.awt.GridBagConstraints;
-import java.awt.GridBagLayout;
+import javax.swing.*;
+import java.awt.*;
 import java.util.ArrayList;
 import java.util.List;
-import javax.swing.JFrame;
 
 /**
- *
  * @author zeckzer
  */
 public class ExampleFrame
-    extends JFrame {
+        extends JFrame
+{
 
     SliderPanel upperSlider;
     SliderPanel lowerSlider;
 
-    public ExampleFrame() {
+    public ExampleFrame()
+    {
         initGUI();
     }
 
-    private void initGUI() {
+    private void initGUI()
+    {
         Dimension dimension = new Dimension(400, 400);
         setSize(dimension);
         setMinimumSize(dimension);
@@ -52,7 +52,8 @@ public class ExampleFrame
 
     }
 
-    private void createUpperSlider() {
+    private void createUpperSlider()
+    {
         SliderParameters sliderParameters = new SliderParameters();
         sliderParameters.setMaximum(22);
         sliderParameters.setMinimum(1);
@@ -80,7 +81,8 @@ public class ExampleFrame
         upperSlider.setNumberInRange(box, numberInRange);
     }
 
-    private void createLowerSlider() {
+    private void createLowerSlider()
+    {
         SliderParameters sliderParameters = new SliderParameters();
         sliderParameters.setMaximum(20);
         sliderParameters.setMinimum(1);

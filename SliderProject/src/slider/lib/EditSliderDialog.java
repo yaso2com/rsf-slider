@@ -4,21 +4,18 @@
  */
 package slider.lib;
 
-import java.awt.Color;
-import java.awt.GridBagConstraints;
-import java.awt.GridBagLayout;
-import java.awt.Insets;
+import javax.swing.*;
+import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.util.ArrayList;
 import java.util.List;
-import javax.swing.*;
 
 /**
- *
  * @author GuestAGHagen
  */
 public class EditSliderDialog
-    extends JDialog {
+        extends JDialog
+{
 
     //
     protected JButton bConfirm;
@@ -41,8 +38,9 @@ public class EditSliderDialog
      * @param sliderparam
      */
     public EditSliderDialog(
-        SliderParameters sliderparam
-    ) {
+            SliderParameters sliderparam
+    )
+    {
         super();
 
         this.sliderParameters = sliderparam;
@@ -57,7 +55,8 @@ public class EditSliderDialog
      *
      * @param e
      */
-    protected void confirmActionPerformed(ActionEvent e) {
+    protected void confirmActionPerformed(ActionEvent e)
+    {
 
         SpinnerNumberModel model = (SpinnerNumberModel) newNumberOfThumbs.getModel();
         int spinner = model.getNumber().intValue();
@@ -76,10 +75,12 @@ public class EditSliderDialog
     /**
      * Create Content
      */
-    protected void initGUI() {
+    protected void initGUI()
+    {
         //
         this.bConfirm = new JButton("Confirm");
-        this.bConfirm.addActionListener((ActionEvent e) -> {
+        this.bConfirm.addActionListener((ActionEvent e) ->
+        {
             confirmActionPerformed(e);
         });
 
@@ -87,7 +88,8 @@ public class EditSliderDialog
         this.newNumberOfThumbs = new JSpinner(new SpinnerNumberModel(sliderParameters.getNumberOfThumbs(), 2, Integer.MAX_VALUE, 1));
 
         this.cbLogScale = new JCheckBox("Logaritmic", sliderParameters.isLogScale());
-        cbLogScale.addActionListener((ActionEvent e) -> {
+        cbLogScale.addActionListener((ActionEvent e) ->
+        {
             sliderParameters.setLogScale(cbLogScale.isSelected());
             //System.err.println(sliderParameters.isLogScale());
         });
@@ -103,7 +105,8 @@ public class EditSliderDialog
         gbc.gridx = 2;
         this.add(newNumberOfThumbs, gbc);
 
-        if (sliderParameters.hasColor()) {
+        if (sliderParameters.hasColor())
+        {
             pColors = new JPanel();
 
             pColors.setLayout(new GridBagLayout());
@@ -132,7 +135,8 @@ public class EditSliderDialog
      *
      * @param ev
      */
-    private void colorButtonActionPerformed(ActionEvent ev) {
+    private void colorButtonActionPerformed(ActionEvent ev)
+    {
         String ac = ev.getActionCommand();
         int i = Integer.parseInt(ac);
         Color color = colors.get(i);
@@ -145,16 +149,19 @@ public class EditSliderDialog
     /**
      * Update content
      */
-    protected void updateGui() {
+    protected void updateGui()
+    {
         this.colors = sliderParameters.getSliderColors();
 
-        if (pColors != null) {
+        if (pColors != null)
+        {
             pColors.removeAll();
         }
 
         GridBagConstraints gbc = new GridBagConstraints();
 
-        for (int i = 0; i < sliderParameters.getNumberOfThumbs() - 1; i++) {
+        for (int i = 0; i < sliderParameters.getNumberOfThumbs() - 1; i++)
+        {
             gbc.insets = new Insets(5, 5, 5, 5);
             gbc.gridy = i;
             gbc.gridx = 1;
@@ -165,7 +172,8 @@ public class EditSliderDialog
             colorButtons.add(i, new JButton());
             colorButtons.get(i).setBackground(colors.get(i));
             colorButtons.get(i).setActionCommand((new Integer(i)).toString());
-            colorButtons.get(i).addActionListener((ActionEvent e) -> {
+            colorButtons.get(i).addActionListener((ActionEvent e) ->
+            {
                 colorButtonActionPerformed(e);
             });
             pColors.add(colorButtons.get(i), gbc);
