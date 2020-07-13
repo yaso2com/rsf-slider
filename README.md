@@ -68,7 +68,7 @@ Please do not forget to cite my work using the following bibtex:
 
 
 4.  @proceedings {563,
-	title = {SAFETY-DOMINO: A Graphical Metaphor for Supporting Minimal Cut Sets Analysis (best paper)},
+	title = {SAFETY-DOMINO: A Graphical Metaphor for Supporting Minimal Cut Sets Analysis (**best paper award**)},
 	year = {2012},
 	pages = {63-74},
 	publisher = {IADIS},
