@@ -52,7 +52,7 @@ public class MetalMThumbSliderUI
 
     protected MouseInputAdapter createMThumbTrackListener(JSlider slider)
     {
-        return additionalUi.trackListener;
+        return additionalUi.thumbMovementHandler;
     }
 
     @Override
@@ -114,7 +114,7 @@ public class MetalMThumbSliderUI
             return;
         }
 
-        Rectangle[] thumbRects = additionalUi.getThumbRects();
+        Rectangle[] thumbRects = additionalUi.getThumbsBodyBoundingBoxes();
         if (thumbRects == null || thumbRects[0] == null)
         {
             System.err.println("MetalMThumbSliderUI.paint: thumbRects is null");

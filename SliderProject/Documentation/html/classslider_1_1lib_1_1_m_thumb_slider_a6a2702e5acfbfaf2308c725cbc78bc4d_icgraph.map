@@ -1,17 +1,15 @@
 <map id="slider.lib.MThumbSlider.calculateGeometry" name="slider.lib.MThumbSlider.calculateGeometry">
-<area shape="rect" id="node1" title=" " alt="" coords="1233,104,1447,145"/>
-<area shape="rect" id="node2" href="$classslider_1_1lib_1_1_m_thumb_slider.html#a26edb05bb15f7dc004d2726c085f0b90" title=" " alt="" coords="1007,104,1185,145"/>
-<area shape="rect" id="node3" href="$classslider_1_1lib_1_1_m_thumb_slider_additional_u_i.html#aa8de5f509d811c8cc87f031a8b82d5ce" title=" " alt="" coords="744,5,959,47"/>
-<area shape="rect" id="node5" href="$classslider_1_1lib_1_1_m_thumb_slider_additional_u_i_1_1_track_listener.html#a74ecacaed8d8069a9a0f2763bfb01b17" title=" " alt="" coords="744,71,959,112"/>
-<area shape="rect" id="node7" href="$classslider_1_1lib_1_1_slider_panel.html#a7ccd71d37a155e70f1aa6be544ff5ac6" title=" " alt="" coords="770,136,933,177"/>
-<area shape="rect" id="node12" href="$classslider_1_1lib_1_1_m_thumb_slider.html#a4e91c9ce9f1d17b04bf14ef6a0035516" title=" " alt="" coords="751,235,951,276"/>
-<area shape="rect" id="node4" href="$classslider_1_1lib_1_1_metal_m_thumb_slider_u_i.html#a9a06f661d3bf24525203c8944b631ba2" title=" " alt="" coords="494,5,683,47"/>
-<area shape="rect" id="node6" href="$classslider_1_1lib_1_1_m_thumb_slider_additional_u_i_1_1_track_listener.html#a56020662fe829cb2dd6c9370bc2d7ef3" title=" " alt="" coords="481,71,696,112"/>
-<area shape="rect" id="node8" href="$classslider_1_1_r_s_f_slider_1_1_example_frame.html#a8f15b0e774f491f35d9b2d926613ec54" title=" " alt="" coords="503,136,674,177"/>
-<area shape="rect" id="node11" href="$classslider_1_1_r_s_f_slider_1_1_example_frame.html#ad868f0f8e372e86013a3decec731c36b" title=" " alt="" coords="503,201,674,243"/>
-<area shape="rect" id="node9" href="$classslider_1_1_r_s_f_slider_1_1_example_frame.html#a45e2eba0b19c79b9d789e4d241ca2ad8" title=" " alt="" coords="243,169,414,211"/>
-<area shape="rect" id="node10" href="$classslider_1_1_r_s_f_slider_1_1_example_frame.html#a68e3acbdc2fec6e3e717b1da9b79b5d3" title=" " alt="" coords="5,169,176,211"/>
-<area shape="rect" id="node13" href="$classslider_1_1lib_1_1_edit_slider_dialog.html#a97b7bdb206a2e4e2df43c036eb3b6bcd" title=" " alt="" coords="483,267,695,308"/>
-<area shape="rect" id="node14" href="$classslider_1_1lib_1_1_edit_slider_dialog.html#aa8520b68dfef0b1febf94e1496a0b4b8" title=" " alt="" coords="224,274,433,301"/>
-<area shape="rect" id="node15" href="$classslider_1_1lib_1_1_edit_slider_dialog.html#a435d0626fcdcf3378b908cf29b91724b" title=" " alt="" coords="5,267,176,308"/>
+<area shape="rect" id="node1" title=" " alt="" coords="1231,112,1444,153"/>
+<area shape="rect" id="node2" href="$classslider_1_1lib_1_1_m_thumb_slider.html#a26edb05bb15f7dc004d2726c085f0b90" title=" " alt="" coords="1004,112,1183,153"/>
+<area shape="rect" id="node3" href="$classslider_1_1lib_1_1_m_thumb_slider_additional_u_i.html#aa8de5f509d811c8cc87f031a8b82d5ce" title=" " alt="" coords="741,15,956,56"/>
+<area shape="rect" id="node5" href="$classslider_1_1lib_1_1_slider_panel.html#a7ccd71d37a155e70f1aa6be544ff5ac6" title=" " alt="" coords="767,112,930,153"/>
+<area shape="rect" id="node10" href="$classslider_1_1lib_1_1_m_thumb_slider.html#a4e91c9ce9f1d17b04bf14ef6a0035516" title=" " alt="" coords="749,193,949,235"/>
+<area shape="rect" id="node4" href="$classslider_1_1lib_1_1_metal_m_thumb_slider_u_i.html#a9a06f661d3bf24525203c8944b631ba2" title=" " alt="" coords="493,5,682,47"/>
+<area shape="rect" id="node6" href="$classslider_1_1_r_s_f_slider_1_1_example_frame.html#a8f15b0e774f491f35d9b2d926613ec54" title=" " alt="" coords="502,71,673,112"/>
+<area shape="rect" id="node9" href="$classslider_1_1_r_s_f_slider_1_1_example_frame.html#ad868f0f8e372e86013a3decec731c36b" title=" " alt="" coords="502,136,673,177"/>
+<area shape="rect" id="node7" href="$classslider_1_1_r_s_f_slider_1_1_example_frame.html#a45e2eba0b19c79b9d789e4d241ca2ad8" title=" " alt="" coords="243,104,414,145"/>
+<area shape="rect" id="node8" href="$classslider_1_1_r_s_f_slider_1_1_example_frame.html#a68e3acbdc2fec6e3e717b1da9b79b5d3" title=" " alt="" coords="5,104,176,145"/>
+<area shape="rect" id="node11" href="$classslider_1_1lib_1_1_edit_slider_dialog.html#a97b7bdb206a2e4e2df43c036eb3b6bcd" title=" " alt="" coords="481,201,693,243"/>
+<area shape="rect" id="node12" href="$classslider_1_1lib_1_1_edit_slider_dialog.html#aa8520b68dfef0b1febf94e1496a0b4b8" title=" " alt="" coords="224,209,433,235"/>
+<area shape="rect" id="node13" href="$classslider_1_1lib_1_1_edit_slider_dialog.html#a435d0626fcdcf3378b908cf29b91724b" title=" " alt="" coords="5,201,176,243"/>
 </map>
