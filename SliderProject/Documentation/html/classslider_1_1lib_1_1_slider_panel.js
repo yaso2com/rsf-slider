@@ -1,7 +1,6 @@
 var classslider_1_1lib_1_1_slider_panel =
 [
     [ "SliderPanel", "classslider_1_1lib_1_1_slider_panel.html#acc328e94d422c40ad9bcecf61be555e1", null ],
-    [ "editButtonClicked", "classslider_1_1lib_1_1_slider_panel.html#a87c33a1d37d46a3ec1e2c83af5a38c0b", null ],
     [ "getIntValue", "classslider_1_1lib_1_1_slider_panel.html#a965db97a60f675c29e52e6c797124a0b", null ],
     [ "getMaximum", "classslider_1_1lib_1_1_slider_panel.html#a59fe42928c0b9d1657cb53c170f0da0e", null ],
     [ "getMinimum", "classslider_1_1lib_1_1_slider_panel.html#ad0ebf56848b36d5e5ca3340a979bc169", null ],
@@ -16,10 +15,5 @@ var classslider_1_1lib_1_1_slider_panel =
     [ "setMThumbSliderColors", "classslider_1_1lib_1_1_slider_panel.html#a0955367ca708a1074442c0c11595215b", null ],
     [ "setNumberInRange", "classslider_1_1lib_1_1_slider_panel.html#a11d3cdb3cb41daac81a7db9964c989f3", null ],
     [ "setRange", "classslider_1_1lib_1_1_slider_panel.html#ad67d10d4a6ba986d564279fc430ee1a6", null ],
-    [ "setValue", "classslider_1_1lib_1_1_slider_panel.html#a7ccd71d37a155e70f1aa6be544ff5ac6", null ],
-    [ "bEdit", "classslider_1_1lib_1_1_slider_panel.html#a478eb5d45e8d506ea0610a32f7cb91cf", null ],
-    [ "dialog", "classslider_1_1lib_1_1_slider_panel.html#a71a390717c94fb6df6c7afafbfb7dcde", null ],
-    [ "slider", "classslider_1_1lib_1_1_slider_panel.html#a55770712b4ca9147d9b5cbe62510714f", null ],
-    [ "sliderParameters", "classslider_1_1lib_1_1_slider_panel.html#a77c2543955c6e4a1a7cacf6fbc6d6bf5", null ],
-    [ "text", "classslider_1_1lib_1_1_slider_panel.html#af088840d1c0673a6d931c1661498a023", null ]
+    [ "setValue", "classslider_1_1lib_1_1_slider_panel.html#a7ccd71d37a155e70f1aa6be544ff5ac6", null ]
 ];

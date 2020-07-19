@@ -1,21 +1,15 @@
 var searchData=
 [
-  ['calculategeometry_205',['calculateGeometry',['../classslider_1_1lib_1_1_metal_m_thumb_slider_u_i.html#a9a06f661d3bf24525203c8944b631ba2',1,'slider.lib.MetalMThumbSliderUI.calculateGeometry()'],['../classslider_1_1lib_1_1_m_thumb_slider.html#a6a2702e5acfbfaf2308c725cbc78bc4d',1,'slider.lib.MThumbSlider.calculateGeometry()']]],
-  ['calculatethumblocation_206',['calculateThumbLocation',['../classslider_1_1lib_1_1_metal_m_thumb_slider_u_i.html#a95545a1ec7211a155d8702ecc990b3a7',1,'slider::lib::MetalMThumbSliderUI']]],
-  ['calculatethumbslocation_207',['calculateThumbsLocation',['../classslider_1_1lib_1_1_m_thumb_slider_additional_u_i.html#aa8de5f509d811c8cc87f031a8b82d5ce',1,'slider::lib::MThumbSliderAdditionalUI']]],
-  ['colorbuttonactionperformed_208',['colorButtonActionPerformed',['../classslider_1_1lib_1_1_edit_slider_dialog.html#aa500830e3982c9d3998f1ec83ee15041',1,'slider::lib::EditSliderDialog']]],
-  ['computehistogramheightscaledbymaximum_209',['computeHistogramHeightScaledByMaximum',['../classslider_1_1lib_1_1_m_thumb_slider.html#adb35c479a878291268432262b22ed3fe',1,'slider::lib::MThumbSlider']]],
-  ['computeleftofthumbbodyboundingbox_210',['computeLeftOfThumbBodyBoundingBox',['../classslider_1_1lib_1_1_m_thumb_slider_additional_u_i_1_1_thumb_movement_handler.html#ad1f9eacc48841b7e7a879c242267da2b',1,'slider::lib::MThumbSliderAdditionalUI::ThumbMovementHandler']]],
-  ['computetopofthumbbodyboundingbox_211',['computeTopOfThumbBodyBoundingBox',['../classslider_1_1lib_1_1_m_thumb_slider_additional_u_i_1_1_thumb_movement_handler.html#a73b5b89c1f14255034c1582c8cac985d',1,'slider::lib::MThumbSliderAdditionalUI::ThumbMovementHandler']]],
-  ['computex_212',['computeX',['../classslider_1_1lib_1_1_metal_m_thumb_slider_u_i.html#af531466b9039e8a3888c4129f1ae42ef',1,'slider::lib::MetalMThumbSliderUI']]],
-  ['computey_213',['computeY',['../classslider_1_1lib_1_1_metal_m_thumb_slider_u_i.html#a8d006b9f6f099725ed4d798c97c5e7d6',1,'slider::lib::MetalMThumbSliderUI']]],
-  ['confirmactionperformed_214',['confirmActionPerformed',['../classslider_1_1lib_1_1_edit_slider_dialog.html#a97b7bdb206a2e4e2df43c036eb3b6bcd',1,'slider::lib::EditSliderDialog']]],
-  ['createimageicon_215',['createImageIcon',['../classslider_1_1lib_1_1_m_thumb_slider.html#ac879269ab8cdeb9f31e9bb0016bf49ba',1,'slider::lib::MThumbSlider']]],
-  ['createlabels_216',['createLabels',['../classslider_1_1lib_1_1_m_thumb_slider.html#af32bff646f87936f4edd19c785ff5b65',1,'slider.lib.MThumbSlider.createLabels()'],['../classslider_1_1lib_1_1_slider_parameters.html#a778253c5cdc43942219b09040da95d4b',1,'slider.lib.SliderParameters.createLabels()']]],
-  ['createlowerslider_217',['createLowerSlider',['../classslider_1_1_r_s_f_slider_1_1_example_frame.html#a8f15b0e774f491f35d9b2d926613ec54',1,'slider::RSFSlider::ExampleFrame']]],
-  ['createmthumbtracklistener_218',['createMThumbTrackListener',['../classslider_1_1lib_1_1_metal_m_thumb_slider_u_i.html#a8100d26197f7b55a1788831318f07365',1,'slider::lib::MetalMThumbSliderUI']]],
-  ['createthumbs_219',['createThumbs',['../classslider_1_1lib_1_1_m_thumb_slider.html#a3da842946f7f24e44401b84617b93d2e',1,'slider::lib::MThumbSlider']]],
-  ['createtracklistener_220',['createTrackListener',['../classslider_1_1lib_1_1_metal_m_thumb_slider_u_i.html#acbcbf21de2b841edbb495b27d34d9d5c',1,'slider::lib::MetalMThumbSliderUI']]],
-  ['createui_221',['createUI',['../classslider_1_1lib_1_1_metal_m_thumb_slider_u_i.html#af04941772e663b5f0fd9af3f38089824',1,'slider::lib::MetalMThumbSliderUI']]],
-  ['createupperslider_222',['createUpperSlider',['../classslider_1_1_r_s_f_slider_1_1_example_frame.html#ad868f0f8e372e86013a3decec731c36b',1,'slider::RSFSlider::ExampleFrame']]]
+  ['calculategeometry_172',['calculateGeometry',['../classslider_1_1lib_1_1_metal_m_thumb_slider_u_i.html#a9a06f661d3bf24525203c8944b631ba2',1,'slider.lib.MetalMThumbSliderUI.calculateGeometry()'],['../classslider_1_1lib_1_1_m_thumb_slider.html#a6a2702e5acfbfaf2308c725cbc78bc4d',1,'slider.lib.MThumbSlider.calculateGeometry()']]],
+  ['calculatethumblocation_173',['calculateThumbLocation',['../classslider_1_1lib_1_1_metal_m_thumb_slider_u_i.html#a95545a1ec7211a155d8702ecc990b3a7',1,'slider::lib::MetalMThumbSliderUI']]],
+  ['calculatethumbslocation_174',['calculateThumbsLocation',['../classslider_1_1lib_1_1_m_thumb_slider_additional_u_i.html#aa8de5f509d811c8cc87f031a8b82d5ce',1,'slider::lib::MThumbSliderAdditionalUI']]],
+  ['computehistogramheightscaledbymaximum_175',['computeHistogramHeightScaledByMaximum',['../classslider_1_1lib_1_1_m_thumb_slider.html#adb35c479a878291268432262b22ed3fe',1,'slider::lib::MThumbSlider']]],
+  ['computex_176',['computeX',['../classslider_1_1lib_1_1_metal_m_thumb_slider_u_i.html#af531466b9039e8a3888c4129f1ae42ef',1,'slider::lib::MetalMThumbSliderUI']]],
+  ['computey_177',['computeY',['../classslider_1_1lib_1_1_metal_m_thumb_slider_u_i.html#a8d006b9f6f099725ed4d798c97c5e7d6',1,'slider::lib::MetalMThumbSliderUI']]],
+  ['confirmactionperformed_178',['confirmActionPerformed',['../classslider_1_1lib_1_1_edit_slider_dialog.html#a97b7bdb206a2e4e2df43c036eb3b6bcd',1,'slider::lib::EditSliderDialog']]],
+  ['createimageicon_179',['createImageIcon',['../classslider_1_1lib_1_1_m_thumb_slider.html#ac879269ab8cdeb9f31e9bb0016bf49ba',1,'slider::lib::MThumbSlider']]],
+  ['createlabels_180',['createLabels',['../classslider_1_1lib_1_1_m_thumb_slider.html#af32bff646f87936f4edd19c785ff5b65',1,'slider.lib.MThumbSlider.createLabels()'],['../classslider_1_1lib_1_1_slider_parameters.html#a778253c5cdc43942219b09040da95d4b',1,'slider.lib.SliderParameters.createLabels()']]],
+  ['createmthumbtracklistener_181',['createMThumbTrackListener',['../classslider_1_1lib_1_1_metal_m_thumb_slider_u_i.html#a8100d26197f7b55a1788831318f07365',1,'slider::lib::MetalMThumbSliderUI']]],
+  ['createtracklistener_182',['createTrackListener',['../classslider_1_1lib_1_1_metal_m_thumb_slider_u_i.html#acbcbf21de2b841edbb495b27d34d9d5c',1,'slider::lib::MetalMThumbSliderUI']]],
+  ['createui_183',['createUI',['../classslider_1_1lib_1_1_metal_m_thumb_slider_u_i.html#af04941772e663b5f0fd9af3f38089824',1,'slider::lib::MetalMThumbSliderUI']]]
 ];

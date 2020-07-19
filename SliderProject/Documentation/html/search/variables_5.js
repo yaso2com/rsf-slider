@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['label_337',['label',['../classslider_1_1lib_1_1_slider_parameters.html#ac0b64f84ddef26d1b2628f122fd75f5c',1,'slider::lib::SliderParameters']]],
-  ['logscale_338',['logScale',['../classslider_1_1lib_1_1_slider_parameters.html#a69d7e6a34f9322884df19fbe2200007d',1,'slider::lib::SliderParameters']]],
-  ['lowerslider_339',['lowerSlider',['../classslider_1_1_r_s_f_slider_1_1_example_frame.html#a1a18c39f1c654494fb345544945effdd',1,'slider::RSFSlider::ExampleFrame']]]
+  ['newnumberofthumbs_291',['newNumberOfThumbs',['../classslider_1_1lib_1_1_edit_slider_dialog.html#a711fa5d7c0565529cc9a625ddf6e5203',1,'slider::lib::EditSliderDialog']]],
+  ['numberinrange_292',['numberInRange',['../classslider_1_1lib_1_1_m_thumb_slider.html#ac707f8dacb0b5a61eab860493220952e',1,'slider::lib::MThumbSlider']]],
+  ['numberofthumbs_293',['numberOfThumbs',['../classslider_1_1lib_1_1_edit_slider_dialog.html#a52d3e3ea71e68f9bf3e67a158064dafc',1,'slider.lib.EditSliderDialog.numberOfThumbs()'],['../classslider_1_1lib_1_1_m_thumb_slider.html#a2fe2d8f4fa672edf6a78893094bb8c9d',1,'slider.lib.MThumbSlider.numberOfThumbs()'],['../classslider_1_1lib_1_1_slider_parameters.html#a52d72d64b93a3626312f24d4d7f6640a',1,'slider.lib.SliderParameters.numberOfThumbs()']]]
 ];

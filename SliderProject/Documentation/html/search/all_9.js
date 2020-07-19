@@ -1,6 +1,20 @@
 var searchData=
 [
-  ['label_85',['label',['../classslider_1_1lib_1_1_slider_parameters.html#ac0b64f84ddef26d1b2628f122fd75f5c',1,'slider::lib::SliderParameters']]],
-  ['logscale_86',['logScale',['../classslider_1_1lib_1_1_slider_parameters.html#a69d7e6a34f9322884df19fbe2200007d',1,'slider::lib::SliderParameters']]],
-  ['lowerslider_87',['lowerSlider',['../classslider_1_1_r_s_f_slider_1_1_example_frame.html#a1a18c39f1c654494fb345544945effdd',1,'slider::RSFSlider::ExampleFrame']]]
+  ['main_70',['main',['../classslider_1_1_r_s_f_slider_1_1_example.html#a2ffbee32614ac4db63492693328e3a6e',1,'slider::RSFSlider::Example']]],
+  ['majortickspacing_71',['majorTickSpacing',['../classslider_1_1lib_1_1_slider_parameters.html#a0a4f7b04f22cb5aa602d4fca2b328f29',1,'slider::lib::SliderParameters']]],
+  ['maximum_72',['maximum',['../classslider_1_1lib_1_1_slider_parameters.html#a2302c971ec868fc5018c9c89bc9c67df',1,'slider::lib::SliderParameters']]],
+  ['metalmthumbsliderui_73',['MetalMThumbSliderUI',['../classslider_1_1lib_1_1_metal_m_thumb_slider_u_i.html',1,'slider.lib.MetalMThumbSliderUI'],['../classslider_1_1lib_1_1_metal_m_thumb_slider_u_i.html#ae03e59b83d39f7a199f03a2802de77f6',1,'slider.lib.MetalMThumbSliderUI.MetalMThumbSliderUI()']]],
+  ['metalmthumbsliderui_2ejava_74',['MetalMThumbSliderUI.java',['../_metal_m_thumb_slider_u_i_8java.html',1,'']]],
+  ['minimum_75',['minimum',['../classslider_1_1lib_1_1_slider_parameters.html#af4a6e2af2f378d338a4e3b045a74c68f',1,'slider::lib::SliderParameters']]],
+  ['minortickspacing_76',['minorTickSpacing',['../classslider_1_1lib_1_1_slider_parameters.html#a2585862d1fbb6f2dbfd95bdef46659c9',1,'slider::lib::SliderParameters']]],
+  ['mouseadapters_77',['mouseAdapters',['../classslider_1_1lib_1_1_slider_parameters.html#a6c37d636642705b1a494849f8c7ceffb',1,'slider::lib::SliderParameters']]],
+  ['mousedragged_78',['mouseDragged',['../classslider_1_1lib_1_1_m_thumb_slider_additional_u_i_1_1_thumb_movement_handler.html#a51b3cdba69bf0e2b2a102e2307a68373',1,'slider::lib::MThumbSliderAdditionalUI::ThumbMovementHandler']]],
+  ['mousepressed_79',['mousePressed',['../classslider_1_1lib_1_1_m_thumb_slider_additional_u_i_1_1_thumb_movement_handler.html#a78037f96e0ccb53bfbf483fd721d6993',1,'slider::lib::MThumbSliderAdditionalUI::ThumbMovementHandler']]],
+  ['mousereleased_80',['mouseReleased',['../classslider_1_1lib_1_1_m_thumb_slider_additional_u_i_1_1_thumb_movement_handler.html#ab800d9599d2a4fe66e849521181d35a6',1,'slider::lib::MThumbSliderAdditionalUI::ThumbMovementHandler']]],
+  ['mthumbslider_81',['MThumbSlider',['../classslider_1_1lib_1_1_m_thumb_slider.html',1,'slider.lib.MThumbSlider'],['../classslider_1_1lib_1_1_m_thumb_slider.html#a109d891722ad4b6d6d28221b550fd448',1,'slider.lib.MThumbSlider.MThumbSlider()']]],
+  ['mthumbslider_2ejava_82',['MThumbSlider.java',['../_m_thumb_slider_8java.html',1,'']]],
+  ['mthumbslideradditional_83',['MThumbSliderAdditional',['../interfaceslider_1_1lib_1_1_m_thumb_slider_additional.html',1,'slider::lib']]],
+  ['mthumbslideradditional_2ejava_84',['MThumbSliderAdditional.java',['../_m_thumb_slider_additional_8java.html',1,'']]],
+  ['mthumbslideradditionalui_85',['MThumbSliderAdditionalUI',['../classslider_1_1lib_1_1_m_thumb_slider_additional_u_i.html',1,'slider.lib.MThumbSliderAdditionalUI'],['../classslider_1_1lib_1_1_m_thumb_slider_additional_u_i.html#a580d76870e0b6c471ee1c64776ce1da1',1,'slider.lib.MThumbSliderAdditionalUI.MThumbSliderAdditionalUI()']]],
+  ['mthumbslideradditionalui_2ejava_86',['MThumbSliderAdditionalUI.java',['../_m_thumb_slider_additional_u_i_8java.html',1,'']]]
 ];

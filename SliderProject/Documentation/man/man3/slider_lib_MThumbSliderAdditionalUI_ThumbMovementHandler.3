@@ -1,0 +1,228 @@
+.TH "slider.lib.MThumbSliderAdditionalUI.ThumbMovementHandler" 3 "Sun Jul 19 2020" "Version 1.0" "RSFslider" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+slider.lib.MThumbSliderAdditionalUI.ThumbMovementHandler
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits MouseInputAdapter\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBThumbMovementHandler\fP (\fBMThumbSlider\fP \fBslider\fP)"
+.br
+.ti -1c
+.RI "void \fBmousePressed\fP (MouseEvent e)"
+.br
+.ti -1c
+.RI "void \fBmouseDragged\fP (MouseEvent e)"
+.br
+.ti -1c
+.RI "void \fBmouseReleased\fP (MouseEvent e)"
+.br
+.in -1c
+.SS "Protected Attributes"
+
+.in +1c
+.ti -1c
+.RI "transient int \fBoffset\fP"
+.br
+.RI "The difference between the upper left corner of the bounding rectangle and the mouse position\&. "
+.ti -1c
+.RI "Rectangle \fBadjustingThumbBodyBoundingBox\fP = null"
+.br
+.RI "The bounding box of the thumb being adjusted\&. "
+.ti -1c
+.RI "int \fBadjustingThumbIndex\fP"
+.br
+.RI "The index of the thumb being adjusted\&. "
+.ti -1c
+.RI "\fBMThumbSlider\fP \fBslider\fP"
+.br
+.RI "The associated slider\&. "
+.ti -1c
+.RI "Rectangle \fBsliderBodyBoundingBox\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Internal class for handling mouse events 
+.PP
+Definition at line 279 of file MThumbSliderAdditionalUI\&.java\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "slider\&.lib\&.MThumbSliderAdditionalUI\&.ThumbMovementHandler\&.ThumbMovementHandler (\fBMThumbSlider\fP slider)"
+Constructor\&. Here the slider is stored\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fIslider\fP slider 
+.RE
+.PP
+
+.PP
+Definition at line 305 of file MThumbSliderAdditionalUI\&.java\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "void slider\&.lib\&.MThumbSliderAdditionalUI\&.ThumbMovementHandler\&.mouseDragged (MouseEvent e)"
+Mouse was dragged\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fIe\fP mouse event
+.RE
+.PP
+\fB Description \fP Checks
+.IP "\(bu" 2
+if slider is enabled, i\&.e\&., can interact with the slider thumbs\&.
+.IP "\(bu" 2
+if a thumb is dragged\&.
+.IP "\(bu" 2
+if the bounding box of the thumb is set
+.IP "  \(bu" 4
+Gets the bounding box of the dragged thumb
+.IP "  \(bu" 4
+Gets the bounding box of the body (i\&.e\&., called Track) of the slider
+.IP "  \(bu" 4
+Gets the orientation of the slider: either vertical or horizontal
+.IP "  \(bu" 4
+Calculates the new position of the currently dragged thumb
+.IP "    \(bu" 6
+Condition: The tip should not be positioned out of the slider body
+.IP "      \(bu" 8
+if the tip position is smaller than the left of the slider body, position it to be on the left slider body position
+.IP "      \(bu" 8
+if the tip position is larger than the right of the slider body, position it to be on the right slider body position
+.PP
+
+.PP
+
+.PP
+
+.PP
+.PP
+.PP
+.nf
+*  Example: HORIZONTAL Slider orientation:
+*
+*        upper left
+*             *-----*        |
+*              \   /         |--> Thumb
+*                !           |
+*            thumb tip
+*              --------------------
+*              |    slider body   |
+*              --------------------
+*             left                right
+* .fi
+.PP
+
+.PP
+Definition at line 386 of file MThumbSliderAdditionalUI\&.java\&.
+.SS "void slider\&.lib\&.MThumbSliderAdditionalUI\&.ThumbMovementHandler\&.mousePressed (MouseEvent e)"
+Mouse was pressed\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIe\fP mouse event
+.RE
+.PP
+\fB Description \fP Checks
+.IP "\(bu" 2
+if slider is enabled, i\&.e\&., can interact with the slider thumbs\&.
+.IP "  \(bu" 4
+Gets the x position of the mouse when pressed from the mouse event
+.IP "  \(bu" 4
+Gets the y position of the mouse when pressed from the mouse event
+.IP "  \(bu" 4
+Put focus on the slider
+.IP "  \(bu" 4
+For all thumbs
+.IP "    \(bu" 6
+gets the bounding box of the thumb
+.IP "    \(bu" 6
+if the current mouse position is inside the bounding box of the thumb
+.IP "      \(bu" 8
+Compute the offset (i\&.e\&., the difference in the x and the y positions) of the mouse with respect to the upper left corner of the bounding box of the thumb\&. Depending whether the slider is vertical or horizontal\&.
+.IP "      \(bu" 8
+set the dragging flag to true
+.IP "      \(bu" 8
+store the bounding box of the thumb and the index of the thumb being adjusted
+.IP "      \(bu" 8
+if the thumb is already found do not go through all thumbs
+.PP
+
+.PP
+
+.PP
+
+.PP
+
+.PP
+Definition at line 318 of file MThumbSliderAdditionalUI\&.java\&.
+.SS "void slider\&.lib\&.MThumbSliderAdditionalUI\&.ThumbMovementHandler\&.mouseReleased (MouseEvent e)"
+Mouse was released\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fIe\fP mouse event
+.RE
+.PP
+\fB Description \fP Checks
+.IP "\(bu" 2
+if slider is enabled, i\&.e\&., can interact with the slider thumbs\&.
+.IP "\(bu" 2
+Set the value of all thumbs
+.IP "  \(bu" 4
+for all thumbs before the released (dragged) thumb, set the new thumbs values (e\&.g\&., $10^-13$ in MCSs analysis or any label being shown), excluding the current released thumb
+.IP "  \(bu" 4
+for all thumbs after the released (dragged) thumb, set the new thumbs values, including the current released thumb
+.PP
+
+.IP "\(bu" 2
+Calculate the thumbs sizes and their positions
+.IP "\(bu" 2
+Reset offset, dragging, value adjusting to the initial values\&. to have a clean start for the next mouse action\&.
+.IP "\(bu" 2
+Repaint the slider
+.PP
+
+.PP
+Definition at line 497 of file MThumbSliderAdditionalUI\&.java\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "Rectangle slider\&.lib\&.MThumbSliderAdditionalUI\&.ThumbMovementHandler\&.adjustingThumbBodyBoundingBox = null\fC [protected]\fP"
+
+.PP
+The bounding box of the thumb being adjusted\&. 
+.PP
+Definition at line 289 of file MThumbSliderAdditionalUI\&.java\&.
+.SS "int slider\&.lib\&.MThumbSliderAdditionalUI\&.ThumbMovementHandler\&.adjustingThumbIndex\fC [protected]\fP"
+
+.PP
+The index of the thumb being adjusted\&. 
+.PP
+Definition at line 292 of file MThumbSliderAdditionalUI\&.java\&.
+.SS "transient int slider\&.lib\&.MThumbSliderAdditionalUI\&.ThumbMovementHandler\&.offset\fC [protected]\fP"
+
+.PP
+The difference between the upper left corner of the bounding rectangle and the mouse position\&. 
+.PP
+Definition at line 286 of file MThumbSliderAdditionalUI\&.java\&.
+.SS "\fBMThumbSlider\fP slider\&.lib\&.MThumbSliderAdditionalUI\&.ThumbMovementHandler\&.slider\fC [protected]\fP"
+
+.PP
+The associated slider\&. 
+.PP
+Definition at line 295 of file MThumbSliderAdditionalUI\&.java\&.
+.SS "Rectangle slider\&.lib\&.MThumbSliderAdditionalUI\&.ThumbMovementHandler\&.sliderBodyBoundingBox\fC [protected]\fP"
+
+.PP
+Definition at line 297 of file MThumbSliderAdditionalUI\&.java\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for RSFslider from the source code\&.
