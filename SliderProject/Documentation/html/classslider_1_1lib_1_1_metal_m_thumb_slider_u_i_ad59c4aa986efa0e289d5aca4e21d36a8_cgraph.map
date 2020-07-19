@@ -1,5 +1,5 @@
 <map id="slider.lib.MetalMThumbSliderUI.paint" name="slider.lib.MetalMThumbSliderUI.paint">
-<area shape="rect" id="node1" title=" " alt="" coords="5,332,195,373"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,365,195,407"/>
 <area shape="rect" id="node2" href="$classslider_1_1lib_1_1_metal_m_thumb_slider_u_i.html#af531466b9039e8a3888c4129f1ae42ef" title=" " alt="" coords="259,5,449,47"/>
 <area shape="rect" id="node3" href="$classslider_1_1lib_1_1_metal_m_thumb_slider_u_i.html#a8d006b9f6f099725ed4d798c97c5e7d6" title=" " alt="" coords="259,71,449,112"/>
 <area shape="rect" id="node4" href="$classslider_1_1lib_1_1_metal_m_thumb_slider_u_i.html#a4342bb44386b9f990209530915459360" title=" " alt="" coords="259,136,449,177"/>
@@ -8,7 +8,13 @@
 <area shape="rect" id="node7" href="$classslider_1_1lib_1_1_m_thumb_slider.html#afc1b6093f9aebcb19057a2667e167d45" title=" " alt="" coords="265,332,443,373"/>
 <area shape="rect" id="node8" href="$classslider_1_1lib_1_1_m_thumb_slider_additional_u_i.html#a7191e8079a9d668d87eb5fa585204d7a" title=" " alt="" coords="243,397,465,439"/>
 <area shape="rect" id="node9" href="$classslider_1_1lib_1_1_slider_parameters.html#a6e610580862db732269961fee98bb1e5" title=" " alt="" coords="256,463,452,504"/>
-<area shape="rect" id="node10" href="$classslider_1_1lib_1_1_metal_m_thumb_slider_u_i.html#ab92ef87e513ba30c771874a45930c891" title=" " alt="" coords="259,528,449,569"/>
-<area shape="rect" id="node11" href="$classslider_1_1lib_1_1_metal_m_thumb_slider_u_i.html#ab67490ecae570b2ca95fc30ee6f4f79a" title=" " alt="" coords="259,593,449,635"/>
-<area shape="rect" id="node12" href="$classslider_1_1lib_1_1_metal_m_thumb_slider_u_i.html#ab356d3907699c2a24d3d3c8784b6cd88" title=" " alt="" coords="259,659,449,700"/>
+<area shape="rect" id="node10" href="$classslider_1_1lib_1_1_metal_m_thumb_slider_u_i.html#a15a22ff1af3dd0206093d377d5e8e492" title=" " alt="" coords="259,528,449,569"/>
+<area shape="rect" id="node16" href="$classslider_1_1lib_1_1_metal_m_thumb_slider_u_i.html#ab67490ecae570b2ca95fc30ee6f4f79a" title=" " alt="" coords="513,627,703,668"/>
+<area shape="rect" id="node17" href="$classslider_1_1lib_1_1_metal_m_thumb_slider_u_i.html#ab92ef87e513ba30c771874a45930c891" title=" " alt="" coords="259,645,449,687"/>
+<area shape="rect" id="node18" href="$classslider_1_1lib_1_1_metal_m_thumb_slider_u_i.html#ab356d3907699c2a24d3d3c8784b6cd88" title=" " alt="" coords="259,711,449,752"/>
+<area shape="rect" id="node11" href="$classslider_1_1lib_1_1_m_thumb_slider.html#a6273a9112b03952374db57462aba599e" title=" " alt="" coords="519,365,697,407"/>
+<area shape="rect" id="node12" href="$classslider_1_1lib_1_1_m_thumb_slider.html#ad299397728ba26d93bcfee6294935132" title=" " alt="" coords="519,431,697,472"/>
+<area shape="rect" id="node13" href="$classslider_1_1lib_1_1_m_thumb_slider.html#adc447f81d6602c1d1efd38de0839a0c6" title=" " alt="" coords="523,496,693,537"/>
+<area shape="rect" id="node15" href="$classslider_1_1lib_1_1_metal_m_thumb_slider_u_i.html#a5b6742b72dd035dfc57444711c36cbea" title=" " alt="" coords="513,561,703,603"/>
+<area shape="rect" id="node14" href="$classslider_1_1lib_1_1_slider_parameters.html#a753ed1d2ac02edc1e6b1ffcf80bd5c63" title=" " alt="" coords="751,496,939,537"/>
 </map>

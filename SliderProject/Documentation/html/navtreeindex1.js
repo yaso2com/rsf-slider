@@ -1,9 +1,5 @@
 var NAVTREEINDEX1 =
 {
-"functions_s.html":[1,3,0,15],
-"functions_t.html":[1,3,0,16],
-"functions_u.html":[1,3,0,17],
-"functions_v.html":[1,3,0,18],
 "functions_vars.html":[1,3,2],
 "functions_x.html":[1,3,0,19],
 "functions_y.html":[1,3,0,20],
@@ -15,10 +11,10 @@ var NAVTREEINDEX1 =
 "interfaceslider_1_1lib_1_1_m_thumb_slider_additional.html#ac7139615b8c607721768bf15c77f333e":[1,0,0,0,3,0],
 "interfaceslider_1_1lib_1_1_m_thumb_slider_additional.html#afc317c05296da458040423b9aa7c5a5c":[1,0,0,0,3,2],
 "namespaces.html":[0,0],
-"namespaceslider.html":[1,0,0],
 "namespaceslider.html":[0,0,0],
-"namespaceslider_1_1_r_s_f_slider.html":[0,0,0,1],
+"namespaceslider.html":[1,0,0],
 "namespaceslider_1_1_r_s_f_slider.html":[1,0,0,1],
+"namespaceslider_1_1_r_s_f_slider.html":[0,0,0,1],
 "namespaceslider_1_1lib.html":[1,0,0,0],
 "namespaceslider_1_1lib.html":[0,0,0,0],
 "pages.html":[]

@@ -1,11 +1,6 @@
 var searchData=
 [
-  ['showdialog_295',['showDialog',['../classslider_1_1lib_1_1_slider_parameters.html#abe086fec513d6a36dbcccd426f426ec1',1,'slider::lib::SliderParameters']]],
-  ['slider_296',['slider',['../classslider_1_1lib_1_1_m_thumb_slider_additional_u_i_1_1_thumb_movement_handler.html#ac73dafe451a18e541af8ca19fe04e834',1,'slider.lib.MThumbSliderAdditionalUI.ThumbMovementHandler.slider()'],['../classslider_1_1lib_1_1_slider_parameters.html#a4eed81f6b1923d25cc952561035311a4',1,'slider.lib.SliderParameters.slider()']]],
-  ['sliderbodyboundingbox_297',['sliderBodyBoundingBox',['../classslider_1_1lib_1_1_m_thumb_slider_additional_u_i_1_1_thumb_movement_handler.html#ab7901c91710224d0f9fa649ca66dfd66',1,'slider::lib::MThumbSliderAdditionalUI::ThumbMovementHandler']]],
-  ['slidercolors_298',['sliderColors',['../classslider_1_1lib_1_1_slider_parameters.html#acc794a3c1ff5a14c84437d22a86bccd2',1,'slider::lib::SliderParameters']]],
-  ['slidermaximum_299',['sliderMaximum',['../classslider_1_1lib_1_1_slider_parameters.html#a6baefd9f5ad5ea62685c594df14780ef',1,'slider::lib::SliderParameters']]],
-  ['sliderminimum_300',['sliderMinimum',['../classslider_1_1lib_1_1_slider_parameters.html#a32507e65cd8821eedbcca2b697b0e55b',1,'slider::lib::SliderParameters']]],
-  ['slidermodels_301',['sliderModels',['../classslider_1_1lib_1_1_m_thumb_slider.html#ad7637a70b20caca55bba4b5c04fd31c1',1,'slider::lib::MThumbSlider']]],
-  ['sliderparameters_302',['sliderParameters',['../classslider_1_1lib_1_1_edit_slider_dialog.html#aba05c53104b235b9959009f77736b6ac',1,'slider::lib::EditSliderDialog']]]
+  ['newnumberofthumbs_348',['newNumberOfThumbs',['../classslider_1_1lib_1_1_edit_slider_dialog.html#a711fa5d7c0565529cc9a625ddf6e5203',1,'slider::lib::EditSliderDialog']]],
+  ['numberinrange_349',['numberInRange',['../classslider_1_1lib_1_1_m_thumb_slider.html#ac707f8dacb0b5a61eab860493220952e',1,'slider::lib::MThumbSlider']]],
+  ['numberofthumbs_350',['numberOfThumbs',['../classslider_1_1lib_1_1_edit_slider_dialog.html#a52d3e3ea71e68f9bf3e67a158064dafc',1,'slider.lib.EditSliderDialog.numberOfThumbs()'],['../classslider_1_1lib_1_1_m_thumb_slider.html#a2fe2d8f4fa672edf6a78893094bb8c9d',1,'slider.lib.MThumbSlider.numberOfThumbs()'],['../classslider_1_1lib_1_1_m_thumb_slider_additional_u_i.html#a0ddbc7d2a44aa47cf1a83ded6986795e',1,'slider.lib.MThumbSliderAdditionalUI.numberOfThumbs()'],['../classslider_1_1lib_1_1_slider_parameters.html#a52d72d64b93a3626312f24d4d7f6640a',1,'slider.lib.SliderParameters.numberOfThumbs()']]]
 ];

@@ -16,11 +16,17 @@ var classslider_1_1lib_1_1_metal_m_thumb_slider_u_i =
     [ "installListeners", "classslider_1_1lib_1_1_metal_m_thumb_slider_u_i.html#ab6b53bf4a499eb04dc4c17c940e0b34b", null ],
     [ "installUI", "classslider_1_1lib_1_1_metal_m_thumb_slider_u_i.html#afd2a9b62eaf812b1e1ce026a5d44cb2c", null ],
     [ "paint", "classslider_1_1lib_1_1_metal_m_thumb_slider_u_i.html#ad59c4aa986efa0e289d5aca4e21d36a8", null ],
+    [ "paintHistogram", "classslider_1_1lib_1_1_metal_m_thumb_slider_u_i.html#a15a22ff1af3dd0206093d377d5e8e492", null ],
+    [ "paintHistogramBar", "classslider_1_1lib_1_1_metal_m_thumb_slider_u_i.html#a5b6742b72dd035dfc57444711c36cbea", null ],
     [ "paintThumb", "classslider_1_1lib_1_1_metal_m_thumb_slider_u_i.html#ab92ef87e513ba30c771874a45930c891", null ],
     [ "scrollByBlock", "classslider_1_1lib_1_1_metal_m_thumb_slider_u_i.html#a0205fb432c044b52f25a26af67297bc3", null ],
     [ "scrollByUnit", "classslider_1_1lib_1_1_metal_m_thumb_slider_u_i.html#af1778612cb7ae0a5eb8a2efba016a9af", null ],
     [ "uninstallListeners", "classslider_1_1lib_1_1_metal_m_thumb_slider_u_i.html#ad8bd77b2b49814bbf905d0baa29b87dd", null ],
     [ "uninstallUI", "classslider_1_1lib_1_1_metal_m_thumb_slider_u_i.html#a5f4543921293042c5d01fb5c9ea05d75", null ],
     [ "xPositionForValue", "classslider_1_1lib_1_1_metal_m_thumb_slider_u_i.html#ab67490ecae570b2ca95fc30ee6f4f79a", null ],
-    [ "yPositionForValue", "classslider_1_1lib_1_1_metal_m_thumb_slider_u_i.html#ab356d3907699c2a24d3d3c8784b6cd88", null ]
+    [ "yPositionForValue", "classslider_1_1lib_1_1_metal_m_thumb_slider_u_i.html#ab356d3907699c2a24d3d3c8784b6cd88", null ],
+    [ "additionalUi", "classslider_1_1lib_1_1_metal_m_thumb_slider_u_i.html#aeb9bfed2561f5ec134b63f358fc58def", null ],
+    [ "mThumbTrackListener", "classslider_1_1lib_1_1_metal_m_thumb_slider_u_i.html#ae5bc291262be790999b3df79fba1791b", null ],
+    [ "parent", "classslider_1_1lib_1_1_metal_m_thumb_slider_u_i.html#ac148b198aaec189525dd0382ebd8e16a", null ],
+    [ "thumbRenderer", "classslider_1_1lib_1_1_metal_m_thumb_slider_u_i.html#a6bf3562e84103dc2207d60d2ed7b1a43", null ]
 ];
