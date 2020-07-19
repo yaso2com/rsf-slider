@@ -1,4 +1,17 @@
-/* (swing1.1.1) */
+/**
+ * \mainpage
+ * LICENSE: CC BY
+ * <p>
+ * This license lets others distribute, remix, adapt, and build upon your work, even commercially,
+ * as long as they credit you for the original creation. This is the most accommodating of licenses offered.
+ * Recommended for maximum dissemination and use of licensed materials.
+ * https://creativecommons.org/licenses/by/4.0/
+ *
+ * @author Yasmin Al-Zokari
+ * @version 1.0
+ * @see https://gitlab.com/yaso2com/rsf-slider
+ * @see https://www.youtube.com/playlist?list=PLZ9SRRNo8TbbJa8cjqxdKuYjwshlH_IGI
+ */
 package slider.lib;
 
 import javax.swing.*;
@@ -8,35 +21,45 @@ import java.awt.*;
 import java.awt.event.MouseEvent;
 
 /**
- * @version 1.0 09/08/99
+ * This class ???
  */
 public class MThumbSliderAdditionalUI
 {
-
+    private static Rectangle unionRect = new Rectangle();
+    TrackListener trackListener;
+    /**
+     * MThumbSlider mSlider:
+     * BasicSliderUI ui:
+     * Rectangle[] thumbRects:
+     * int thumbNum: the thumb number starts from 0
+     * Rectangle trackRect:
+     * TrackListener trackListener: handles the mouse events
+     * Rectangle unionRect:
+     */
     private MThumbSlider mSlider;
     private BasicSliderUI ui;
     private Rectangle[] thumbRects;
-    private int thumbNum;
-    private transient boolean isDragging;
+    private int numberOfThumbs;
     private Rectangle trackRect;
-    TrackListener trackListener;
-    private static Rectangle unionRect = new Rectangle();
 
     public MThumbSliderAdditionalUI(BasicSliderUI ui)
     {
         this.ui = ui;
     }
 
+    /**
+     * @param c
+     */
     public void installUI(JComponent c)
     {
+
         mSlider = (MThumbSlider) c;
-        thumbNum = mSlider.getNumberOfThumbs();
-        thumbRects = new Rectangle[thumbNum];
-        for (int i = 0; i < thumbNum; i++)
+        numberOfThumbs = mSlider.getNumberOfThumbs();
+        thumbRects = new Rectangle[numberOfThumbs];
+        for (int i = 0; i < numberOfThumbs; i++)
         {
             thumbRects[i] = new Rectangle();
         }
-        isDragging = false;
         trackListener = new MThumbSliderAdditionalUI.TrackListener(mSlider);
     }
 
@@ -49,7 +72,7 @@ public class MThumbSliderAdditionalUI
     protected void calculateThumbsSize()
     {
         Dimension size = ((MThumbSliderAdditional) ui).getThumbSize();
-        for (int i = 0; i < thumbNum; i++)
+        for (int i = 0; i < numberOfThumbs; i++)
         {
             thumbRects[i].setSize(size.width, size.height);
         }
@@ -57,7 +80,7 @@ public class MThumbSliderAdditionalUI
 
     protected void calculateThumbsLocation()
     {
-        for (int i = 0; i < thumbNum; i++)
+        for (int i = 0; i < numberOfThumbs; i++)
         {
             if (mSlider.getSnapToTicks())
             {
@@ -86,31 +109,31 @@ public class MThumbSliderAdditionalUI
                 int valuePosition = ((MThumbSliderAdditional) ui).xPositionForValue(
                         value);
                 thumbRects[i].x = valuePosition - (thumbRects[i].width / 2);
-                if (thumbNum % 2 == 0)
+                if (numberOfThumbs % 2 == 0)
                 {
-                    if (i < thumbNum / 2)
+                    if (i < numberOfThumbs / 2)
                     {
-                        thumbRects[i].y = trackRect.y - (i - thumbNum / 2) * 8;
+                        thumbRects[i].y = trackRect.y - (i - numberOfThumbs / 2) * 8;
                     }
                     else
                     {
-                        thumbRects[i].y = trackRect.y - (i - thumbNum / 2) * 8 - 8;
+                        thumbRects[i].y = trackRect.y - (i - numberOfThumbs / 2) * 8 - 8;
                     }
                     //12 - 8 * i;// it was 20-10
                 }
                 else
                 {
-                    if (i < thumbNum / 2)
+                    if (i < numberOfThumbs / 2)
                     {
-                        thumbRects[i].y = trackRect.y - ((i - thumbNum / 2) * 8 - 4);
+                        thumbRects[i].y = trackRect.y - ((i - numberOfThumbs / 2) * 8 - 4);
                     }
-                    else if (i == thumbNum / 2)
+                    else if (i == numberOfThumbs / 2)
                     {
                         thumbRects[i].y = trackRect.y;
                     }
                     else
                     {
-                        thumbRects[i].y = trackRect.y - (i - thumbNum / 2) * 8;
+                        thumbRects[i].y = trackRect.y - (i - numberOfThumbs / 2) * 8;
                     }
                 }
             }
@@ -123,9 +146,9 @@ public class MThumbSliderAdditionalUI
         }
     }//end calculateThumbsLocation
 
-    public int getThumbNum()
+    public int getNumberOfThumbs()
     {
-        return thumbNum;
+        return numberOfThumbs;
     }
 
     public Rectangle[] getThumbRects()
@@ -134,22 +157,24 @@ public class MThumbSliderAdditionalUI
     }
 
     /**
-     * This is the method for the cascading effect
-     * @param x is the x location of the thumb number index
-     * @param y is the y location of the thumb number index
-     * @param index is the index of the thumb whose location should be changed
+     * This is the method for the cascading effect, there are two tyes of sliders, one vertical and another horizontal.
+     * The horizontal is used for the examples
+     *
+     * @param leftThumbBodyBoundingBox      is the leftThumbBodyBoundingBox location of the thumb number indexOfCurrentThumb
+     * @param upperThumbBodyBoundingBox      is the upperThumbBodyBoundingBox location of the thumb number indexOfCurrentThumb
+     * @param indexOfCurrentThumb  is the indexOfCurrentThumb of the thumb whose location should be changed
      * @param slider is the slider to change
-      */
+     */
 
-    public void setThumbLocationAt(int x,
-                                   int y,
-                                   int index,
+    public void setThumbLocationAt(int leftThumbBodyBoundingBox,
+                                   int upperThumbBodyBoundingBox,
+                                   int indexOfCurrentThumb,
                                    MThumbSlider slider)
     {
-        unionRect.setBounds(thumbRects[index]);
+        unionRect.setBounds(thumbRects[indexOfCurrentThumb]);
 
-        thumbRects[index].setLocation(x, y);
-        SwingUtilities.computeUnion(thumbRects[index].x, thumbRects[index].y, thumbRects[index].width, thumbRects[index].height,
+        thumbRects[indexOfCurrentThumb].setLocation(leftThumbBodyBoundingBox, upperThumbBodyBoundingBox);
+        SwingUtilities.computeUnion(thumbRects[indexOfCurrentThumb].x, thumbRects[indexOfCurrentThumb].y, thumbRects[indexOfCurrentThumb].width, thumbRects[indexOfCurrentThumb].height,
                 unionRect);
         mSlider.repaint(unionRect.x, unionRect.y, unionRect.width, unionRect.height);
 
@@ -157,26 +182,26 @@ public class MThumbSliderAdditionalUI
         {
             // this is not used in the examples "a vertical slider, but it is possible"
             case JSlider.VERTICAL:
-                if (index < thumbRects.length - 1 && unionRect.y > thumbRects[index + 1].y)
+                if (indexOfCurrentThumb < thumbRects.length - 1 && unionRect.y > thumbRects[indexOfCurrentThumb + 1].y)
                 {
-                    setThumbLocationAt(y, thumbRects[index + 1].x, index + 1, slider);
+                    setThumbLocationAt(upperThumbBodyBoundingBox, thumbRects[indexOfCurrentThumb + 1].x, indexOfCurrentThumb + 1, slider);
                 }
 
-                if (index > 0 && unionRect.y < thumbRects[index - 1].y)
+                if (indexOfCurrentThumb > 0 && unionRect.y < thumbRects[indexOfCurrentThumb - 1].y)
                 {
-                    setThumbLocationAt(y, thumbRects[index - 1].x, index - 1, slider);
+                    setThumbLocationAt(upperThumbBodyBoundingBox, thumbRects[indexOfCurrentThumb - 1].x, indexOfCurrentThumb - 1, slider);
                 }
                 break;
 
             case JSlider.HORIZONTAL:
-                if (index < thumbRects.length - 1 && thumbRects[index].x > thumbRects[index + 1].x)
+                if (indexOfCurrentThumb < thumbRects.length - 1 && thumbRects[indexOfCurrentThumb].x > thumbRects[indexOfCurrentThumb + 1].x)
                 {
-                    setThumbLocationAt(x, thumbRects[index + 1].y, index + 1, slider);
+                    setThumbLocationAt(leftThumbBodyBoundingBox, thumbRects[indexOfCurrentThumb + 1].y, indexOfCurrentThumb + 1, slider);
                 }
 
-                if (index > 0 && thumbRects[index].x < thumbRects[index - 1].x)
+                if (indexOfCurrentThumb > 0 && thumbRects[indexOfCurrentThumb].x < thumbRects[indexOfCurrentThumb - 1].x)
                 {
-                    setThumbLocationAt(x, thumbRects[index - 1].y, index - 1, slider);
+                    setThumbLocationAt(leftThumbBodyBoundingBox, thumbRects[indexOfCurrentThumb - 1].y, indexOfCurrentThumb - 1, slider);
                 }
                 break;
         }
@@ -188,214 +213,312 @@ public class MThumbSliderAdditionalUI
     }
 
     /**
-     * Internal class for tracking mouse events.
+     * Internal class for handling mouse events
      */
     public class TrackListener
             extends MouseInputAdapter
     {
+        /// Transient boolean isDragging: if the thumb of the slider is being dragged
+        private transient boolean isDragging;
 
-        // offset and mousePosition
+        /// The difference between the upper left corner of the bounding rectangle and the mouse position
         protected transient int offset;
-        protected transient int currentMouseX, currentMouseY;
-        // thumb and slider
-        protected Rectangle adjustingThumbRect = null;
+
+        /// The bounding box of the thumb being adjusted
+        protected Rectangle adjustingThumbBodyBoundingBox = null;
+
+        /// The index of the thumb being adjusted
         protected int adjustingThumbIndex;
+
+        /// The associated slider
         protected MThumbSlider slider;
-        protected Rectangle trackRect;
+
+        protected Rectangle sliderBodyBoundingBox;
 
         /**
          * Constructor.
+         * Here the slider is stored.
          *
          * @param slider slider
          */
-        TrackListener(MThumbSlider slider)
+        public TrackListener(MThumbSlider slider)
         {
             this.slider = slider;
+            initOrReset();
         }
 
         @Override
-        /** Mouse was pressed.
-         *
+        /**
+         * Mouse was pressed.
          * @param e mouse event
+         *
+         * <B> Description </B>
          */
         public void mousePressed(MouseEvent e)
         {
-            // check if slider is active
-            if (!slider.isEnabled())
+            /** Checks
+             * - if slider is enabled, i.e., can interact with the slider thumbs.
+             *   + Gets the x position of the mouse when pressed from the mouse event
+             *   + Gets the y position of the mouse when pressed from the mouse event
+             *   + Put focus on the slider
+             *   + For all thumbs
+             *    + gets the bounding box of the thumb
+             *    + if the current mouse position is inside the bounding box of the thumb
+             *     + Compute the offset (i.e., the difference in the x and the y positions) of the mouse with respect to the
+             *     upper left corner of the bounding box of the thumb. Depending whether the slider is vertical or horizontal.
+             *     + set the dragging flag to true
+             *     + store the bounding box of the thumb and the index of the thumb being adjusted
+             *     + if the thumb is already found do not go through all thumbs
+             */
+            if (slider.isEnabled())
             {
-                return;
-            }
+                // Gets the x position of the mouse when pressed from the mouse event
+                int currentMouseX = e.getX();
 
-            // get current mouse position
-            currentMouseX = e.getX();
-            currentMouseY = e.getY();
-            slider.requestFocus();
+                // Gets the y position of the mouse when pressed from the mouse event
+                int currentMouseY = e.getY();
 
-            // for all thumbs
-            for (int i = 0; i < thumbNum; i++)
-            {
-                Rectangle rect = thumbRects[i];
-                if (rect.contains(currentMouseX, currentMouseY))
+                // Put focus on the slider
+                slider.requestFocus();
+
+                // For all thumbs,
+                for (int i = 0; i < numberOfThumbs; i++)
                 {
-                    // mouse is over thumb
-                    // compute offset
-                    switch (slider.getOrientation())
+                    // - gets the bounding box of the thumb,
+                    Rectangle thumbBodyBoundingBox = thumbRects[i];
+
+                    //  if the current mouse position is inside the bounding box of the thumb
+                    //   compute the offset (i.e., the difference in the x and the y positions) of the mouse with respect to the
+                     //  upper left corner of the bounding box of the thumb. Depending whether the slider is vertical or horizontal.
+                     //    set the dragging flag to true
+                     //    store the bounding box of the thumb and the index of the thumb being adjusted
+                     //    if the thumb is already found do not go through all thumbs
+                    if (thumbBodyBoundingBox.contains(currentMouseX, currentMouseY))
                     {
-                        case JSlider.VERTICAL:
-                            offset = currentMouseY - rect.y;
-                            break;
-                        case JSlider.HORIZONTAL:
-                            offset = currentMouseX - rect.x;
-                            break;
+                        switch (slider.getOrientation())
+                        {
+                            case JSlider.VERTICAL:
+                                offset = currentMouseY - thumbBodyBoundingBox.y;
+                                break;
+                            case JSlider.HORIZONTAL:
+                                offset = currentMouseX - thumbBodyBoundingBox.x;
+                                break;
+                        }
+                        isDragging = true;
+                        slider.setValueIsAdjusting(true);
+                        adjustingThumbBodyBoundingBox = thumbBodyBoundingBox;
+                        adjustingThumbIndex = i;
+                        return;
                     }
-                    // set flags and active thumb number
-                    isDragging = true;
-                    slider.setValueIsAdjusting(true);
-                    adjustingThumbRect = rect;
-                    adjustingThumbIndex = i;
-                    return;
                 }
             }
         }
 
         @Override
-        /** Mouse was dragged
+        /**
+         * Mouse was dragged.
          *
          * @param e mouse event
+         *
+         *  <B> Description </B>
          */
         public void mouseDragged(MouseEvent e)
         {
-            // check if event should be handled
-            if (!slider.isEnabled()
-                    || !isDragging
-                    || !slider.getValueIsAdjusting()
-                    || adjustingThumbRect == null)
+            /** Checks
+             * - if slider is enabled, i.e., can interact with the slider thumbs.
+             * - if a thumb is dragged.
+             * - if the bounding box of the thumb is set
+             *   + Gets the bounding box of the dragged thumb
+             *   + Gets the bounding box of the body (i.e., called Track) of the slider
+             *   + Gets the orientation of the slider: either vertical or horizontal
+             *   + Calculates the new position of the currently dragged thumb
+             *    + Condition: The tip should not be positioned out of the slider body
+             *      + if the tip position is smaller than the left of the slider body, position it to be on the left slider body position
+             *      + if the tip position is larger than the right of the slider body, position it to be on the right slider body position
+             *
+             * @verbatim
+
+             *  Example: HORIZONTAL Slider orientation:
+             *
+             *        upper left
+             *             *-----*        |
+             *              \   /         |--> Thumb
+             *                !           |
+             *            thumb tip
+             *              --------------------
+             *              |    slider body   |
+             *              --------------------
+             *             left                right
+             * @endverbatim
+             */
+            if (slider.isEnabled()
+                    && isDragging
+                    && slider.getValueIsAdjusting()
+                    && adjustingThumbBodyBoundingBox != null)
             {
-                return;
+                Rectangle thumbBodyBoundingBox = thumbRects[adjustingThumbIndex];
+                sliderBodyBoundingBox = getTrackRect();
+
+                // branch on orientation
+                switch (slider.getOrientation())
+                {
+                    case JSlider.VERTICAL:
+                        // compute and set new position
+
+                        int topOfThumbBodyBoundingBox = computeTopOfThumbBodyBoundingBox(thumbBodyBoundingBox, e.getY() - offset);
+                        setThumbLocationAt(thumbBodyBoundingBox.x, topOfThumbBodyBoundingBox, adjustingThumbIndex, slider);
+                        break;
+
+                    case JSlider.HORIZONTAL:
+                        // compute and set new position
+                        int leftOfThumbBodyBoundingBox = computeLeftOfThumbBodyBoundingBox(thumbBodyBoundingBox, e.getX() - offset);
+                        setThumbLocationAt(leftOfThumbBodyBoundingBox, thumbBodyBoundingBox.y, adjustingThumbIndex, slider);
+                        break;
+                }
             }
+        }
 
-            // get rectangle of dragged thumb
-            Rectangle rect = thumbRects[adjustingThumbIndex];
-            trackRect = getTrackRect();
+        private int computeLeftOfThumbBodyBoundingBox(Rectangle thumbBodyBoundingBox, int initLeftOfThumbBodyBoundingBox)
+        {
+            int halfThumbWidth = thumbBodyBoundingBox.width / 2;// from the middle of the bounding box of the thumb, where the tip is
 
-            // branch on orientation
-            switch (slider.getOrientation())
-            {
-                case JSlider.VERTICAL:
-                    // compute and set new position
-                    int halfThumbHeight = rect.height / 2;
-                    int thumbTop = e.getY() - offset;
-                    int trackTop = trackRect.y;
-                    int trackBottom = trackRect.y + (trackRect.height - 1);
+            int leftOfThumbBodyBoundingBox = initLeftOfThumbBodyBoundingBox; //
+            int tipOfThumbBody = leftOfThumbBodyBoundingBox + halfThumbWidth;
+            int leftOfSliderBodyBoundingBox = sliderBodyBoundingBox.x;
+            int rightOfSliderBodyBoundingBox = sliderBodyBoundingBox.x + (sliderBodyBoundingBox.width - 1);
 
-                    thumbTop = Math.max(thumbTop, trackTop - halfThumbHeight);
-                    thumbTop = Math.min(thumbTop, trackBottom - halfThumbHeight);
+            // Conditions: The tip should not be positioned out of the slider body
+            //  if the tip position is smaller than the left of the slider body, position it to be on the left slider body position
+            //  if the tip position is larger than the right of the slider body, position it to be on the right slider body position
+            tipOfThumbBody = Math.max(tipOfThumbBody, leftOfSliderBodyBoundingBox);
+            tipOfThumbBody = Math.min(tipOfThumbBody, rightOfSliderBodyBoundingBox);
 
-                    setThumbLocationAt(rect.x, thumbTop, adjustingThumbIndex, slider);
-                    break;
+            leftOfThumbBodyBoundingBox = tipOfThumbBody - halfThumbWidth;
+            return leftOfThumbBodyBoundingBox;
+        }
 
-                case JSlider.HORIZONTAL:
-                    // compute and set new position
-                    int halfThumbWidth = rect.width / 2;
-                    int thumbLeft = e.getX() - offset;
-                    int trackLeft = trackRect.x;
-                    int trackRight = trackRect.x + (trackRect.width - 1);
+        private int computeTopOfThumbBodyBoundingBox(Rectangle thumbBodyBoundingBox, int initTopOfThumbBodyBoundingBox)
+        {
+            int halfThumbHeight = thumbBodyBoundingBox.height / 2; // from the middle of the bounding box of the thumb
+            int topOfThumbBodyBoundingBox = initTopOfThumbBodyBoundingBox; //e.getY() - offset;
+            int tipOfThumbBody = topOfThumbBodyBoundingBox + halfThumbHeight;
+            int topOfSliderBodyBoundingBox = sliderBodyBoundingBox.y;
+            int bottomOfSliderBodyBoundingBox = sliderBodyBoundingBox.y + (sliderBodyBoundingBox.height - 1);
 
-                    thumbLeft = Math.max(thumbLeft, trackLeft - halfThumbWidth);
-                    thumbLeft = Math.min(thumbLeft, trackRight - halfThumbWidth);
+            tipOfThumbBody = Math.max(tipOfThumbBody, topOfSliderBodyBoundingBox);
+            tipOfThumbBody = Math.min(tipOfThumbBody, bottomOfSliderBodyBoundingBox);
 
-                    setThumbLocationAt(thumbLeft, rect.y, adjustingThumbIndex, slider);
-                    break;
-            }
+            topOfThumbBodyBoundingBox = tipOfThumbBody - halfThumbHeight;
+            return topOfThumbBodyBoundingBox;
         }
 
         @Override
-        /** Mouse was released
+        /**
+         * Mouse was released.
          *
          * @param e mouse event
+         *
+         * <B> Description </B>
+         *
          */
         public void mouseReleased(MouseEvent e)
         {
-            if (!slider.isEnabled())
+            /**
+             * Checks
+             *  - if slider is enabled, i.e., can interact with the slider thumbs.
+             *  - Set the value of all thumbs
+             *      - for all thumbs before the released (dragged) thumb, set the new thumbs values (e.g., \f$10^-13\f$ in MCSs analysis or any label being shown), excluding the current released thumb
+             *      - for all thumbs after the released (dragged) thumb, set the new thumbs values, including the current released thumb
+             *  - Calculate the thumbs sizes and their positions
+             *  - Reset offset, dragging, value adjusting to the initial values. to have a clean start for the next mouse action.
+             *  - Repaint the slider
+             */
+            if (slider.isEnabled())
             {
-                // if slider is not enabled -> return
-                return;
+                //  for all thumbs before the released (dragged) thumb, set the new thumbs values. The value of the current released thumb is not set
+                for (int thumbIndex = 0; thumbIndex < adjustingThumbIndex; ++thumbIndex)
+                {
+                    setThumbValue(thumbIndex);
+                }
+
+                // for all thumbs after the released (dragged) thumb, set the new thumbs values, including the current released thumb
+                // from largest value to the slider that was manipulated (included)
+                for (int thumbIndex = numberOfThumbs - 1; thumbIndex >= adjustingThumbIndex; --thumbIndex)
+                {
+                    setThumbValue(thumbIndex);
+                }
+
+                // Calculate the thumbs sizes and their positions
+                slider.calculateGeometry();
+                // Reset offset, dragging, value adjusting to the initial values. to have a clean start for the next mouse action.
+                initOrReset();
+
+                // repaint slider
+                slider.repaint();
             }
-
-            // from smallest value to the slider that was manipulated (excluded)
-            for (int thumbIndex = 0; thumbIndex < adjustingThumbIndex; ++thumbIndex)
-            {
-                // set new thumb value
-                setThumbValue(thumbIndex);
-            }
-
-            // from largest value to the slider that was manipulated (included)
-            for (int thumbIndex = thumbNum - 1; thumbIndex >= adjustingThumbIndex; --thumbIndex)
-            {
-                // set new thumb value
-                setThumbValue(thumbIndex);
-            }
-
-            // calculate the thumb geometries
-            mSlider.calculateGeometry();
-
-            // reset offset, dragging, value adjusting
-            offset = 0;
-            isDragging = false;
-            mSlider.setValueIsAdjusting(false);
-
-            // repaint slider
-            mSlider.repaint();
         }
 
         /**
-         * Set thumb value
+         * Reset offset, dragging, value_adjusting
+         */
+        private void initOrReset()
+        {
+            offset = 0;
+            isDragging = false;
+            slider.setValueIsAdjusting(false);
+        }
+
+        /**
+         * Set current thumb value.
          *
          * @param thumbIndex thumb index
+         *
+         *  <B> Description </B>
+         *
+         *  Gets the thumb body bounding box and the track slider body bounding box
+         *  Gets the orientation of the slider Vertical of horizontal
+         *  Calculates the new position of the current thumb
+         *
          */
         private void setThumbValue(int thumbIndex)
         {
-            int thumbMiddle;
+            // The tip of the current thumb
+            int thumbTip;
 
-            // get the thumb rectangle and the track rectangle
-            Rectangle rect = thumbRects[thumbIndex];
-            trackRect = getTrackRect();
+            // Gets the thumb body bounding box and the track slider body bounding box
+            Rectangle thumbBodyBoundingBox = thumbRects[thumbIndex];
+            sliderBodyBoundingBox = getTrackRect();
 
-            // branch for slide orientation
+            // Gets the orientation of the slider Vertical of horizontal
             switch (slider.getOrientation())
             {
                 case JSlider.VERTICAL:
-                    // compute thumb position and set value
-                    int halfThumbHeight = rect.height / 2;
-                    int thumbTop = rect.y;
-                    int trackTop = trackRect.y;
-                    int trackBottom = trackRect.y + (trackRect.height - 1);
+                    // Calculates the new position of the current thumb
+                    int halfThumbHeight = thumbBodyBoundingBox.height / 2;
+                    int topOfThumbBodyBoundingBox = computeTopOfThumbBodyBoundingBox(thumbBodyBoundingBox, thumbBodyBoundingBox.y);
+                    thumbTip = topOfThumbBodyBoundingBox + halfThumbHeight;
 
-                    thumbTop = Math.max(thumbTop, trackTop - halfThumbHeight);
-                    thumbTop = Math.min(thumbTop, trackBottom - halfThumbHeight);
-
-                    thumbMiddle = thumbTop + halfThumbHeight;
-                    if (ui.valueForYPosition(thumbMiddle) != mSlider.getValueAt(thumbNum))
+                    //
+                    if (ui.valueForYPosition(thumbTip) != slider.getValueAt(numberOfThumbs))
                     {
-                        mSlider.setValueAt(ui.valueForYPosition(thumbMiddle),
-                                thumbIndex, false);
+                        slider.setValueAt(ui.valueForYPosition(thumbTip), thumbIndex, false);
                     }
                     break;
 
                 case JSlider.HORIZONTAL:
-                    // compute thumb position and set value
-                    int halfThumbWidth = rect.width / 2;
-                    int thumbLeft = rect.x;
-                    int trackLeft = trackRect.x;
-                    int trackRight = trackRect.x + (trackRect.width - 1);
+                    // Calculates the new position of the current thumb
+                    int halfThumbWidth = thumbBodyBoundingBox.width / 2;
+                    int thumbLeft = thumbBodyBoundingBox.x;
+                    int trackLeft = sliderBodyBoundingBox.x;
+                    int trackRight = sliderBodyBoundingBox.x + (sliderBodyBoundingBox.width - 1);
 
                     thumbLeft = Math.max(thumbLeft, trackLeft - halfThumbWidth);
                     thumbLeft = Math.min(thumbLeft, trackRight - halfThumbWidth);
 
-                    thumbMiddle = thumbLeft + halfThumbWidth;
-                    if (ui.valueForXPosition(thumbMiddle) != mSlider.getValueAt(thumbIndex))
+                    thumbTip = thumbLeft + halfThumbWidth;
+                    if (ui.valueForXPosition(thumbTip) != mSlider.getValueAt(thumbIndex))
                     {
-                        mSlider.setValueAt(ui.valueForXPosition(thumbMiddle),
+                        mSlider.setValueAt(ui.valueForXPosition(thumbTip),
                                 thumbIndex, false);
                     }
                     break;

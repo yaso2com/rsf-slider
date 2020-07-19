@@ -1,0 +1,182 @@
+.TH "slider.lib.MThumbSliderAdditionalUI" 3 "Sun Jul 19 2020" "Version Test1" "RSFslider" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+slider.lib.MThumbSliderAdditionalUI
+.SH SYNOPSIS
+.br
+.PP
+.SS "Classes"
+
+.in +1c
+.ti -1c
+.RI "class \fBTrackListener\fP"
+.br
+.in -1c
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBMThumbSliderAdditionalUI\fP (BasicSliderUI \fBui\fP)"
+.br
+.ti -1c
+.RI "void \fBinstallUI\fP (JComponent c)"
+.br
+.ti -1c
+.RI "void \fBuninstallUI\fP (JComponent c)"
+.br
+.ti -1c
+.RI "int \fBgetNumberOfThumbs\fP ()"
+.br
+.ti -1c
+.RI "Rectangle[] \fBgetThumbRects\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetThumbLocationAt\fP (int leftThumbBodyBoundingBox, int upperThumbBodyBoundingBox, int indexOfCurrentThumb, \fBMThumbSlider\fP slider)"
+.br
+.ti -1c
+.RI "Rectangle \fBgetTrackRect\fP ()"
+.br
+.in -1c
+.SS "Protected Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBcalculateThumbsSize\fP ()"
+.br
+.ti -1c
+.RI "void \fBcalculateThumbsLocation\fP ()"
+.br
+.in -1c
+.SS "Package Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBTrackListener\fP \fBtrackListener\fP"
+.br
+.in -1c
+.SS "Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBMThumbSlider\fP \fBmSlider\fP"
+.br
+.ti -1c
+.RI "BasicSliderUI \fBui\fP"
+.br
+.ti -1c
+.RI "Rectangle[] \fBthumbRects\fP"
+.br
+.ti -1c
+.RI "int \fBnumberOfThumbs\fP"
+.br
+.ti -1c
+.RI "Rectangle \fBtrackRect\fP"
+.br
+.in -1c
+.SS "Static Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "static Rectangle \fBunionRect\fP = new Rectangle()"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+This class ??? 
+.PP
+Definition at line 26 of file MThumbSliderAdditionalUI\&.java\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "slider\&.lib\&.MThumbSliderAdditionalUI\&.MThumbSliderAdditionalUI (BasicSliderUI ui)"
+
+.PP
+Definition at line 45 of file MThumbSliderAdditionalUI\&.java\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "void slider\&.lib\&.MThumbSliderAdditionalUI\&.calculateThumbsLocation ()\fC [protected]\fP"
+
+.PP
+Definition at line 81 of file MThumbSliderAdditionalUI\&.java\&.
+.SS "void slider\&.lib\&.MThumbSliderAdditionalUI\&.calculateThumbsSize ()\fC [protected]\fP"
+
+.PP
+Definition at line 72 of file MThumbSliderAdditionalUI\&.java\&.
+.SS "int slider\&.lib\&.MThumbSliderAdditionalUI\&.getNumberOfThumbs ()"
+
+.PP
+Definition at line 149 of file MThumbSliderAdditionalUI\&.java\&.
+.SS "Rectangle [] slider\&.lib\&.MThumbSliderAdditionalUI\&.getThumbRects ()"
+
+.PP
+Definition at line 154 of file MThumbSliderAdditionalUI\&.java\&.
+.SS "Rectangle slider\&.lib\&.MThumbSliderAdditionalUI\&.getTrackRect ()"
+
+.PP
+Definition at line 210 of file MThumbSliderAdditionalUI\&.java\&.
+.SS "void slider\&.lib\&.MThumbSliderAdditionalUI\&.installUI (JComponent c)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fIc\fP 
+.RE
+.PP
+
+.PP
+Definition at line 53 of file MThumbSliderAdditionalUI\&.java\&.
+.SS "void slider\&.lib\&.MThumbSliderAdditionalUI\&.setThumbLocationAt (int leftThumbBodyBoundingBox, int upperThumbBodyBoundingBox, int indexOfCurrentThumb, \fBMThumbSlider\fP slider)"
+This is the method for the cascading effect, there are two tyes of sliders, one vertical and another horizontal\&. The horizontal is used for the examples
+.PP
+\fBParameters\fP
+.RS 4
+\fIleftThumbBodyBoundingBox\fP is the leftThumbBodyBoundingBox location of the thumb number indexOfCurrentThumb 
+.br
+\fIupperThumbBodyBoundingBox\fP is the upperThumbBodyBoundingBox location of the thumb number indexOfCurrentThumb 
+.br
+\fIindexOfCurrentThumb\fP is the indexOfCurrentThumb of the thumb whose location should be changed 
+.br
+\fIslider\fP is the slider to change 
+.RE
+.PP
+
+.PP
+Definition at line 169 of file MThumbSliderAdditionalUI\&.java\&.
+.SS "void slider\&.lib\&.MThumbSliderAdditionalUI\&.uninstallUI (JComponent c)"
+
+.PP
+Definition at line 66 of file MThumbSliderAdditionalUI\&.java\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "\fBMThumbSlider\fP slider\&.lib\&.MThumbSliderAdditionalUI\&.mSlider\fC [private]\fP"
+\fBMThumbSlider\fP mSlider: BasicSliderUI ui: Rectangle[] thumbRects: int thumbNum: the thumb number starts from 0 Rectangle trackRect: \fBTrackListener\fP trackListener: handles the mouse events Rectangle unionRect: 
+.PP
+Definition at line 39 of file MThumbSliderAdditionalUI\&.java\&.
+.SS "int slider\&.lib\&.MThumbSliderAdditionalUI\&.numberOfThumbs\fC [private]\fP"
+
+.PP
+Definition at line 42 of file MThumbSliderAdditionalUI\&.java\&.
+.SS "Rectangle [] slider\&.lib\&.MThumbSliderAdditionalUI\&.thumbRects\fC [private]\fP"
+
+.PP
+Definition at line 41 of file MThumbSliderAdditionalUI\&.java\&.
+.SS "\fBTrackListener\fP slider\&.lib\&.MThumbSliderAdditionalUI\&.trackListener\fC [package]\fP"
+
+.PP
+Definition at line 29 of file MThumbSliderAdditionalUI\&.java\&.
+.SS "Rectangle slider\&.lib\&.MThumbSliderAdditionalUI\&.trackRect\fC [private]\fP"
+
+.PP
+Definition at line 43 of file MThumbSliderAdditionalUI\&.java\&.
+.SS "BasicSliderUI slider\&.lib\&.MThumbSliderAdditionalUI\&.ui\fC [private]\fP"
+
+.PP
+Definition at line 40 of file MThumbSliderAdditionalUI\&.java\&.
+.SS "Rectangle slider\&.lib\&.MThumbSliderAdditionalUI\&.unionRect = new Rectangle()\fC [static]\fP, \fC [private]\fP"
+
+.PP
+Definition at line 28 of file MThumbSliderAdditionalUI\&.java\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for RSFslider from the source code\&.

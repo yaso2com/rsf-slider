@@ -235,7 +235,7 @@ public class MThumbSlider
         {
             if (sliderParameters.isLogScale())
             {
-                sliderModels.get(i).setMinimum(getExponent(minimum) - 1);//(initial posion of the thumbs, extent ,min, max)
+                sliderModels.get(i).setMinimum(getExponent(minimum) - 1);//(initial position of the thumbs, extent ,min, max)
             }
             else
             {

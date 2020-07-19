@@ -1,0 +1,196 @@
+.TH "slider.lib.SliderPanel" 3 "Sun Jul 19 2020" "Version Test1" "RSFslider" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+slider.lib.SliderPanel
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits JPanel\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBSliderPanel\fP (\fBSliderParameters\fP \fBsliderParameters\fP)"
+.br
+.ti -1c
+.RI "void \fBsetMThumbSliderColors\fP (int colorCode)"
+.br
+.ti -1c
+.RI "double \fBgetMinimum\fP ()"
+.br
+.ti -1c
+.RI "double \fBgetMaximum\fP ()"
+.br
+.ti -1c
+.RI "int \fBgetTicks\fP ()"
+.br
+.ti -1c
+.RI "\fBSliderParameters\fP \fBgetSliderParameters\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetValue\fP (double value, int index)"
+.br
+.ti -1c
+.RI "double \fBgetValue\fP (int index)"
+.br
+.ti -1c
+.RI "int \fBgetIntValue\fP (int index)"
+.br
+.ti -1c
+.RI "void \fBsetRange\fP (double minimum, double maximum)"
+.br
+.ti -1c
+.RI "void \fBsetMinimum\fP (double minimum)"
+.br
+.ti -1c
+.RI "void \fBsetMaximum\fP (double maximum)"
+.br
+.ti -1c
+.RI "void \fBsetNumberInRange\fP (List< Integer > box, List< Integer > numberInRange)"
+.br
+.ti -1c
+.RI "int \fBgetNumberInRange\fP (int box)"
+.br
+.ti -1c
+.RI "void \fBpaint\fP (Graphics g)"
+.br
+.ti -1c
+.RI "List< Integer > \fBgetTickValues\fP ()"
+.br
+.in -1c
+.SS "Private Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBeditButtonClicked\fP (ActionEvent e)"
+.br
+.in -1c
+.SS "Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "JLabel \fBtext\fP"
+.br
+.ti -1c
+.RI "JButton \fBbEdit\fP"
+.br
+.ti -1c
+.RI "\fBEditSliderDialog\fP \fBdialog\fP = null"
+.br
+.ti -1c
+.RI "\fBSliderParameters\fP \fBsliderParameters\fP = null"
+.br
+.ti -1c
+.RI "\fBMThumbSlider\fP \fBslider\fP = null"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Definition at line 12 of file SliderPanel\&.java\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "slider\&.lib\&.SliderPanel\&.SliderPanel (\fBSliderParameters\fP sliderParameters)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fIsliderParameters\fP 
+.RE
+.PP
+
+.PP
+Definition at line 27 of file SliderPanel\&.java\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "void slider\&.lib\&.SliderPanel\&.editButtonClicked (ActionEvent e)\fC [private]\fP"
+
+.PP
+Definition at line 231 of file SliderPanel\&.java\&.
+.SS "int slider\&.lib\&.SliderPanel\&.getIntValue (int index)"
+
+.PP
+Definition at line 114 of file SliderPanel\&.java\&.
+.SS "double slider\&.lib\&.SliderPanel\&.getMaximum ()"
+
+.PP
+Definition at line 88 of file SliderPanel\&.java\&.
+.SS "double slider\&.lib\&.SliderPanel\&.getMinimum ()"
+
+.PP
+Definition at line 83 of file SliderPanel\&.java\&.
+.SS "int slider\&.lib\&.SliderPanel\&.getNumberInRange (int box)"
+
+.PP
+Definition at line 221 of file SliderPanel\&.java\&.
+.SS "\fBSliderParameters\fP slider\&.lib\&.SliderPanel\&.getSliderParameters ()"
+
+.PP
+Definition at line 98 of file SliderPanel\&.java\&.
+.SS "int slider\&.lib\&.SliderPanel\&.getTicks ()"
+
+.PP
+Definition at line 93 of file SliderPanel\&.java\&.
+.SS "List<Integer> slider\&.lib\&.SliderPanel\&.getTickValues ()"
+
+.PP
+Definition at line 241 of file SliderPanel\&.java\&.
+.SS "double slider\&.lib\&.SliderPanel\&.getValue (int index)"
+
+.PP
+Definition at line 109 of file SliderPanel\&.java\&.
+.SS "void slider\&.lib\&.SliderPanel\&.paint (Graphics g)"
+
+.PP
+Definition at line 226 of file SliderPanel\&.java\&.
+.SS "void slider\&.lib\&.SliderPanel\&.setMaximum (double maximum)"
+
+.PP
+Definition at line 181 of file SliderPanel\&.java\&.
+.SS "void slider\&.lib\&.SliderPanel\&.setMinimum (double minimum)"
+
+.PP
+Definition at line 151 of file SliderPanel\&.java\&.
+.SS "void slider\&.lib\&.SliderPanel\&.setMThumbSliderColors (int colorCode)"
+
+.PP
+Definition at line 78 of file SliderPanel\&.java\&.
+.SS "void slider\&.lib\&.SliderPanel\&.setNumberInRange (List< Integer > box, List< Integer > numberInRange)"
+
+.PP
+Definition at line 211 of file SliderPanel\&.java\&.
+.SS "void slider\&.lib\&.SliderPanel\&.setRange (double minimum, double maximum)"
+
+.PP
+Definition at line 119 of file SliderPanel\&.java\&.
+.SS "void slider\&.lib\&.SliderPanel\&.setValue (double value, int index)"
+
+.PP
+Definition at line 103 of file SliderPanel\&.java\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "JButton slider\&.lib\&.SliderPanel\&.bEdit\fC [private]\fP"
+
+.PP
+Definition at line 18 of file SliderPanel\&.java\&.
+.SS "\fBEditSliderDialog\fP slider\&.lib\&.SliderPanel\&.dialog = null\fC [private]\fP"
+
+.PP
+Definition at line 19 of file SliderPanel\&.java\&.
+.SS "\fBMThumbSlider\fP slider\&.lib\&.SliderPanel\&.slider = null\fC [private]\fP"
+
+.PP
+Definition at line 22 of file SliderPanel\&.java\&.
+.SS "\fBSliderParameters\fP slider\&.lib\&.SliderPanel\&.sliderParameters = null\fC [private]\fP"
+
+.PP
+Definition at line 21 of file SliderPanel\&.java\&.
+.SS "JLabel slider\&.lib\&.SliderPanel\&.text\fC [private]\fP"
+
+.PP
+Definition at line 17 of file SliderPanel\&.java\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for RSFslider from the source code\&.

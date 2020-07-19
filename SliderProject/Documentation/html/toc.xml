@@ -1,0 +1,552 @@
+<toc label="RSFslider" topic="index.html">
+  <topic label="Packages" href="namespaces.html">
+    <topic label="Packages" href="namespaces.html">
+      <topic label="slider" href="namespaceslider.html">
+        <topic label="lib" href="namespaceslider_1_1lib.html"/>
+        <topic label="RSFSlider" href="namespaceslider_1_1_r_s_f_slider.html"/>
+      </topic>
+    </topic>
+  </topic>
+  <topic label="Classes" href="annotated.html">
+    <topic label="Class List" href="annotated.html">
+      <topic label="slider" href="namespaceslider.html">
+        <topic label="lib" href="namespaceslider_1_1lib.html">
+          <topic label="EditSliderDialog" href="classslider_1_1lib_1_1_edit_slider_dialog.html">
+            <topic label="EditSliderDialog" href="classslider_1_1lib_1_1_edit_slider_dialog.html#a435d0626fcdcf3378b908cf29b91724b"/>
+            <topic label="colorButtonActionPerformed" href="classslider_1_1lib_1_1_edit_slider_dialog.html#aa500830e3982c9d3998f1ec83ee15041"/>
+            <topic label="confirmActionPerformed" href="classslider_1_1lib_1_1_edit_slider_dialog.html#a97b7bdb206a2e4e2df43c036eb3b6bcd"/>
+            <topic label="initGUI" href="classslider_1_1lib_1_1_edit_slider_dialog.html#aa8520b68dfef0b1febf94e1496a0b4b8"/>
+            <topic label="updateGui" href="classslider_1_1lib_1_1_edit_slider_dialog.html#a26ce4631e31759089d0de1a7d95a803b"/>
+            <topic label="bConfirm" href="classslider_1_1lib_1_1_edit_slider_dialog.html#a0f8fa45a61c9525d95f6c0ed0b1a77f7"/>
+            <topic label="cbLogScale" href="classslider_1_1lib_1_1_edit_slider_dialog.html#a6682033e6d705b566f5cd4b36c0f971d"/>
+            <topic label="colorButtons" href="classslider_1_1lib_1_1_edit_slider_dialog.html#a7470f58befcdad1d1f0320ea9b1a1eae"/>
+            <topic label="colors" href="classslider_1_1lib_1_1_edit_slider_dialog.html#ae75d6a21c3d7fc3c43757e67108a2ca7"/>
+            <topic label="newNumberOfThumbs" href="classslider_1_1lib_1_1_edit_slider_dialog.html#a711fa5d7c0565529cc9a625ddf6e5203"/>
+            <topic label="numberOfThumbs" href="classslider_1_1lib_1_1_edit_slider_dialog.html#a52d3e3ea71e68f9bf3e67a158064dafc"/>
+            <topic label="pColors" href="classslider_1_1lib_1_1_edit_slider_dialog.html#ad38c5d7795b33fa21591ab20d49d4784"/>
+            <topic label="sliderParameters" href="classslider_1_1lib_1_1_edit_slider_dialog.html#aba05c53104b235b9959009f77736b6ac"/>
+          </topic>
+          <topic label="MetalMThumbSliderUI" href="classslider_1_1lib_1_1_metal_m_thumb_slider_u_i.html">
+            <topic label="MetalMThumbSliderUI" href="classslider_1_1lib_1_1_metal_m_thumb_slider_u_i.html#ae03e59b83d39f7a199f03a2802de77f6"/>
+            <topic label="calculateGeometry" href="classslider_1_1lib_1_1_metal_m_thumb_slider_u_i.html#a9a06f661d3bf24525203c8944b631ba2"/>
+            <topic label="calculateThumbLocation" href="classslider_1_1lib_1_1_metal_m_thumb_slider_u_i.html#a95545a1ec7211a155d8702ecc990b3a7"/>
+            <topic label="computeX" href="classslider_1_1lib_1_1_metal_m_thumb_slider_u_i.html#af531466b9039e8a3888c4129f1ae42ef"/>
+            <topic label="computeY" href="classslider_1_1lib_1_1_metal_m_thumb_slider_u_i.html#a8d006b9f6f099725ed4d798c97c5e7d6"/>
+            <topic label="createMThumbTrackListener" href="classslider_1_1lib_1_1_metal_m_thumb_slider_u_i.html#a8100d26197f7b55a1788831318f07365"/>
+            <topic label="createTrackListener" href="classslider_1_1lib_1_1_metal_m_thumb_slider_u_i.html#acbcbf21de2b841edbb495b27d34d9d5c"/>
+            <topic label="createUI" href="classslider_1_1lib_1_1_metal_m_thumb_slider_u_i.html#af04941772e663b5f0fd9af3f38089824"/>
+            <topic label="fillTrack" href="classslider_1_1lib_1_1_metal_m_thumb_slider_u_i.html#a4342bb44386b9f990209530915459360"/>
+            <topic label="getHorizThumbIcon" href="classslider_1_1lib_1_1_metal_m_thumb_slider_u_i.html#a1630a0fe764cfa843828d5e1157095c2"/>
+            <topic label="getOrientation" href="classslider_1_1lib_1_1_metal_m_thumb_slider_u_i.html#a09309cfc5d6104350fe0b595bf760e1d"/>
+            <topic label="getThumbSize" href="classslider_1_1lib_1_1_metal_m_thumb_slider_u_i.html#af0343e1fd86a8cf2c574cac1ad46176e"/>
+            <topic label="getTrackRect" href="classslider_1_1lib_1_1_metal_m_thumb_slider_u_i.html#a1973982ee60e6e011d5e35b8def89e4a"/>
+            <topic label="getVertThumbIcon" href="classslider_1_1lib_1_1_metal_m_thumb_slider_u_i.html#ac9073618ff1412f8e28ff4c51f32d00e"/>
+            <topic label="installListeners" href="classslider_1_1lib_1_1_metal_m_thumb_slider_u_i.html#ab6b53bf4a499eb04dc4c17c940e0b34b"/>
+            <topic label="installUI" href="classslider_1_1lib_1_1_metal_m_thumb_slider_u_i.html#afd2a9b62eaf812b1e1ce026a5d44cb2c"/>
+            <topic label="paint" href="classslider_1_1lib_1_1_metal_m_thumb_slider_u_i.html#ad59c4aa986efa0e289d5aca4e21d36a8"/>
+            <topic label="paintHistogram" href="classslider_1_1lib_1_1_metal_m_thumb_slider_u_i.html#a15a22ff1af3dd0206093d377d5e8e492"/>
+            <topic label="paintHistogramBar" href="classslider_1_1lib_1_1_metal_m_thumb_slider_u_i.html#a5b6742b72dd035dfc57444711c36cbea"/>
+            <topic label="paintThumb" href="classslider_1_1lib_1_1_metal_m_thumb_slider_u_i.html#ab92ef87e513ba30c771874a45930c891"/>
+            <topic label="scrollByBlock" href="classslider_1_1lib_1_1_metal_m_thumb_slider_u_i.html#a0205fb432c044b52f25a26af67297bc3"/>
+            <topic label="scrollByUnit" href="classslider_1_1lib_1_1_metal_m_thumb_slider_u_i.html#af1778612cb7ae0a5eb8a2efba016a9af"/>
+            <topic label="uninstallListeners" href="classslider_1_1lib_1_1_metal_m_thumb_slider_u_i.html#ad8bd77b2b49814bbf905d0baa29b87dd"/>
+            <topic label="uninstallUI" href="classslider_1_1lib_1_1_metal_m_thumb_slider_u_i.html#a5f4543921293042c5d01fb5c9ea05d75"/>
+            <topic label="xPositionForValue" href="classslider_1_1lib_1_1_metal_m_thumb_slider_u_i.html#ab67490ecae570b2ca95fc30ee6f4f79a"/>
+            <topic label="yPositionForValue" href="classslider_1_1lib_1_1_metal_m_thumb_slider_u_i.html#ab356d3907699c2a24d3d3c8784b6cd88"/>
+            <topic label="additionalUi" href="classslider_1_1lib_1_1_metal_m_thumb_slider_u_i.html#aeb9bfed2561f5ec134b63f358fc58def"/>
+            <topic label="mThumbTrackListener" href="classslider_1_1lib_1_1_metal_m_thumb_slider_u_i.html#ae5bc291262be790999b3df79fba1791b"/>
+            <topic label="parent" href="classslider_1_1lib_1_1_metal_m_thumb_slider_u_i.html#ac148b198aaec189525dd0382ebd8e16a"/>
+            <topic label="thumbRenderer" href="classslider_1_1lib_1_1_metal_m_thumb_slider_u_i.html#a6bf3562e84103dc2207d60d2ed7b1a43"/>
+          </topic>
+          <topic label="MThumbSlider" href="classslider_1_1lib_1_1_m_thumb_slider.html">
+            <topic label="MThumbSlider" href="classslider_1_1lib_1_1_m_thumb_slider.html#a109d891722ad4b6d6d28221b550fd448"/>
+            <topic label="calculateGeometry" href="classslider_1_1lib_1_1_m_thumb_slider.html#a6a2702e5acfbfaf2308c725cbc78bc4d"/>
+            <topic label="computeHistogramHeightScaledByMaximum" href="classslider_1_1lib_1_1_m_thumb_slider.html#adb35c479a878291268432262b22ed3fe"/>
+            <topic label="createImageIcon" href="classslider_1_1lib_1_1_m_thumb_slider.html#ac879269ab8cdeb9f31e9bb0016bf49ba"/>
+            <topic label="createLabels" href="classslider_1_1lib_1_1_m_thumb_slider.html#af32bff646f87936f4edd19c785ff5b65"/>
+            <topic label="createThumbs" href="classslider_1_1lib_1_1_m_thumb_slider.html#a3da842946f7f24e44401b84617b93d2e"/>
+            <topic label="getBoxHeight" href="classslider_1_1lib_1_1_m_thumb_slider.html#a6273a9112b03952374db57462aba599e"/>
+            <topic label="getExponent" href="classslider_1_1lib_1_1_m_thumb_slider.html#ae42874e9ebcbdc6cc796fa53188ff3e3"/>
+            <topic label="getMaxHistogram" href="classslider_1_1lib_1_1_m_thumb_slider.html#a40730f1514848db7797422163d07369f"/>
+            <topic label="getMaximumValue" href="classslider_1_1lib_1_1_m_thumb_slider.html#a59440b4e3601c9104fb7a93705b27685"/>
+            <topic label="getMinimumValue" href="classslider_1_1lib_1_1_m_thumb_slider.html#a553a410a012012306100a125ec2f3843"/>
+            <topic label="getModelAt" href="classslider_1_1lib_1_1_m_thumb_slider.html#aac5e65945c477fcd813c78bf496567d5"/>
+            <topic label="getNumberInRange" href="classslider_1_1lib_1_1_m_thumb_slider.html#ad299397728ba26d93bcfee6294935132"/>
+            <topic label="getNumberOfThumbs" href="classslider_1_1lib_1_1_m_thumb_slider.html#a61f3ee10378b0b245feaa7863a04dd77"/>
+            <topic label="getSliderParameters" href="classslider_1_1lib_1_1_m_thumb_slider.html#afc1b6093f9aebcb19057a2667e167d45"/>
+            <topic label="getThumbMoved" href="classslider_1_1lib_1_1_m_thumb_slider.html#ad228e7bc4ad28e108fcd086adae3c395"/>
+            <topic label="getThumbRenderer" href="classslider_1_1lib_1_1_m_thumb_slider.html#a03b9e088a946ac4443eecf147e54db31"/>
+            <topic label="getThumbRendererAt" href="classslider_1_1lib_1_1_m_thumb_slider.html#a33de1f254276a840e7336e365742fed7"/>
+            <topic label="getThumbRendererBestHorizontal" href="classslider_1_1lib_1_1_m_thumb_slider.html#a2a062378c44c3f2875db5c117a4e0d69"/>
+            <topic label="getTicks" href="classslider_1_1lib_1_1_m_thumb_slider.html#aea13c8cb1900caa354e681c5bea8d51d"/>
+            <topic label="getTickValues" href="classslider_1_1lib_1_1_m_thumb_slider.html#a99b03367d7856e08fe8f75e23501a828"/>
+            <topic label="getUIClassID" href="classslider_1_1lib_1_1_m_thumb_slider.html#a35ecbb97892e7f0778bd66eccd6971ab"/>
+            <topic label="getValueAt" href="classslider_1_1lib_1_1_m_thumb_slider.html#aedffc6e1b42cbf6a2b7f8bf35b48c84b"/>
+            <topic label="isCategoricalData" href="classslider_1_1lib_1_1_m_thumb_slider.html#adc447f81d6602c1d1efd38de0839a0c6"/>
+            <topic label="setBoxHeight" href="classslider_1_1lib_1_1_m_thumb_slider.html#a4368dc26d40c3d6f0023717baa8882f9"/>
+            <topic label="setBoxHeightScaled" href="classslider_1_1lib_1_1_m_thumb_slider.html#ac58416626be7e515002c314c08161855"/>
+            <topic label="setMaxHistogram" href="classslider_1_1lib_1_1_m_thumb_slider.html#a7858574ade533762e33f5e5eee9d3c54"/>
+            <topic label="setMaximum" href="classslider_1_1lib_1_1_m_thumb_slider.html#a4186d96d8b3a4861e09f4cf3244ee1df"/>
+            <topic label="setMinimum" href="classslider_1_1lib_1_1_m_thumb_slider.html#a7be223cd626fa27f8e1b9df6a3607011"/>
+            <topic label="setNumberInRange" href="classslider_1_1lib_1_1_m_thumb_slider.html#ad2795ae6588a811412e213d7e5f88743"/>
+            <topic label="setThumbMoved" href="classslider_1_1lib_1_1_m_thumb_slider.html#a81ee81b1cbdaabd2f3eacc715b3bcc07"/>
+            <topic label="setThumbRendererAt" href="classslider_1_1lib_1_1_m_thumb_slider.html#a77578aab55a4a5c8502866d4ce989556"/>
+            <topic label="setValueAt" href="classslider_1_1lib_1_1_m_thumb_slider.html#a26edb05bb15f7dc004d2726c085f0b90"/>
+            <topic label="updateThumbs" href="classslider_1_1lib_1_1_m_thumb_slider.html#a4e91c9ce9f1d17b04bf14ef6a0035516"/>
+            <topic label="updateUI" href="classslider_1_1lib_1_1_m_thumb_slider.html#a8a0f12e4b3745519733208e017c682e0"/>
+            <topic label="boxHeight" href="classslider_1_1lib_1_1_m_thumb_slider.html#a7b68cc8ad49fe8962dda9e3ed4b1d982"/>
+            <topic label="maxHistogram" href="classslider_1_1lib_1_1_m_thumb_slider.html#a59994b017bfa95aefd7d6574821381a8"/>
+            <topic label="numberInRange" href="classslider_1_1lib_1_1_m_thumb_slider.html#ac707f8dacb0b5a61eab860493220952e"/>
+            <topic label="numberOfThumbs" href="classslider_1_1lib_1_1_m_thumb_slider.html#a2fe2d8f4fa672edf6a78893094bb8c9d"/>
+            <topic label="recomputeHistogram" href="classslider_1_1lib_1_1_m_thumb_slider.html#a4e44449e50553f31be5d0144d6bdb7b7"/>
+            <topic label="sliderModels" href="classslider_1_1lib_1_1_m_thumb_slider.html#ad7637a70b20caca55bba4b5c04fd31c1"/>
+            <topic label="sliderParameters" href="classslider_1_1lib_1_1_m_thumb_slider.html#a14143755e1759e44ba5364dc95218799"/>
+            <topic label="thumbMoved" href="classslider_1_1lib_1_1_m_thumb_slider.html#a5292c83157bd5e3323bcc7e55dd22ee6"/>
+            <topic label="thumbRenderers" href="classslider_1_1lib_1_1_m_thumb_slider.html#af157743dc0f4b35960ad7599486bcce0"/>
+            <topic label="uiClassID" href="classslider_1_1lib_1_1_m_thumb_slider.html#afe306ec6b90bb107e6e71771956bda9f"/>
+          </topic>
+          <topic label="MThumbSliderAdditional" href="interfaceslider_1_1lib_1_1_m_thumb_slider_additional.html">
+            <topic label="getThumbSize" href="interfaceslider_1_1lib_1_1_m_thumb_slider_additional.html#ac7139615b8c607721768bf15c77f333e"/>
+            <topic label="getTrackRect" href="interfaceslider_1_1lib_1_1_m_thumb_slider_additional.html#a55913bc26f87735d89a62f6f60beb331"/>
+            <topic label="xPositionForValue" href="interfaceslider_1_1lib_1_1_m_thumb_slider_additional.html#afc317c05296da458040423b9aa7c5a5c"/>
+            <topic label="yPositionForValue" href="interfaceslider_1_1lib_1_1_m_thumb_slider_additional.html#a943976c463a14b87604436d592a305ea"/>
+          </topic>
+          <topic label="MThumbSliderAdditionalUI" href="classslider_1_1lib_1_1_m_thumb_slider_additional_u_i.html">
+            <topic label="TrackListener" href="classslider_1_1lib_1_1_m_thumb_slider_additional_u_i_1_1_track_listener.html">
+              <topic label="TrackListener" href="classslider_1_1lib_1_1_m_thumb_slider_additional_u_i_1_1_track_listener.html#a3eed4f99564dd2a32f4b11c2052b2cba"/>
+              <topic label="mouseDragged" href="classslider_1_1lib_1_1_m_thumb_slider_additional_u_i_1_1_track_listener.html#aa9e8260f08568608a1f53f63b7849ed4"/>
+              <topic label="mousePressed" href="classslider_1_1lib_1_1_m_thumb_slider_additional_u_i_1_1_track_listener.html#ad6a077f56bfd1d1cfae5ddc2fdfa573a"/>
+              <topic label="mouseReleased" href="classslider_1_1lib_1_1_m_thumb_slider_additional_u_i_1_1_track_listener.html#a56020662fe829cb2dd6c9370bc2d7ef3"/>
+              <topic label="setThumbValue" href="classslider_1_1lib_1_1_m_thumb_slider_additional_u_i_1_1_track_listener.html#a74ecacaed8d8069a9a0f2763bfb01b17"/>
+              <topic label="adjustingThumbIndex" href="classslider_1_1lib_1_1_m_thumb_slider_additional_u_i_1_1_track_listener.html#a2ec27f0a251e85acc435c18a30c9af8f"/>
+              <topic label="adjustingThumbRect" href="classslider_1_1lib_1_1_m_thumb_slider_additional_u_i_1_1_track_listener.html#a08adad30f70f1dc4b399937cdbd907e4"/>
+              <topic label="offset" href="classslider_1_1lib_1_1_m_thumb_slider_additional_u_i_1_1_track_listener.html#a0dab9a5f70485e7941d33073430fb7cb"/>
+              <topic label="slider" href="classslider_1_1lib_1_1_m_thumb_slider_additional_u_i_1_1_track_listener.html#affdff2e391a4e5f03a7066f59907f1ff"/>
+              <topic label="trackRect" href="classslider_1_1lib_1_1_m_thumb_slider_additional_u_i_1_1_track_listener.html#ae1223dac10708255f72296ce4f776b0e"/>
+            </topic>
+            <topic label="MThumbSliderAdditionalUI" href="classslider_1_1lib_1_1_m_thumb_slider_additional_u_i.html#a580d76870e0b6c471ee1c64776ce1da1"/>
+            <topic label="calculateThumbsLocation" href="classslider_1_1lib_1_1_m_thumb_slider_additional_u_i.html#aa8de5f509d811c8cc87f031a8b82d5ce"/>
+            <topic label="calculateThumbsSize" href="classslider_1_1lib_1_1_m_thumb_slider_additional_u_i.html#a62c49ad47e72bcb74088de0f6dca70f9"/>
+            <topic label="getThumbNum" href="classslider_1_1lib_1_1_m_thumb_slider_additional_u_i.html#a471173b14e08ae8114f74dd0bb030716"/>
+            <topic label="getThumbRects" href="classslider_1_1lib_1_1_m_thumb_slider_additional_u_i.html#a59b3ee7a4f7942fc1b6216bfde058081"/>
+            <topic label="getTrackRect" href="classslider_1_1lib_1_1_m_thumb_slider_additional_u_i.html#a765c01a5571d91584a37f13bfb3c8331"/>
+            <topic label="installUI" href="classslider_1_1lib_1_1_m_thumb_slider_additional_u_i.html#a5d9581d5773601ee438c7e515aba4c86"/>
+            <topic label="setThumbLocationAt" href="classslider_1_1lib_1_1_m_thumb_slider_additional_u_i.html#aa3f54443724b4a5e48956eea692b81e0"/>
+            <topic label="uninstallUI" href="classslider_1_1lib_1_1_m_thumb_slider_additional_u_i.html#a747ac2d179168635fd3d588476275fb0"/>
+            <topic label="isDragging" href="classslider_1_1lib_1_1_m_thumb_slider_additional_u_i.html#af4ae18f12a2a64ecfcf4b71144a9cde2"/>
+            <topic label="mSlider" href="classslider_1_1lib_1_1_m_thumb_slider_additional_u_i.html#a20a2df0b7b952c64c345f3ca5e3b9458"/>
+            <topic label="thumbNum" href="classslider_1_1lib_1_1_m_thumb_slider_additional_u_i.html#a63882073b975a8a12def720711448650"/>
+            <topic label="thumbRects" href="classslider_1_1lib_1_1_m_thumb_slider_additional_u_i.html#afd327e234d7e773974ee916354f6340c"/>
+            <topic label="trackListener" href="classslider_1_1lib_1_1_m_thumb_slider_additional_u_i.html#abfd7f24589a679450615eeb4068d7065"/>
+            <topic label="trackRect" href="classslider_1_1lib_1_1_m_thumb_slider_additional_u_i.html#a278b6abf57c4df34109a13c8e269a0b8"/>
+            <topic label="ui" href="classslider_1_1lib_1_1_m_thumb_slider_additional_u_i.html#a54614cdb53826c4af2a2d19734574b12"/>
+            <topic label="unionRect" href="classslider_1_1lib_1_1_m_thumb_slider_additional_u_i.html#a53fdfcbac9d379114fa95ae22ceabdc2"/>
+          </topic>
+          <topic label="SliderPanel" href="classslider_1_1lib_1_1_slider_panel.html">
+            <topic label="SliderPanel" href="classslider_1_1lib_1_1_slider_panel.html#acc328e94d422c40ad9bcecf61be555e1"/>
+            <topic label="editButtonClicked" href="classslider_1_1lib_1_1_slider_panel.html#a87c33a1d37d46a3ec1e2c83af5a38c0b"/>
+            <topic label="getIntValue" href="classslider_1_1lib_1_1_slider_panel.html#a965db97a60f675c29e52e6c797124a0b"/>
+            <topic label="getMaximum" href="classslider_1_1lib_1_1_slider_panel.html#a59fe42928c0b9d1657cb53c170f0da0e"/>
+            <topic label="getMinimum" href="classslider_1_1lib_1_1_slider_panel.html#ad0ebf56848b36d5e5ca3340a979bc169"/>
+            <topic label="getNumberInRange" href="classslider_1_1lib_1_1_slider_panel.html#a29027defb6f084f2c10253d1dfb786db"/>
+            <topic label="getSliderParameters" href="classslider_1_1lib_1_1_slider_panel.html#a2c02d25cc8c53c610827a168112ce576"/>
+            <topic label="getTicks" href="classslider_1_1lib_1_1_slider_panel.html#a269e63c4f79be260b239361f32ba8824"/>
+            <topic label="getTickValues" href="classslider_1_1lib_1_1_slider_panel.html#a6dcaa6e633a592d2dec1d4dc786cb01e"/>
+            <topic label="getValue" href="classslider_1_1lib_1_1_slider_panel.html#ab91e52ff628b0499b1058294e9a50d6b"/>
+            <topic label="paint" href="classslider_1_1lib_1_1_slider_panel.html#af7fd51725fd5a8f126966c9021e56efd"/>
+            <topic label="setMaximum" href="classslider_1_1lib_1_1_slider_panel.html#a7a2a7ab889d3f1d0f0b9db176f38b143"/>
+            <topic label="setMinimum" href="classslider_1_1lib_1_1_slider_panel.html#a02d692343ade2d20a78580a2841da0f2"/>
+            <topic label="setMThumbSliderColors" href="classslider_1_1lib_1_1_slider_panel.html#a0955367ca708a1074442c0c11595215b"/>
+            <topic label="setNumberInRange" href="classslider_1_1lib_1_1_slider_panel.html#a11d3cdb3cb41daac81a7db9964c989f3"/>
+            <topic label="setRange" href="classslider_1_1lib_1_1_slider_panel.html#ad67d10d4a6ba986d564279fc430ee1a6"/>
+            <topic label="setValue" href="classslider_1_1lib_1_1_slider_panel.html#a7ccd71d37a155e70f1aa6be544ff5ac6"/>
+            <topic label="bEdit" href="classslider_1_1lib_1_1_slider_panel.html#a478eb5d45e8d506ea0610a32f7cb91cf"/>
+            <topic label="dialog" href="classslider_1_1lib_1_1_slider_panel.html#a71a390717c94fb6df6c7afafbfb7dcde"/>
+            <topic label="slider" href="classslider_1_1lib_1_1_slider_panel.html#a55770712b4ca9147d9b5cbe62510714f"/>
+            <topic label="sliderParameters" href="classslider_1_1lib_1_1_slider_panel.html#a77c2543955c6e4a1a7cacf6fbc6d6bf5"/>
+            <topic label="text" href="classslider_1_1lib_1_1_slider_panel.html#af088840d1c0673a6d931c1661498a023"/>
+          </topic>
+          <topic label="SliderParameters" href="classslider_1_1lib_1_1_slider_parameters.html">
+            <topic label="SliderParameters" href="classslider_1_1lib_1_1_slider_parameters.html#aa94c72843b1f4196a073d5b177fcc6b2"/>
+            <topic label="additionalColors" href="classslider_1_1lib_1_1_slider_parameters.html#a8a579c70612a4358916c0fc03b742b2c"/>
+            <topic label="addMouseAdapter" href="classslider_1_1lib_1_1_slider_parameters.html#aaf2b07ac540ebcc7093d4912aea5f172"/>
+            <topic label="createLabels" href="classslider_1_1lib_1_1_slider_parameters.html#a778253c5cdc43942219b09040da95d4b"/>
+            <topic label="getExponent" href="classslider_1_1lib_1_1_slider_parameters.html#a1ff86ba7f31a5bf3548a663076ff07d8"/>
+            <topic label="getLabel" href="classslider_1_1lib_1_1_slider_parameters.html#a73964f4c5614e014f078911d1d3b2989"/>
+            <topic label="getMajorTickSpacing" href="classslider_1_1lib_1_1_slider_parameters.html#ae399d8a868c00e8c7f08737d986be6ad"/>
+            <topic label="getMaximum" href="classslider_1_1lib_1_1_slider_parameters.html#a158e6a13d63b3b21341d836625469b40"/>
+            <topic label="getMinimum" href="classslider_1_1lib_1_1_slider_parameters.html#ae6b36280f90cf35bec665de4158562d9"/>
+            <topic label="getMinorTickSpacing" href="classslider_1_1lib_1_1_slider_parameters.html#a583ed9c11e5aa7115e8455acf2677c00"/>
+            <topic label="getNumberOfThumbs" href="classslider_1_1lib_1_1_slider_parameters.html#ac5e758abf876bead0514a6ce91cce5e6"/>
+            <topic label="getSlider" href="classslider_1_1lib_1_1_slider_parameters.html#a6f807501eafc4329ddd4c38f02659d3a"/>
+            <topic label="getSliderColorAt" href="classslider_1_1lib_1_1_slider_parameters.html#ab646698180cb59427d97c70add63e07d"/>
+            <topic label="getSliderColors" href="classslider_1_1lib_1_1_slider_parameters.html#a0fc3560c9b1d441bf8635800f5556df2"/>
+            <topic label="getSliderMaximum" href="classslider_1_1lib_1_1_slider_parameters.html#a0301c7f70af5f970e1b0c853818c43ac"/>
+            <topic label="getSliderMinimum" href="classslider_1_1lib_1_1_slider_parameters.html#a197800dbe81f60cf8f967d67e74f0c28"/>
+            <topic label="getTrackFillColor" href="classslider_1_1lib_1_1_slider_parameters.html#a6e610580862db732269961fee98bb1e5"/>
+            <topic label="hasColor" href="classslider_1_1lib_1_1_slider_parameters.html#a62b71e819009a3a2ef185542b5222c36"/>
+            <topic label="isCategoricalData" href="classslider_1_1lib_1_1_slider_parameters.html#a753ed1d2ac02edc1e6b1ffcf80bd5c63"/>
+            <topic label="isLogScale" href="classslider_1_1lib_1_1_slider_parameters.html#ae4b33b63f1a2e5a132ee3cfeb566eb11"/>
+            <topic label="isShowDialog" href="classslider_1_1lib_1_1_slider_parameters.html#af5c58b5d21b09f6ba533ee6a35518f59"/>
+            <topic label="setCategoricalData" href="classslider_1_1lib_1_1_slider_parameters.html#afde597a33661db25d7221380412748a0"/>
+            <topic label="setLabel" href="classslider_1_1lib_1_1_slider_parameters.html#ac3b82714ae8b3303c7ce1cca976a1a73"/>
+            <topic label="setLogScale" href="classslider_1_1lib_1_1_slider_parameters.html#a6f8808bc8ed1cfe1b7d74e7b157bdeeb"/>
+            <topic label="setMajorTickSpacing" href="classslider_1_1lib_1_1_slider_parameters.html#af039f2bb8099baf6df56f5c07d2335c5"/>
+            <topic label="setMaximum" href="classslider_1_1lib_1_1_slider_parameters.html#a5c5f8cfc7f8fedeb98321435606d7601"/>
+            <topic label="setMinimum" href="classslider_1_1lib_1_1_slider_parameters.html#aded293cce347c971269d760d6fa38239"/>
+            <topic label="setMinorTickSpacing" href="classslider_1_1lib_1_1_slider_parameters.html#a21cec3db488b15fe0e519be463dc9d5f"/>
+            <topic label="setMouseListener" href="classslider_1_1lib_1_1_slider_parameters.html#ae4666e86181ecbc2d7e179fc918a4fdf"/>
+            <topic label="setNumberOfThumbs" href="classslider_1_1lib_1_1_slider_parameters.html#a1096344ca17b9087beb158b1e91908d9"/>
+            <topic label="setRange" href="classslider_1_1lib_1_1_slider_parameters.html#a1b5d3854286b91dee0994d523346e1b5"/>
+            <topic label="setShowDialog" href="classslider_1_1lib_1_1_slider_parameters.html#a8d852f4a43d813b88f838a6b0b99cf19"/>
+            <topic label="setSlider" href="classslider_1_1lib_1_1_slider_parameters.html#add7348dc1145ec59ad353a07f1515213"/>
+            <topic label="setSliderColorAt" href="classslider_1_1lib_1_1_slider_parameters.html#a2bddb19d1ec9393765ded5b536631703"/>
+            <topic label="setSliderColors" href="classslider_1_1lib_1_1_slider_parameters.html#abc0f5d4e18cc8205930e35dbe07c9312"/>
+            <topic label="setTrackFillColor" href="classslider_1_1lib_1_1_slider_parameters.html#aea1f2adf52314227764571518b3d66c8"/>
+            <topic label="sliderValueToValue" href="classslider_1_1lib_1_1_slider_parameters.html#aa572e027295ac02c51e17afca4a12dbe"/>
+            <topic label="updateSlider" href="classslider_1_1lib_1_1_slider_parameters.html#ab12680799b3475bd90f817a11a170d7d"/>
+            <topic label="valueToSliderValue" href="classslider_1_1lib_1_1_slider_parameters.html#a425f654266f6740fa9bdc435ee83a3f2"/>
+            <topic label="categoricalData" href="classslider_1_1lib_1_1_slider_parameters.html#abc9825ab4bedf3ac634f90f5fa15ecfb"/>
+            <topic label="label" href="classslider_1_1lib_1_1_slider_parameters.html#ac0b64f84ddef26d1b2628f122fd75f5c"/>
+            <topic label="logScale" href="classslider_1_1lib_1_1_slider_parameters.html#a69d7e6a34f9322884df19fbe2200007d"/>
+            <topic label="majorTickSpacing" href="classslider_1_1lib_1_1_slider_parameters.html#a0a4f7b04f22cb5aa602d4fca2b328f29"/>
+            <topic label="maximum" href="classslider_1_1lib_1_1_slider_parameters.html#a2302c971ec868fc5018c9c89bc9c67df"/>
+            <topic label="minimum" href="classslider_1_1lib_1_1_slider_parameters.html#af4a6e2af2f378d338a4e3b045a74c68f"/>
+            <topic label="minorTickSpacing" href="classslider_1_1lib_1_1_slider_parameters.html#a2585862d1fbb6f2dbfd95bdef46659c9"/>
+            <topic label="mouseAdapters" href="classslider_1_1lib_1_1_slider_parameters.html#a6c37d636642705b1a494849f8c7ceffb"/>
+            <topic label="numberOfThumbs" href="classslider_1_1lib_1_1_slider_parameters.html#a52d72d64b93a3626312f24d4d7f6640a"/>
+            <topic label="showDialog" href="classslider_1_1lib_1_1_slider_parameters.html#abe086fec513d6a36dbcccd426f426ec1"/>
+            <topic label="slider" href="classslider_1_1lib_1_1_slider_parameters.html#a4eed81f6b1923d25cc952561035311a4"/>
+            <topic label="sliderColors" href="classslider_1_1lib_1_1_slider_parameters.html#acc794a3c1ff5a14c84437d22a86bccd2"/>
+            <topic label="sliderMaximum" href="classslider_1_1lib_1_1_slider_parameters.html#a6baefd9f5ad5ea62685c594df14780ef"/>
+            <topic label="sliderMinimum" href="classslider_1_1lib_1_1_slider_parameters.html#a32507e65cd8821eedbcca2b697b0e55b"/>
+            <topic label="trackFillColor" href="classslider_1_1lib_1_1_slider_parameters.html#a02470d92ca67543bc6d99df1e5275ec4"/>
+          </topic>
+        </topic>
+        <topic label="RSFSlider" href="namespaceslider_1_1_r_s_f_slider.html">
+          <topic label="Example" href="classslider_1_1_r_s_f_slider_1_1_example.html">
+            <topic label="main" href="classslider_1_1_r_s_f_slider_1_1_example.html#a2ffbee32614ac4db63492693328e3a6e"/>
+          </topic>
+          <topic label="ExampleFrame" href="classslider_1_1_r_s_f_slider_1_1_example_frame.html">
+            <topic label="ExampleFrame" href="classslider_1_1_r_s_f_slider_1_1_example_frame.html#a68e3acbdc2fec6e3e717b1da9b79b5d3"/>
+            <topic label="createLowerSlider" href="classslider_1_1_r_s_f_slider_1_1_example_frame.html#a8f15b0e774f491f35d9b2d926613ec54"/>
+            <topic label="createUpperSlider" href="classslider_1_1_r_s_f_slider_1_1_example_frame.html#ad868f0f8e372e86013a3decec731c36b"/>
+            <topic label="initGUI" href="classslider_1_1_r_s_f_slider_1_1_example_frame.html#a45e2eba0b19c79b9d789e4d241ca2ad8"/>
+            <topic label="lowerSlider" href="classslider_1_1_r_s_f_slider_1_1_example_frame.html#a1a18c39f1c654494fb345544945effdd"/>
+            <topic label="upperSlider" href="classslider_1_1_r_s_f_slider_1_1_example_frame.html#a4f0116a298d26716b00d9b9c95c1fe56"/>
+          </topic>
+        </topic>
+      </topic>
+    </topic>
+    <topic label="Class Index" href="classes.html"/>
+    <topic label="Class Hierarchy" href="hierarchy.html">
+      <topic label="slider.RSFSlider.Example" href="classslider_1_1_r_s_f_slider_1_1_example.html"/>
+      <topic label="JDialog">
+        <topic label="slider.lib.EditSliderDialog" href="classslider_1_1lib_1_1_edit_slider_dialog.html"/>
+      </topic>
+      <topic label="JFrame">
+        <topic label="slider.RSFSlider.ExampleFrame" href="classslider_1_1_r_s_f_slider_1_1_example_frame.html"/>
+      </topic>
+      <topic label="JPanel">
+        <topic label="slider.lib.SliderPanel" href="classslider_1_1lib_1_1_slider_panel.html"/>
+      </topic>
+      <topic label="JSlider">
+        <topic label="slider.lib.MThumbSlider" href="classslider_1_1lib_1_1_m_thumb_slider.html"/>
+      </topic>
+      <topic label="slider.lib.MThumbSliderAdditional" href="interfaceslider_1_1lib_1_1_m_thumb_slider_additional.html">
+        <topic label="slider.lib.MetalMThumbSliderUI" href="classslider_1_1lib_1_1_metal_m_thumb_slider_u_i.html"/>
+      </topic>
+      <topic label="slider.lib.MThumbSliderAdditionalUI" href="classslider_1_1lib_1_1_m_thumb_slider_additional_u_i.html"/>
+      <topic label="slider.lib.SliderParameters" href="classslider_1_1lib_1_1_slider_parameters.html"/>
+      <topic label="MetalSliderUI">
+        <topic label="slider.lib.MetalMThumbSliderUI" href="classslider_1_1lib_1_1_metal_m_thumb_slider_u_i.html"/>
+      </topic>
+      <topic label="MouseInputAdapter">
+        <topic label="slider.lib.MThumbSliderAdditionalUI.TrackListener" href="classslider_1_1lib_1_1_m_thumb_slider_additional_u_i_1_1_track_listener.html"/>
+      </topic>
+    </topic>
+    <topic label="Class Members" href="functions.html">
+      <topic label="All" href="functions.html">
+        <topic label="a" href="functions.html"/>
+        <topic label="b" href="functions_b.html"/>
+        <topic label="c" href="functions_c.html"/>
+        <topic label="d" href="functions_d.html"/>
+        <topic label="e" href="functions_e.html"/>
+        <topic label="f" href="functions_f.html"/>
+        <topic label="g" href="functions_g.html"/>
+        <topic label="h" href="functions_h.html"/>
+        <topic label="i" href="functions_i.html"/>
+        <topic label="l" href="functions_l.html"/>
+        <topic label="m" href="functions_m.html"/>
+        <topic label="n" href="functions_n.html"/>
+        <topic label="o" href="functions_o.html"/>
+        <topic label="p" href="functions_p.html"/>
+        <topic label="r" href="functions_r.html"/>
+        <topic label="s" href="functions_s.html"/>
+        <topic label="t" href="functions_t.html"/>
+        <topic label="u" href="functions_u.html"/>
+        <topic label="v" href="functions_v.html"/>
+        <topic label="x" href="functions_x.html"/>
+        <topic label="y" href="functions_y.html"/>
+      </topic>
+      <topic label="Functions" href="functions_func.html"/>
+      <topic label="Variables" href="functions_vars.html"/>
+    </topic>
+  </topic>
+  <topic label="Files" href="files.html">
+    <topic label="File List" href="files.html">
+      <topic label="EditSliderDialog.java" href="_edit_slider_dialog_8java.html">
+        <topic label="EditSliderDialog" href="classslider_1_1lib_1_1_edit_slider_dialog.html">
+          <topic label="EditSliderDialog" href="classslider_1_1lib_1_1_edit_slider_dialog.html#a435d0626fcdcf3378b908cf29b91724b"/>
+          <topic label="colorButtonActionPerformed" href="classslider_1_1lib_1_1_edit_slider_dialog.html#aa500830e3982c9d3998f1ec83ee15041"/>
+          <topic label="confirmActionPerformed" href="classslider_1_1lib_1_1_edit_slider_dialog.html#a97b7bdb206a2e4e2df43c036eb3b6bcd"/>
+          <topic label="initGUI" href="classslider_1_1lib_1_1_edit_slider_dialog.html#aa8520b68dfef0b1febf94e1496a0b4b8"/>
+          <topic label="updateGui" href="classslider_1_1lib_1_1_edit_slider_dialog.html#a26ce4631e31759089d0de1a7d95a803b"/>
+          <topic label="bConfirm" href="classslider_1_1lib_1_1_edit_slider_dialog.html#a0f8fa45a61c9525d95f6c0ed0b1a77f7"/>
+          <topic label="cbLogScale" href="classslider_1_1lib_1_1_edit_slider_dialog.html#a6682033e6d705b566f5cd4b36c0f971d"/>
+          <topic label="colorButtons" href="classslider_1_1lib_1_1_edit_slider_dialog.html#a7470f58befcdad1d1f0320ea9b1a1eae"/>
+          <topic label="colors" href="classslider_1_1lib_1_1_edit_slider_dialog.html#ae75d6a21c3d7fc3c43757e67108a2ca7"/>
+          <topic label="newNumberOfThumbs" href="classslider_1_1lib_1_1_edit_slider_dialog.html#a711fa5d7c0565529cc9a625ddf6e5203"/>
+          <topic label="numberOfThumbs" href="classslider_1_1lib_1_1_edit_slider_dialog.html#a52d3e3ea71e68f9bf3e67a158064dafc"/>
+          <topic label="pColors" href="classslider_1_1lib_1_1_edit_slider_dialog.html#ad38c5d7795b33fa21591ab20d49d4784"/>
+          <topic label="sliderParameters" href="classslider_1_1lib_1_1_edit_slider_dialog.html#aba05c53104b235b9959009f77736b6ac"/>
+        </topic>
+      </topic>
+      <topic label="Example.java" href="_example_8java.html">
+        <topic label="Example" href="classslider_1_1_r_s_f_slider_1_1_example.html">
+          <topic label="main" href="classslider_1_1_r_s_f_slider_1_1_example.html#a2ffbee32614ac4db63492693328e3a6e"/>
+        </topic>
+      </topic>
+      <topic label="ExampleFrame.java" href="_example_frame_8java.html">
+        <topic label="ExampleFrame" href="classslider_1_1_r_s_f_slider_1_1_example_frame.html">
+          <topic label="ExampleFrame" href="classslider_1_1_r_s_f_slider_1_1_example_frame.html#a68e3acbdc2fec6e3e717b1da9b79b5d3"/>
+          <topic label="createLowerSlider" href="classslider_1_1_r_s_f_slider_1_1_example_frame.html#a8f15b0e774f491f35d9b2d926613ec54"/>
+          <topic label="createUpperSlider" href="classslider_1_1_r_s_f_slider_1_1_example_frame.html#ad868f0f8e372e86013a3decec731c36b"/>
+          <topic label="initGUI" href="classslider_1_1_r_s_f_slider_1_1_example_frame.html#a45e2eba0b19c79b9d789e4d241ca2ad8"/>
+          <topic label="lowerSlider" href="classslider_1_1_r_s_f_slider_1_1_example_frame.html#a1a18c39f1c654494fb345544945effdd"/>
+          <topic label="upperSlider" href="classslider_1_1_r_s_f_slider_1_1_example_frame.html#a4f0116a298d26716b00d9b9c95c1fe56"/>
+        </topic>
+      </topic>
+      <topic label="MetalMThumbSliderUI.java" href="_metal_m_thumb_slider_u_i_8java.html">
+        <topic label="MetalMThumbSliderUI" href="classslider_1_1lib_1_1_metal_m_thumb_slider_u_i.html">
+          <topic label="MetalMThumbSliderUI" href="classslider_1_1lib_1_1_metal_m_thumb_slider_u_i.html#ae03e59b83d39f7a199f03a2802de77f6"/>
+          <topic label="calculateGeometry" href="classslider_1_1lib_1_1_metal_m_thumb_slider_u_i.html#a9a06f661d3bf24525203c8944b631ba2"/>
+          <topic label="calculateThumbLocation" href="classslider_1_1lib_1_1_metal_m_thumb_slider_u_i.html#a95545a1ec7211a155d8702ecc990b3a7"/>
+          <topic label="computeX" href="classslider_1_1lib_1_1_metal_m_thumb_slider_u_i.html#af531466b9039e8a3888c4129f1ae42ef"/>
+          <topic label="computeY" href="classslider_1_1lib_1_1_metal_m_thumb_slider_u_i.html#a8d006b9f6f099725ed4d798c97c5e7d6"/>
+          <topic label="createMThumbTrackListener" href="classslider_1_1lib_1_1_metal_m_thumb_slider_u_i.html#a8100d26197f7b55a1788831318f07365"/>
+          <topic label="createTrackListener" href="classslider_1_1lib_1_1_metal_m_thumb_slider_u_i.html#acbcbf21de2b841edbb495b27d34d9d5c"/>
+          <topic label="createUI" href="classslider_1_1lib_1_1_metal_m_thumb_slider_u_i.html#af04941772e663b5f0fd9af3f38089824"/>
+          <topic label="fillTrack" href="classslider_1_1lib_1_1_metal_m_thumb_slider_u_i.html#a4342bb44386b9f990209530915459360"/>
+          <topic label="getHorizThumbIcon" href="classslider_1_1lib_1_1_metal_m_thumb_slider_u_i.html#a1630a0fe764cfa843828d5e1157095c2"/>
+          <topic label="getOrientation" href="classslider_1_1lib_1_1_metal_m_thumb_slider_u_i.html#a09309cfc5d6104350fe0b595bf760e1d"/>
+          <topic label="getThumbSize" href="classslider_1_1lib_1_1_metal_m_thumb_slider_u_i.html#af0343e1fd86a8cf2c574cac1ad46176e"/>
+          <topic label="getTrackRect" href="classslider_1_1lib_1_1_metal_m_thumb_slider_u_i.html#a1973982ee60e6e011d5e35b8def89e4a"/>
+          <topic label="getVertThumbIcon" href="classslider_1_1lib_1_1_metal_m_thumb_slider_u_i.html#ac9073618ff1412f8e28ff4c51f32d00e"/>
+          <topic label="installListeners" href="classslider_1_1lib_1_1_metal_m_thumb_slider_u_i.html#ab6b53bf4a499eb04dc4c17c940e0b34b"/>
+          <topic label="installUI" href="classslider_1_1lib_1_1_metal_m_thumb_slider_u_i.html#afd2a9b62eaf812b1e1ce026a5d44cb2c"/>
+          <topic label="paint" href="classslider_1_1lib_1_1_metal_m_thumb_slider_u_i.html#ad59c4aa986efa0e289d5aca4e21d36a8"/>
+          <topic label="paintHistogram" href="classslider_1_1lib_1_1_metal_m_thumb_slider_u_i.html#a15a22ff1af3dd0206093d377d5e8e492"/>
+          <topic label="paintHistogramBar" href="classslider_1_1lib_1_1_metal_m_thumb_slider_u_i.html#a5b6742b72dd035dfc57444711c36cbea"/>
+          <topic label="paintThumb" href="classslider_1_1lib_1_1_metal_m_thumb_slider_u_i.html#ab92ef87e513ba30c771874a45930c891"/>
+          <topic label="scrollByBlock" href="classslider_1_1lib_1_1_metal_m_thumb_slider_u_i.html#a0205fb432c044b52f25a26af67297bc3"/>
+          <topic label="scrollByUnit" href="classslider_1_1lib_1_1_metal_m_thumb_slider_u_i.html#af1778612cb7ae0a5eb8a2efba016a9af"/>
+          <topic label="uninstallListeners" href="classslider_1_1lib_1_1_metal_m_thumb_slider_u_i.html#ad8bd77b2b49814bbf905d0baa29b87dd"/>
+          <topic label="uninstallUI" href="classslider_1_1lib_1_1_metal_m_thumb_slider_u_i.html#a5f4543921293042c5d01fb5c9ea05d75"/>
+          <topic label="xPositionForValue" href="classslider_1_1lib_1_1_metal_m_thumb_slider_u_i.html#ab67490ecae570b2ca95fc30ee6f4f79a"/>
+          <topic label="yPositionForValue" href="classslider_1_1lib_1_1_metal_m_thumb_slider_u_i.html#ab356d3907699c2a24d3d3c8784b6cd88"/>
+          <topic label="additionalUi" href="classslider_1_1lib_1_1_metal_m_thumb_slider_u_i.html#aeb9bfed2561f5ec134b63f358fc58def"/>
+          <topic label="mThumbTrackListener" href="classslider_1_1lib_1_1_metal_m_thumb_slider_u_i.html#ae5bc291262be790999b3df79fba1791b"/>
+          <topic label="parent" href="classslider_1_1lib_1_1_metal_m_thumb_slider_u_i.html#ac148b198aaec189525dd0382ebd8e16a"/>
+          <topic label="thumbRenderer" href="classslider_1_1lib_1_1_metal_m_thumb_slider_u_i.html#a6bf3562e84103dc2207d60d2ed7b1a43"/>
+        </topic>
+      </topic>
+      <topic label="MThumbSlider.java" href="_m_thumb_slider_8java.html">
+        <topic label="MThumbSlider" href="classslider_1_1lib_1_1_m_thumb_slider.html">
+          <topic label="MThumbSlider" href="classslider_1_1lib_1_1_m_thumb_slider.html#a109d891722ad4b6d6d28221b550fd448"/>
+          <topic label="calculateGeometry" href="classslider_1_1lib_1_1_m_thumb_slider.html#a6a2702e5acfbfaf2308c725cbc78bc4d"/>
+          <topic label="computeHistogramHeightScaledByMaximum" href="classslider_1_1lib_1_1_m_thumb_slider.html#adb35c479a878291268432262b22ed3fe"/>
+          <topic label="createImageIcon" href="classslider_1_1lib_1_1_m_thumb_slider.html#ac879269ab8cdeb9f31e9bb0016bf49ba"/>
+          <topic label="createLabels" href="classslider_1_1lib_1_1_m_thumb_slider.html#af32bff646f87936f4edd19c785ff5b65"/>
+          <topic label="createThumbs" href="classslider_1_1lib_1_1_m_thumb_slider.html#a3da842946f7f24e44401b84617b93d2e"/>
+          <topic label="getBoxHeight" href="classslider_1_1lib_1_1_m_thumb_slider.html#a6273a9112b03952374db57462aba599e"/>
+          <topic label="getExponent" href="classslider_1_1lib_1_1_m_thumb_slider.html#ae42874e9ebcbdc6cc796fa53188ff3e3"/>
+          <topic label="getMaxHistogram" href="classslider_1_1lib_1_1_m_thumb_slider.html#a40730f1514848db7797422163d07369f"/>
+          <topic label="getMaximumValue" href="classslider_1_1lib_1_1_m_thumb_slider.html#a59440b4e3601c9104fb7a93705b27685"/>
+          <topic label="getMinimumValue" href="classslider_1_1lib_1_1_m_thumb_slider.html#a553a410a012012306100a125ec2f3843"/>
+          <topic label="getModelAt" href="classslider_1_1lib_1_1_m_thumb_slider.html#aac5e65945c477fcd813c78bf496567d5"/>
+          <topic label="getNumberInRange" href="classslider_1_1lib_1_1_m_thumb_slider.html#ad299397728ba26d93bcfee6294935132"/>
+          <topic label="getNumberOfThumbs" href="classslider_1_1lib_1_1_m_thumb_slider.html#a61f3ee10378b0b245feaa7863a04dd77"/>
+          <topic label="getSliderParameters" href="classslider_1_1lib_1_1_m_thumb_slider.html#afc1b6093f9aebcb19057a2667e167d45"/>
+          <topic label="getThumbMoved" href="classslider_1_1lib_1_1_m_thumb_slider.html#ad228e7bc4ad28e108fcd086adae3c395"/>
+          <topic label="getThumbRenderer" href="classslider_1_1lib_1_1_m_thumb_slider.html#a03b9e088a946ac4443eecf147e54db31"/>
+          <topic label="getThumbRendererAt" href="classslider_1_1lib_1_1_m_thumb_slider.html#a33de1f254276a840e7336e365742fed7"/>
+          <topic label="getThumbRendererBestHorizontal" href="classslider_1_1lib_1_1_m_thumb_slider.html#a2a062378c44c3f2875db5c117a4e0d69"/>
+          <topic label="getTicks" href="classslider_1_1lib_1_1_m_thumb_slider.html#aea13c8cb1900caa354e681c5bea8d51d"/>
+          <topic label="getTickValues" href="classslider_1_1lib_1_1_m_thumb_slider.html#a99b03367d7856e08fe8f75e23501a828"/>
+          <topic label="getUIClassID" href="classslider_1_1lib_1_1_m_thumb_slider.html#a35ecbb97892e7f0778bd66eccd6971ab"/>
+          <topic label="getValueAt" href="classslider_1_1lib_1_1_m_thumb_slider.html#aedffc6e1b42cbf6a2b7f8bf35b48c84b"/>
+          <topic label="isCategoricalData" href="classslider_1_1lib_1_1_m_thumb_slider.html#adc447f81d6602c1d1efd38de0839a0c6"/>
+          <topic label="setBoxHeight" href="classslider_1_1lib_1_1_m_thumb_slider.html#a4368dc26d40c3d6f0023717baa8882f9"/>
+          <topic label="setBoxHeightScaled" href="classslider_1_1lib_1_1_m_thumb_slider.html#ac58416626be7e515002c314c08161855"/>
+          <topic label="setMaxHistogram" href="classslider_1_1lib_1_1_m_thumb_slider.html#a7858574ade533762e33f5e5eee9d3c54"/>
+          <topic label="setMaximum" href="classslider_1_1lib_1_1_m_thumb_slider.html#a4186d96d8b3a4861e09f4cf3244ee1df"/>
+          <topic label="setMinimum" href="classslider_1_1lib_1_1_m_thumb_slider.html#a7be223cd626fa27f8e1b9df6a3607011"/>
+          <topic label="setNumberInRange" href="classslider_1_1lib_1_1_m_thumb_slider.html#ad2795ae6588a811412e213d7e5f88743"/>
+          <topic label="setThumbMoved" href="classslider_1_1lib_1_1_m_thumb_slider.html#a81ee81b1cbdaabd2f3eacc715b3bcc07"/>
+          <topic label="setThumbRendererAt" href="classslider_1_1lib_1_1_m_thumb_slider.html#a77578aab55a4a5c8502866d4ce989556"/>
+          <topic label="setValueAt" href="classslider_1_1lib_1_1_m_thumb_slider.html#a26edb05bb15f7dc004d2726c085f0b90"/>
+          <topic label="updateThumbs" href="classslider_1_1lib_1_1_m_thumb_slider.html#a4e91c9ce9f1d17b04bf14ef6a0035516"/>
+          <topic label="updateUI" href="classslider_1_1lib_1_1_m_thumb_slider.html#a8a0f12e4b3745519733208e017c682e0"/>
+          <topic label="boxHeight" href="classslider_1_1lib_1_1_m_thumb_slider.html#a7b68cc8ad49fe8962dda9e3ed4b1d982"/>
+          <topic label="maxHistogram" href="classslider_1_1lib_1_1_m_thumb_slider.html#a59994b017bfa95aefd7d6574821381a8"/>
+          <topic label="numberInRange" href="classslider_1_1lib_1_1_m_thumb_slider.html#ac707f8dacb0b5a61eab860493220952e"/>
+          <topic label="numberOfThumbs" href="classslider_1_1lib_1_1_m_thumb_slider.html#a2fe2d8f4fa672edf6a78893094bb8c9d"/>
+          <topic label="recomputeHistogram" href="classslider_1_1lib_1_1_m_thumb_slider.html#a4e44449e50553f31be5d0144d6bdb7b7"/>
+          <topic label="sliderModels" href="classslider_1_1lib_1_1_m_thumb_slider.html#ad7637a70b20caca55bba4b5c04fd31c1"/>
+          <topic label="sliderParameters" href="classslider_1_1lib_1_1_m_thumb_slider.html#a14143755e1759e44ba5364dc95218799"/>
+          <topic label="thumbMoved" href="classslider_1_1lib_1_1_m_thumb_slider.html#a5292c83157bd5e3323bcc7e55dd22ee6"/>
+          <topic label="thumbRenderers" href="classslider_1_1lib_1_1_m_thumb_slider.html#af157743dc0f4b35960ad7599486bcce0"/>
+          <topic label="uiClassID" href="classslider_1_1lib_1_1_m_thumb_slider.html#afe306ec6b90bb107e6e71771956bda9f"/>
+        </topic>
+      </topic>
+      <topic label="MThumbSliderAdditional.java" href="_m_thumb_slider_additional_8java.html">
+        <topic label="MThumbSliderAdditional" href="interfaceslider_1_1lib_1_1_m_thumb_slider_additional.html">
+          <topic label="getThumbSize" href="interfaceslider_1_1lib_1_1_m_thumb_slider_additional.html#ac7139615b8c607721768bf15c77f333e"/>
+          <topic label="getTrackRect" href="interfaceslider_1_1lib_1_1_m_thumb_slider_additional.html#a55913bc26f87735d89a62f6f60beb331"/>
+          <topic label="xPositionForValue" href="interfaceslider_1_1lib_1_1_m_thumb_slider_additional.html#afc317c05296da458040423b9aa7c5a5c"/>
+          <topic label="yPositionForValue" href="interfaceslider_1_1lib_1_1_m_thumb_slider_additional.html#a943976c463a14b87604436d592a305ea"/>
+        </topic>
+      </topic>
+      <topic label="MThumbSliderAdditionalUI.java" href="_m_thumb_slider_additional_u_i_8java.html">
+        <topic label="MThumbSliderAdditionalUI" href="classslider_1_1lib_1_1_m_thumb_slider_additional_u_i.html">
+          <topic label="TrackListener" href="classslider_1_1lib_1_1_m_thumb_slider_additional_u_i_1_1_track_listener.html">
+            <topic label="TrackListener" href="classslider_1_1lib_1_1_m_thumb_slider_additional_u_i_1_1_track_listener.html#a3eed4f99564dd2a32f4b11c2052b2cba"/>
+            <topic label="mouseDragged" href="classslider_1_1lib_1_1_m_thumb_slider_additional_u_i_1_1_track_listener.html#aa9e8260f08568608a1f53f63b7849ed4"/>
+            <topic label="mousePressed" href="classslider_1_1lib_1_1_m_thumb_slider_additional_u_i_1_1_track_listener.html#ad6a077f56bfd1d1cfae5ddc2fdfa573a"/>
+            <topic label="mouseReleased" href="classslider_1_1lib_1_1_m_thumb_slider_additional_u_i_1_1_track_listener.html#a56020662fe829cb2dd6c9370bc2d7ef3"/>
+            <topic label="setThumbValue" href="classslider_1_1lib_1_1_m_thumb_slider_additional_u_i_1_1_track_listener.html#a74ecacaed8d8069a9a0f2763bfb01b17"/>
+            <topic label="adjustingThumbIndex" href="classslider_1_1lib_1_1_m_thumb_slider_additional_u_i_1_1_track_listener.html#a2ec27f0a251e85acc435c18a30c9af8f"/>
+            <topic label="adjustingThumbRect" href="classslider_1_1lib_1_1_m_thumb_slider_additional_u_i_1_1_track_listener.html#a08adad30f70f1dc4b399937cdbd907e4"/>
+            <topic label="offset" href="classslider_1_1lib_1_1_m_thumb_slider_additional_u_i_1_1_track_listener.html#a0dab9a5f70485e7941d33073430fb7cb"/>
+            <topic label="slider" href="classslider_1_1lib_1_1_m_thumb_slider_additional_u_i_1_1_track_listener.html#affdff2e391a4e5f03a7066f59907f1ff"/>
+            <topic label="trackRect" href="classslider_1_1lib_1_1_m_thumb_slider_additional_u_i_1_1_track_listener.html#ae1223dac10708255f72296ce4f776b0e"/>
+          </topic>
+          <topic label="MThumbSliderAdditionalUI" href="classslider_1_1lib_1_1_m_thumb_slider_additional_u_i.html#a580d76870e0b6c471ee1c64776ce1da1"/>
+          <topic label="calculateThumbsLocation" href="classslider_1_1lib_1_1_m_thumb_slider_additional_u_i.html#aa8de5f509d811c8cc87f031a8b82d5ce"/>
+          <topic label="calculateThumbsSize" href="classslider_1_1lib_1_1_m_thumb_slider_additional_u_i.html#a62c49ad47e72bcb74088de0f6dca70f9"/>
+          <topic label="getThumbNum" href="classslider_1_1lib_1_1_m_thumb_slider_additional_u_i.html#a471173b14e08ae8114f74dd0bb030716"/>
+          <topic label="getThumbRects" href="classslider_1_1lib_1_1_m_thumb_slider_additional_u_i.html#a59b3ee7a4f7942fc1b6216bfde058081"/>
+          <topic label="getTrackRect" href="classslider_1_1lib_1_1_m_thumb_slider_additional_u_i.html#a765c01a5571d91584a37f13bfb3c8331"/>
+          <topic label="installUI" href="classslider_1_1lib_1_1_m_thumb_slider_additional_u_i.html#a5d9581d5773601ee438c7e515aba4c86"/>
+          <topic label="setThumbLocationAt" href="classslider_1_1lib_1_1_m_thumb_slider_additional_u_i.html#aa3f54443724b4a5e48956eea692b81e0"/>
+          <topic label="uninstallUI" href="classslider_1_1lib_1_1_m_thumb_slider_additional_u_i.html#a747ac2d179168635fd3d588476275fb0"/>
+          <topic label="isDragging" href="classslider_1_1lib_1_1_m_thumb_slider_additional_u_i.html#af4ae18f12a2a64ecfcf4b71144a9cde2"/>
+          <topic label="mSlider" href="classslider_1_1lib_1_1_m_thumb_slider_additional_u_i.html#a20a2df0b7b952c64c345f3ca5e3b9458"/>
+          <topic label="thumbNum" href="classslider_1_1lib_1_1_m_thumb_slider_additional_u_i.html#a63882073b975a8a12def720711448650"/>
+          <topic label="thumbRects" href="classslider_1_1lib_1_1_m_thumb_slider_additional_u_i.html#afd327e234d7e773974ee916354f6340c"/>
+          <topic label="trackListener" href="classslider_1_1lib_1_1_m_thumb_slider_additional_u_i.html#abfd7f24589a679450615eeb4068d7065"/>
+          <topic label="trackRect" href="classslider_1_1lib_1_1_m_thumb_slider_additional_u_i.html#a278b6abf57c4df34109a13c8e269a0b8"/>
+          <topic label="ui" href="classslider_1_1lib_1_1_m_thumb_slider_additional_u_i.html#a54614cdb53826c4af2a2d19734574b12"/>
+          <topic label="unionRect" href="classslider_1_1lib_1_1_m_thumb_slider_additional_u_i.html#a53fdfcbac9d379114fa95ae22ceabdc2"/>
+        </topic>
+        <topic label="TrackListener" href="classslider_1_1lib_1_1_m_thumb_slider_additional_u_i_1_1_track_listener.html">
+          <topic label="TrackListener" href="classslider_1_1lib_1_1_m_thumb_slider_additional_u_i_1_1_track_listener.html#a3eed4f99564dd2a32f4b11c2052b2cba"/>
+          <topic label="mouseDragged" href="classslider_1_1lib_1_1_m_thumb_slider_additional_u_i_1_1_track_listener.html#aa9e8260f08568608a1f53f63b7849ed4"/>
+          <topic label="mousePressed" href="classslider_1_1lib_1_1_m_thumb_slider_additional_u_i_1_1_track_listener.html#ad6a077f56bfd1d1cfae5ddc2fdfa573a"/>
+          <topic label="mouseReleased" href="classslider_1_1lib_1_1_m_thumb_slider_additional_u_i_1_1_track_listener.html#a56020662fe829cb2dd6c9370bc2d7ef3"/>
+          <topic label="setThumbValue" href="classslider_1_1lib_1_1_m_thumb_slider_additional_u_i_1_1_track_listener.html#a74ecacaed8d8069a9a0f2763bfb01b17"/>
+          <topic label="adjustingThumbIndex" href="classslider_1_1lib_1_1_m_thumb_slider_additional_u_i_1_1_track_listener.html#a2ec27f0a251e85acc435c18a30c9af8f"/>
+          <topic label="adjustingThumbRect" href="classslider_1_1lib_1_1_m_thumb_slider_additional_u_i_1_1_track_listener.html#a08adad30f70f1dc4b399937cdbd907e4"/>
+          <topic label="offset" href="classslider_1_1lib_1_1_m_thumb_slider_additional_u_i_1_1_track_listener.html#a0dab9a5f70485e7941d33073430fb7cb"/>
+          <topic label="slider" href="classslider_1_1lib_1_1_m_thumb_slider_additional_u_i_1_1_track_listener.html#affdff2e391a4e5f03a7066f59907f1ff"/>
+          <topic label="trackRect" href="classslider_1_1lib_1_1_m_thumb_slider_additional_u_i_1_1_track_listener.html#ae1223dac10708255f72296ce4f776b0e"/>
+        </topic>
+      </topic>
+      <topic label="SliderPanel.java" href="_slider_panel_8java.html">
+        <topic label="SliderPanel" href="classslider_1_1lib_1_1_slider_panel.html">
+          <topic label="SliderPanel" href="classslider_1_1lib_1_1_slider_panel.html#acc328e94d422c40ad9bcecf61be555e1"/>
+          <topic label="editButtonClicked" href="classslider_1_1lib_1_1_slider_panel.html#a87c33a1d37d46a3ec1e2c83af5a38c0b"/>
+          <topic label="getIntValue" href="classslider_1_1lib_1_1_slider_panel.html#a965db97a60f675c29e52e6c797124a0b"/>
+          <topic label="getMaximum" href="classslider_1_1lib_1_1_slider_panel.html#a59fe42928c0b9d1657cb53c170f0da0e"/>
+          <topic label="getMinimum" href="classslider_1_1lib_1_1_slider_panel.html#ad0ebf56848b36d5e5ca3340a979bc169"/>
+          <topic label="getNumberInRange" href="classslider_1_1lib_1_1_slider_panel.html#a29027defb6f084f2c10253d1dfb786db"/>
+          <topic label="getSliderParameters" href="classslider_1_1lib_1_1_slider_panel.html#a2c02d25cc8c53c610827a168112ce576"/>
+          <topic label="getTicks" href="classslider_1_1lib_1_1_slider_panel.html#a269e63c4f79be260b239361f32ba8824"/>
+          <topic label="getTickValues" href="classslider_1_1lib_1_1_slider_panel.html#a6dcaa6e633a592d2dec1d4dc786cb01e"/>
+          <topic label="getValue" href="classslider_1_1lib_1_1_slider_panel.html#ab91e52ff628b0499b1058294e9a50d6b"/>
+          <topic label="paint" href="classslider_1_1lib_1_1_slider_panel.html#af7fd51725fd5a8f126966c9021e56efd"/>
+          <topic label="setMaximum" href="classslider_1_1lib_1_1_slider_panel.html#a7a2a7ab889d3f1d0f0b9db176f38b143"/>
+          <topic label="setMinimum" href="classslider_1_1lib_1_1_slider_panel.html#a02d692343ade2d20a78580a2841da0f2"/>
+          <topic label="setMThumbSliderColors" href="classslider_1_1lib_1_1_slider_panel.html#a0955367ca708a1074442c0c11595215b"/>
+          <topic label="setNumberInRange" href="classslider_1_1lib_1_1_slider_panel.html#a11d3cdb3cb41daac81a7db9964c989f3"/>
+          <topic label="setRange" href="classslider_1_1lib_1_1_slider_panel.html#ad67d10d4a6ba986d564279fc430ee1a6"/>
+          <topic label="setValue" href="classslider_1_1lib_1_1_slider_panel.html#a7ccd71d37a155e70f1aa6be544ff5ac6"/>
+          <topic label="bEdit" href="classslider_1_1lib_1_1_slider_panel.html#a478eb5d45e8d506ea0610a32f7cb91cf"/>
+          <topic label="dialog" href="classslider_1_1lib_1_1_slider_panel.html#a71a390717c94fb6df6c7afafbfb7dcde"/>
+          <topic label="slider" href="classslider_1_1lib_1_1_slider_panel.html#a55770712b4ca9147d9b5cbe62510714f"/>
+          <topic label="sliderParameters" href="classslider_1_1lib_1_1_slider_panel.html#a77c2543955c6e4a1a7cacf6fbc6d6bf5"/>
+          <topic label="text" href="classslider_1_1lib_1_1_slider_panel.html#af088840d1c0673a6d931c1661498a023"/>
+        </topic>
+      </topic>
+      <topic label="SliderParameters.java" href="_slider_parameters_8java.html">
+        <topic label="SliderParameters" href="classslider_1_1lib_1_1_slider_parameters.html">
+          <topic label="SliderParameters" href="classslider_1_1lib_1_1_slider_parameters.html#aa94c72843b1f4196a073d5b177fcc6b2"/>
+          <topic label="additionalColors" href="classslider_1_1lib_1_1_slider_parameters.html#a8a579c70612a4358916c0fc03b742b2c"/>
+          <topic label="addMouseAdapter" href="classslider_1_1lib_1_1_slider_parameters.html#aaf2b07ac540ebcc7093d4912aea5f172"/>
+          <topic label="createLabels" href="classslider_1_1lib_1_1_slider_parameters.html#a778253c5cdc43942219b09040da95d4b"/>
+          <topic label="getExponent" href="classslider_1_1lib_1_1_slider_parameters.html#a1ff86ba7f31a5bf3548a663076ff07d8"/>
+          <topic label="getLabel" href="classslider_1_1lib_1_1_slider_parameters.html#a73964f4c5614e014f078911d1d3b2989"/>
+          <topic label="getMajorTickSpacing" href="classslider_1_1lib_1_1_slider_parameters.html#ae399d8a868c00e8c7f08737d986be6ad"/>
+          <topic label="getMaximum" href="classslider_1_1lib_1_1_slider_parameters.html#a158e6a13d63b3b21341d836625469b40"/>
+          <topic label="getMinimum" href="classslider_1_1lib_1_1_slider_parameters.html#ae6b36280f90cf35bec665de4158562d9"/>
+          <topic label="getMinorTickSpacing" href="classslider_1_1lib_1_1_slider_parameters.html#a583ed9c11e5aa7115e8455acf2677c00"/>
+          <topic label="getNumberOfThumbs" href="classslider_1_1lib_1_1_slider_parameters.html#ac5e758abf876bead0514a6ce91cce5e6"/>
+          <topic label="getSlider" href="classslider_1_1lib_1_1_slider_parameters.html#a6f807501eafc4329ddd4c38f02659d3a"/>
+          <topic label="getSliderColorAt" href="classslider_1_1lib_1_1_slider_parameters.html#ab646698180cb59427d97c70add63e07d"/>
+          <topic label="getSliderColors" href="classslider_1_1lib_1_1_slider_parameters.html#a0fc3560c9b1d441bf8635800f5556df2"/>
+          <topic label="getSliderMaximum" href="classslider_1_1lib_1_1_slider_parameters.html#a0301c7f70af5f970e1b0c853818c43ac"/>
+          <topic label="getSliderMinimum" href="classslider_1_1lib_1_1_slider_parameters.html#a197800dbe81f60cf8f967d67e74f0c28"/>
+          <topic label="getTrackFillColor" href="classslider_1_1lib_1_1_slider_parameters.html#a6e610580862db732269961fee98bb1e5"/>
+          <topic label="hasColor" href="classslider_1_1lib_1_1_slider_parameters.html#a62b71e819009a3a2ef185542b5222c36"/>
+          <topic label="isCategoricalData" href="classslider_1_1lib_1_1_slider_parameters.html#a753ed1d2ac02edc1e6b1ffcf80bd5c63"/>
+          <topic label="isLogScale" href="classslider_1_1lib_1_1_slider_parameters.html#ae4b33b63f1a2e5a132ee3cfeb566eb11"/>
+          <topic label="isShowDialog" href="classslider_1_1lib_1_1_slider_parameters.html#af5c58b5d21b09f6ba533ee6a35518f59"/>
+          <topic label="setCategoricalData" href="classslider_1_1lib_1_1_slider_parameters.html#afde597a33661db25d7221380412748a0"/>
+          <topic label="setLabel" href="classslider_1_1lib_1_1_slider_parameters.html#ac3b82714ae8b3303c7ce1cca976a1a73"/>
+          <topic label="setLogScale" href="classslider_1_1lib_1_1_slider_parameters.html#a6f8808bc8ed1cfe1b7d74e7b157bdeeb"/>
+          <topic label="setMajorTickSpacing" href="classslider_1_1lib_1_1_slider_parameters.html#af039f2bb8099baf6df56f5c07d2335c5"/>
+          <topic label="setMaximum" href="classslider_1_1lib_1_1_slider_parameters.html#a5c5f8cfc7f8fedeb98321435606d7601"/>
+          <topic label="setMinimum" href="classslider_1_1lib_1_1_slider_parameters.html#aded293cce347c971269d760d6fa38239"/>
+          <topic label="setMinorTickSpacing" href="classslider_1_1lib_1_1_slider_parameters.html#a21cec3db488b15fe0e519be463dc9d5f"/>
+          <topic label="setMouseListener" href="classslider_1_1lib_1_1_slider_parameters.html#ae4666e86181ecbc2d7e179fc918a4fdf"/>
+          <topic label="setNumberOfThumbs" href="classslider_1_1lib_1_1_slider_parameters.html#a1096344ca17b9087beb158b1e91908d9"/>
+          <topic label="setRange" href="classslider_1_1lib_1_1_slider_parameters.html#a1b5d3854286b91dee0994d523346e1b5"/>
+          <topic label="setShowDialog" href="classslider_1_1lib_1_1_slider_parameters.html#a8d852f4a43d813b88f838a6b0b99cf19"/>
+          <topic label="setSlider" href="classslider_1_1lib_1_1_slider_parameters.html#add7348dc1145ec59ad353a07f1515213"/>
+          <topic label="setSliderColorAt" href="classslider_1_1lib_1_1_slider_parameters.html#a2bddb19d1ec9393765ded5b536631703"/>
+          <topic label="setSliderColors" href="classslider_1_1lib_1_1_slider_parameters.html#abc0f5d4e18cc8205930e35dbe07c9312"/>
+          <topic label="setTrackFillColor" href="classslider_1_1lib_1_1_slider_parameters.html#aea1f2adf52314227764571518b3d66c8"/>
+          <topic label="sliderValueToValue" href="classslider_1_1lib_1_1_slider_parameters.html#aa572e027295ac02c51e17afca4a12dbe"/>
+          <topic label="updateSlider" href="classslider_1_1lib_1_1_slider_parameters.html#ab12680799b3475bd90f817a11a170d7d"/>
+          <topic label="valueToSliderValue" href="classslider_1_1lib_1_1_slider_parameters.html#a425f654266f6740fa9bdc435ee83a3f2"/>
+          <topic label="categoricalData" href="classslider_1_1lib_1_1_slider_parameters.html#abc9825ab4bedf3ac634f90f5fa15ecfb"/>
+          <topic label="label" href="classslider_1_1lib_1_1_slider_parameters.html#ac0b64f84ddef26d1b2628f122fd75f5c"/>
+          <topic label="logScale" href="classslider_1_1lib_1_1_slider_parameters.html#a69d7e6a34f9322884df19fbe2200007d"/>
+          <topic label="majorTickSpacing" href="classslider_1_1lib_1_1_slider_parameters.html#a0a4f7b04f22cb5aa602d4fca2b328f29"/>
+          <topic label="maximum" href="classslider_1_1lib_1_1_slider_parameters.html#a2302c971ec868fc5018c9c89bc9c67df"/>
+          <topic label="minimum" href="classslider_1_1lib_1_1_slider_parameters.html#af4a6e2af2f378d338a4e3b045a74c68f"/>
+          <topic label="minorTickSpacing" href="classslider_1_1lib_1_1_slider_parameters.html#a2585862d1fbb6f2dbfd95bdef46659c9"/>
+          <topic label="mouseAdapters" href="classslider_1_1lib_1_1_slider_parameters.html#a6c37d636642705b1a494849f8c7ceffb"/>
+          <topic label="numberOfThumbs" href="classslider_1_1lib_1_1_slider_parameters.html#a52d72d64b93a3626312f24d4d7f6640a"/>
+          <topic label="showDialog" href="classslider_1_1lib_1_1_slider_parameters.html#abe086fec513d6a36dbcccd426f426ec1"/>
+          <topic label="slider" href="classslider_1_1lib_1_1_slider_parameters.html#a4eed81f6b1923d25cc952561035311a4"/>
+          <topic label="sliderColors" href="classslider_1_1lib_1_1_slider_parameters.html#acc794a3c1ff5a14c84437d22a86bccd2"/>
+          <topic label="sliderMaximum" href="classslider_1_1lib_1_1_slider_parameters.html#a6baefd9f5ad5ea62685c594df14780ef"/>
+          <topic label="sliderMinimum" href="classslider_1_1lib_1_1_slider_parameters.html#a32507e65cd8821eedbcca2b697b0e55b"/>
+          <topic label="trackFillColor" href="classslider_1_1lib_1_1_slider_parameters.html#a02470d92ca67543bc6d99df1e5275ec4"/>
+        </topic>
+      </topic>
+    </topic>
+  </topic>
+</toc>

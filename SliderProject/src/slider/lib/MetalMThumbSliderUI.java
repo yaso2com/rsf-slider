@@ -4,7 +4,6 @@
 package slider.lib;
 
 import javax.swing.*;
-import javax.swing.event.ChangeListener;
 import javax.swing.event.MouseInputAdapter;
 import javax.swing.plaf.ComponentUI;
 import javax.swing.plaf.metal.MetalLookAndFeel;
@@ -122,7 +121,7 @@ public class MetalMThumbSliderUI
             return;
         }
         thumbRect = thumbRects[0];
-        int thumbNum = additionalUi.getThumbNum();
+        int thumbNum = additionalUi.getNumberOfThumbs();
 
         // Paint colored lines on the slider
         if (slider.getPaintTrack() && clip.intersects(trackRect))
