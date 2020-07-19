@@ -93,37 +93,28 @@ $(document).ready(function(){initNavTree('_m_thumb_slider_additional_8java_sourc
 <div class="title">MThumbSliderAdditional.java</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="_m_thumb_slider_additional_8java.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/* (swing1.1.1) */</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="keyword">package </span>slider.lib;</div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="keyword">import</span> java.awt.*;</div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment">//</span></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">// MThumbSliderAdditionalUI &lt;--&gt; BasicMThumbSliderUI</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">//                          &lt;--&gt; MetalMThumbSliderUI</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">//                          &lt;--&gt; MotifMThumbSliderUI</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">//</span></div>
-<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="interfaceslider_1_1lib_1_1_m_thumb_slider_additional.html">   15</a></span>&#160;<span class="keyword">public</span> <span class="keyword">interface </span><a class="code" href="interfaceslider_1_1lib_1_1_m_thumb_slider_additional.html">MThumbSliderAdditional</a></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;{</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
-<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="interfaceslider_1_1lib_1_1_m_thumb_slider_additional.html#a55913bc26f87735d89a62f6f60beb331">   18</a></span>&#160;    Rectangle <a class="code" href="interfaceslider_1_1lib_1_1_m_thumb_slider_additional.html#a55913bc26f87735d89a62f6f60beb331">getTrackRect</a>();</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
+<a href="_m_thumb_slider_additional_8java.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="keyword">package </span>slider.lib;</div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="keyword">import</span> java.awt.*;</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
+<div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="interfaceslider_1_1lib_1_1_m_thumb_slider_additional.html">    9</a></span>&#160;<span class="keyword">public</span> <span class="keyword">interface </span><a class="code" href="interfaceslider_1_1lib_1_1_m_thumb_slider_additional.html">MThumbSliderAdditional</a></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;{</div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="interfaceslider_1_1lib_1_1_m_thumb_slider_additional.html#a55913bc26f87735d89a62f6f60beb331">   15</a></span>&#160;    Rectangle <a class="code" href="interfaceslider_1_1lib_1_1_m_thumb_slider_additional.html#a55913bc26f87735d89a62f6f60beb331">getTrackRect</a>();</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
 <div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="interfaceslider_1_1lib_1_1_m_thumb_slider_additional.html#ac7139615b8c607721768bf15c77f333e">   20</a></span>&#160;    Dimension <a class="code" href="interfaceslider_1_1lib_1_1_m_thumb_slider_additional.html#ac7139615b8c607721768bf15c77f333e">getThumbSize</a>();</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
-<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="interfaceslider_1_1lib_1_1_m_thumb_slider_additional.html#afc317c05296da458040423b9aa7c5a5c">   22</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="interfaceslider_1_1lib_1_1_m_thumb_slider_additional.html#afc317c05296da458040423b9aa7c5a5c">xPositionForValue</a>(<span class="keywordtype">int</span> value);</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
-<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="interfaceslider_1_1lib_1_1_m_thumb_slider_additional.html#a943976c463a14b87604436d592a305ea">   24</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="interfaceslider_1_1lib_1_1_m_thumb_slider_additional.html#a943976c463a14b87604436d592a305ea">yPositionForValue</a>(<span class="keywordtype">int</span> value);</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;}</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="interfaceslider_1_1lib_1_1_m_thumb_slider_additional.html#afc317c05296da458040423b9aa7c5a5c">   23</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="interfaceslider_1_1lib_1_1_m_thumb_slider_additional.html#afc317c05296da458040423b9aa7c5a5c">xPositionForValue</a>(<span class="keywordtype">int</span> value);</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="interfaceslider_1_1lib_1_1_m_thumb_slider_additional.html#a943976c463a14b87604436d592a305ea">   26</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="interfaceslider_1_1lib_1_1_m_thumb_slider_additional.html#a943976c463a14b87604436d592a305ea">yPositionForValue</a>(<span class="keywordtype">int</span> value);</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;}</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="ainterfaceslider_1_1lib_1_1_m_thumb_slider_additional_html_ac7139615b8c607721768bf15c77f333e"><div class="ttname"><a href="interfaceslider_1_1lib_1_1_m_thumb_slider_additional.html#ac7139615b8c607721768bf15c77f333e">slider.lib.MThumbSliderAdditional.getThumbSize</a></div><div class="ttdeci">Dimension getThumbSize()</div></div>
-<div class="ttc" id="ainterfaceslider_1_1lib_1_1_m_thumb_slider_additional_html"><div class="ttname"><a href="interfaceslider_1_1lib_1_1_m_thumb_slider_additional.html">slider.lib.MThumbSliderAdditional</a></div><div class="ttdef"><b>Definition:</b> <a href="_m_thumb_slider_additional_8java_source.html#l00015">MThumbSliderAdditional.java:16</a></div></div>
+<div class="ttc" id="ainterfaceslider_1_1lib_1_1_m_thumb_slider_additional_html"><div class="ttname"><a href="interfaceslider_1_1lib_1_1_m_thumb_slider_additional.html">slider.lib.MThumbSliderAdditional</a></div><div class="ttdef"><b>Definition:</b> <a href="_m_thumb_slider_additional_8java_source.html#l00009">MThumbSliderAdditional.java:10</a></div></div>
 <div class="ttc" id="ainterfaceslider_1_1lib_1_1_m_thumb_slider_additional_html_a55913bc26f87735d89a62f6f60beb331"><div class="ttname"><a href="interfaceslider_1_1lib_1_1_m_thumb_slider_additional.html#a55913bc26f87735d89a62f6f60beb331">slider.lib.MThumbSliderAdditional.getTrackRect</a></div><div class="ttdeci">Rectangle getTrackRect()</div></div>
-<div class="ttc" id="ainterfaceslider_1_1lib_1_1_m_thumb_slider_additional_html_a943976c463a14b87604436d592a305ea"><div class="ttname"><a href="interfaceslider_1_1lib_1_1_m_thumb_slider_additional.html#a943976c463a14b87604436d592a305ea">slider.lib.MThumbSliderAdditional.yPositionForValue</a></div><div class="ttdeci">int yPositionForValue(int value)</div></div>
-<div class="ttc" id="ainterfaceslider_1_1lib_1_1_m_thumb_slider_additional_html_afc317c05296da458040423b9aa7c5a5c"><div class="ttname"><a href="interfaceslider_1_1lib_1_1_m_thumb_slider_additional.html#afc317c05296da458040423b9aa7c5a5c">slider.lib.MThumbSliderAdditional.xPositionForValue</a></div><div class="ttdeci">int xPositionForValue(int value)</div></div>
+<div class="ttc" id="ainterfaceslider_1_1lib_1_1_m_thumb_slider_additional_html_a943976c463a14b87604436d592a305ea"><div class="ttname"><a href="interfaceslider_1_1lib_1_1_m_thumb_slider_additional.html#a943976c463a14b87604436d592a305ea">slider.lib.MThumbSliderAdditional.yPositionForValue</a></div><div class="ttdeci">int yPositionForValue(int value)</div><div class="ttdoc">Gets the y position of thumb tip for that value on the slider body.</div></div>
+<div class="ttc" id="ainterfaceslider_1_1lib_1_1_m_thumb_slider_additional_html_afc317c05296da458040423b9aa7c5a5c"><div class="ttname"><a href="interfaceslider_1_1lib_1_1_m_thumb_slider_additional.html#afc317c05296da458040423b9aa7c5a5c">slider.lib.MThumbSliderAdditional.xPositionForValue</a></div><div class="ttdeci">int xPositionForValue(int value)</div><div class="ttdoc">Gets the x position of thumb tip for that value on the slider body.</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>

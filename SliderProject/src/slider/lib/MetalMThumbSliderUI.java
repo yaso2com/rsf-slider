@@ -11,7 +11,7 @@ import javax.swing.plaf.metal.MetalSliderUI;
 import java.awt.*;
 
 /**
- *
+ * This class provides the user interface behavior that is dependent of the look and feel.
  */
 public class MetalMThumbSliderUI
         extends MetalSliderUI
@@ -89,7 +89,7 @@ public class MetalMThumbSliderUI
         try
         {
             super.calculateGeometry();
-            additionalUi.calculateThumbsSize();
+            additionalUi.setThumbsBodyBoundingBoxes();
             additionalUi.calculateThumbsLocation();
         }
         catch (Exception ex)

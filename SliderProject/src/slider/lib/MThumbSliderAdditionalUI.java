@@ -11,6 +11,7 @@
  * @version 1.0
  * @see https://gitlab.com/yaso2com/rsf-slider
  * @see https://www.youtube.com/playlist?list=PLZ9SRRNo8TbbJa8cjqxdKuYjwshlH_IGI
+ * @see The published paper for this work can be found at: https://www.cgv-conf.org/wp-content/uploads/2020/07/02_202011L010_F074.pdf
  */
 package slider.lib;
 
@@ -21,21 +22,18 @@ import java.awt.*;
 import java.awt.event.MouseEvent;
 
 /**
- * This class ??
+ * This class provides the user interface behavior that is independent of the look and feel.
  */
 public class MThumbSliderAdditionalUI
 {
-    private static Rectangle unionRect = new Rectangle();
-    ThumbMovementHandler thumbMovementHandler;
     /**
-     * MThumbSlider mSlider: ???
-     * BasicSliderUI ui:
-     * Rectangle[] thumbRects:
-     * int thumbNum: the thumb number starts from 0
-     * Rectangle trackRect:
-     * ThumbMovementHandler thumbMovementHandler: handles the mouse events
-     * Rectangle unionRect:
+     * MThumbSlider mSlider                      is the multithumb slider from Java Swing
+     * BasicSliderUI ui                          is the user interface
+     * Rectangle[] thumbsBodyBoundingBoxes       are the bounding boxes of all thumbs
+     * int thumbNum                              is the thumb number starts from 0
+     * ThumbMovementHandler thumbMovementHandler is the handler of the mouse events
      */
+    ThumbMovementHandler thumbMovementHandler;
     private MThumbSlider mSlider;
     private BasicSliderUI ui;
     private Rectangle[] thumbsBodyBoundingBoxes;
@@ -44,7 +42,7 @@ public class MThumbSliderAdditionalUI
     /**
      * Constructor: stores the user interface
      *
-     * @param ui
+     * @param ui is the user interface
      */
     public MThumbSliderAdditionalUI(BasicSliderUI ui)
     {
@@ -52,13 +50,12 @@ public class MThumbSliderAdditionalUI
     }
 
     /**
-     * Initializes the number of thumbs, thumbs body bounding boxes, thumb movement handler
+     * Sets the number of thumbs, thumbs body bounding boxes, thumb movement handler
      *
-     * @param c
+     * @param c is the parent component
      */
     public void installUI(JComponent c)
     {
-
         mSlider = (MThumbSlider) c;
         numberOfThumbs = mSlider.getNumberOfThumbs();
         thumbsBodyBoundingBoxes = new Rectangle[numberOfThumbs];
@@ -71,6 +68,8 @@ public class MThumbSliderAdditionalUI
 
     /**
      * Unsets the thumbs body bounding boxes and the thumb movement handler (invalidating them).
+     *
+     * @param c  is the parent component
      */
     public void uninstallUI(JComponent c)
     {
@@ -79,19 +78,22 @@ public class MThumbSliderAdditionalUI
     }
 
     /**
-     * ???
+     * Sets the bounding boxs of all thumbs
      */
-    protected void calculateThumbsSize()
+    protected void setThumbsBodyBoundingBoxes()
     {
         Dimension size = ((MThumbSliderAdditional) ui).getThumbSize();
-        for (int i = 0; i < numberOfThumbs; i++)
+        for (int currentThumb = 0; currentThumb < numberOfThumbs; currentThumb++)
         {
-            thumbsBodyBoundingBoxes[i].setSize(size.width, size.height);
+            thumbsBodyBoundingBoxes[currentThumb].setSize(size.width, size.height);
         }
     }
 
     /**
      * Assures that the thumbtips are on the ticks of the slider and not some where in between.
+     *
+     * <B> Description </B>
+     *
      * Gets the orientation of the slider, either vertical or horizontal
      *  - Vertical case is not implemented yet
      *
@@ -100,7 +102,7 @@ public class MThumbSliderAdditionalUI
     {
         for (int currentThumb = 0; currentThumb < numberOfThumbs; currentThumb++)
         {
-            // Assure that the thumbtips are on the ticks of the slider and not some where in between.
+            /// Assures that the thumbtips are on the ticks of the slider and not some where in between.
             if (mSlider.getSnapToTicks())
             {
                 int tickSpacing = mSlider.getMinorTickSpacing();
@@ -122,54 +124,60 @@ public class MThumbSliderAdditionalUI
                 }
             }
 
-            Rectangle sliderBodyBoundingBox = getTrackRect();
+            Rectangle sliderBodyBoundingBox = getSliderBodyBoundingBox();
 
-            // Gets the orientation of the slider, either vertical or horizontal
+            /// Gets the orientation of the slider, either vertical or horizontal (Vertical case **Not implemented yet**)
             switch (mSlider.getOrientation())
             {
                 case JSlider.VERTICAL:
                 {
-                    // **Not implemented**
+                    //Vertical case **Not implemented**
                 }
                 break;
                 case JSlider.HORIZONTAL:
                 {
-                    // Gets the current thumb value
+                    /// Gets the current thumb value
                     int currentThumbValue = mSlider.getValueAt(currentThumb);
 
-                    // Gets the x position of thumb tip for that value on the slider body
+                    /// Gets the x position of thumb tip for that value on the slider body
                     int xPositionOfThumbTip = ((MThumbSliderAdditional) ui).xPositionForValue(currentThumbValue);
 
-                    // Sets the position of the left side of the current thumb to the position of the tip - half the width of the thumb
+                    /// Sets the position of the left side of the current thumb to the position of the tip - half the width of the thumb
                     thumbsBodyBoundingBoxes[currentThumb].x = xPositionOfThumbTip - (thumbsBodyBoundingBoxes[currentThumb].width / 2);
 
-                    // Distinguish if we have an odd number of thumbs or an even number of thumbs
+                    /// Distinguishs if we have an odd number of thumbs or an even number of thumbs
                     if (numberOfThumbs % 2 == 0)
                     {
-                        // case of even: equation is 12 - 8 * i
+                        /** - case of even: the left half of the thumbs position will be below the slider and the right half of the thumbs position will be over the slider
+                         *   +  Example: 8-> 16 -> 8 (for four thumbs)
+                         */
                         if (currentThumb < numberOfThumbs / 2)
                         {
-                            // the left half of the thumbs position will be below the slider
                             thumbsBodyBoundingBoxes[currentThumb].y = sliderBodyBoundingBox.y - (currentThumb - numberOfThumbs / 2) * 8;
                         }
                         else
                         {
-                            // the right half of the thumbs position will be over the slider
                             thumbsBodyBoundingBoxes[currentThumb].y = sliderBodyBoundingBox.y - (currentThumb - numberOfThumbs / 2) * 8 - 8;
                         }
                     }
                     else
-                    {
-                        if (currentThumb < numberOfThumbs / 2)
+                    { /** - case of odd: the left half of the thumbs position will be below the slider, the middle thumb is in the middle of the slider body,
+                     and the right half of the thumbs position will be over the slider
+                     *      + Example: 8-> 8-> 8 -> 8 (for five thumbs)
+                     */
+                        if (currentThumb < numberOfThumbs / 2) // Example: 8-> 8-> 8 -> 8 (for five thumbs)
                         {
-                            thumbsBodyBoundingBoxes[currentThumb].y = sliderBodyBoundingBox.y - ((currentThumb - numberOfThumbs / 2) * 8 - 4);
+                            //the left half of the thumbs position will be below the slider
+                            thumbsBodyBoundingBoxes[currentThumb].y = sliderBodyBoundingBox.y - ((currentThumb - numberOfThumbs / 2) * 8);
                         }
                         else if (currentThumb == numberOfThumbs / 2)
                         {
+                            // the middle thumb is in the middle of the slider body
                             thumbsBodyBoundingBoxes[currentThumb].y = sliderBodyBoundingBox.y;
                         }
                         else
                         {
+                            // the right half of the thumbs position will be over the slider
                             thumbsBodyBoundingBoxes[currentThumb].y = sliderBodyBoundingBox.y - (currentThumb - numberOfThumbs / 2) * 8;
                         }
                     }
@@ -179,24 +187,35 @@ public class MThumbSliderAdditionalUI
         }
     }//end calculateThumbsLocation
 
+    /**
+     * Gets the number of thumbs
+     * @return the number of thumbs
+     */
     public int getNumberOfThumbs()
     {
         return numberOfThumbs;
     }
 
+    /**
+     * Gets the bounding boxes of all thumbs
+     *
+     * @return the bounding box of all thumbs
+     */
     public Rectangle[] getThumbsBodyBoundingBoxes()
     {
         return thumbsBodyBoundingBoxes;
     }
 
     /**
-     * This is the method for the cascading effect, there are two tyes of sliders, one vertical and another horizontal.
-     * The horizontal is used for the examples
+     * This is the method for the cascading effect, there are two types of sliders, one vertical and another horizontal.
      *
      * @param leftThumbBodyBoundingBox  is the leftThumbBodyBoundingBox location of the thumb number indexOfCurrentThumb
      * @param upperThumbBodyBoundingBox is the upperThumbBodyBoundingBox location of the thumb number indexOfCurrentThumb
      * @param indexOfCurrentThumb       is the indexOfCurrentThumb of the thumb whose location should be changed
      * @param slider                    is the slider to change
+     *
+     *  <B>Description</B>
+     *
      */
 
     public void setThumbLocationAt(int leftThumbBodyBoundingBox,
@@ -204,23 +223,28 @@ public class MThumbSliderAdditionalUI
                                    int indexOfCurrentThumb,
                                    MThumbSlider slider)
     {
-        unionRect.setBounds(thumbsBodyBoundingBoxes[indexOfCurrentThumb]);
-
+        /// Calculates the union of the old and the new bounding boxes of the thumbs to repaint the old one with the background and the new one with the thumb
+        Rectangle unionOfTwoThumbBodyBoundingBoxes = new Rectangle();
+        unionOfTwoThumbBodyBoundingBoxes.setBounds(thumbsBodyBoundingBoxes[indexOfCurrentThumb]);
         thumbsBodyBoundingBoxes[indexOfCurrentThumb].setLocation(leftThumbBodyBoundingBox, upperThumbBodyBoundingBox);
-        SwingUtilities.computeUnion(thumbsBodyBoundingBoxes[indexOfCurrentThumb].x, thumbsBodyBoundingBoxes[indexOfCurrentThumb].y, thumbsBodyBoundingBoxes[indexOfCurrentThumb].width, thumbsBodyBoundingBoxes[indexOfCurrentThumb].height,
-                unionRect);
-        mSlider.repaint(unionRect.x, unionRect.y, unionRect.width, unionRect.height);
+        SwingUtilities.computeUnion(thumbsBodyBoundingBoxes[indexOfCurrentThumb].x,
+                                    thumbsBodyBoundingBoxes[indexOfCurrentThumb].y,
+                                    thumbsBodyBoundingBoxes[indexOfCurrentThumb].width,
+                                    thumbsBodyBoundingBoxes[indexOfCurrentThumb].height,
+                                    unionOfTwoThumbBodyBoundingBoxes);
+
+        mSlider.repaint(unionOfTwoThumbBodyBoundingBoxes);
 
         switch (slider.getOrientation())
         {
             // this is not used in the examples "a vertical slider, but it is possible"
             case JSlider.VERTICAL:
-                if (indexOfCurrentThumb < thumbsBodyBoundingBoxes.length - 1 && unionRect.y > thumbsBodyBoundingBoxes[indexOfCurrentThumb + 1].y)
+                if (indexOfCurrentThumb < thumbsBodyBoundingBoxes.length - 1 && thumbsBodyBoundingBoxes[indexOfCurrentThumb].y > thumbsBodyBoundingBoxes[indexOfCurrentThumb + 1].y)
                 {
                     setThumbLocationAt(upperThumbBodyBoundingBox, thumbsBodyBoundingBoxes[indexOfCurrentThumb + 1].x, indexOfCurrentThumb + 1, slider);
                 }
 
-                if (indexOfCurrentThumb > 0 && unionRect.y < thumbsBodyBoundingBoxes[indexOfCurrentThumb - 1].y)
+                if (indexOfCurrentThumb > 0 && thumbsBodyBoundingBoxes[indexOfCurrentThumb].y < thumbsBodyBoundingBoxes[indexOfCurrentThumb - 1].y)
                 {
                     setThumbLocationAt(upperThumbBodyBoundingBox, thumbsBodyBoundingBoxes[indexOfCurrentThumb - 1].x, indexOfCurrentThumb - 1, slider);
                 }
@@ -240,8 +264,11 @@ public class MThumbSliderAdditionalUI
         }
     }
 
-
-    public Rectangle getTrackRect()
+    /**
+     * Gets the bounding box of the slider
+     * @return the bounding box of the slider
+     */
+    public Rectangle getSliderBodyBoundingBox()
     {
         return ((MThumbSliderAdditional) ui).getTrackRect();
     }
@@ -391,7 +418,7 @@ public class MThumbSliderAdditionalUI
                     && adjustingThumbBodyBoundingBox != null)
             {
                 Rectangle thumbBodyBoundingBox = thumbsBodyBoundingBoxes[adjustingThumbIndex];
-                sliderBodyBoundingBox = getTrackRect();
+                sliderBodyBoundingBox = getSliderBodyBoundingBox();
 
                 // branch on orientation
                 switch (slider.getOrientation())
@@ -533,7 +560,7 @@ public class MThumbSliderAdditionalUI
 
             // Gets the thumb body bounding box and the track slider body bounding box
             Rectangle thumbBodyBoundingBox = thumbsBodyBoundingBoxes[thumbIndex];
-            sliderBodyBoundingBox = getTrackRect();
+            sliderBodyBoundingBox = getSliderBodyBoundingBox();
 
             // Gets the orientation of the slider Vertical of horizontal
             switch (slider.getOrientation())

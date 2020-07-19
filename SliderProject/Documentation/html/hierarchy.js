@@ -22,6 +22,6 @@ var hierarchy =
       [ "slider.lib.MetalMThumbSliderUI", "classslider_1_1lib_1_1_metal_m_thumb_slider_u_i.html", null ]
     ] ],
     [ "MouseInputAdapter", null, [
-      [ "slider.lib.MThumbSliderAdditionalUI.TrackListener", "classslider_1_1lib_1_1_m_thumb_slider_additional_u_i_1_1_track_listener.html", null ]
+      [ "slider.lib.MThumbSliderAdditionalUI.ThumbMovementHandler", "classslider_1_1lib_1_1_m_thumb_slider_additional_u_i_1_1_thumb_movement_handler.html", null ]
     ] ]
 ];

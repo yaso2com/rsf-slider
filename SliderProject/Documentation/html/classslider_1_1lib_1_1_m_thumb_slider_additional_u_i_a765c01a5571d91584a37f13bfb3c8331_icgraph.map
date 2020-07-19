@@ -1,8 +1,8 @@
 <map id="slider.lib.MThumbSliderAdditionalUI.getTrackRect" name="slider.lib.MThumbSliderAdditionalUI.getTrackRect">
-<area shape="rect" id="node1" title=" " alt="" coords="531,71,745,112"/>
-<area shape="rect" id="node2" href="$classslider_1_1lib_1_1_m_thumb_slider_additional_u_i.html#aa8de5f509d811c8cc87f031a8b82d5ce" title=" " alt="" coords="268,5,483,47"/>
-<area shape="rect" id="node4" href="$classslider_1_1lib_1_1_m_thumb_slider_additional_u_i_1_1_track_listener.html#aa9e8260f08568608a1f53f63b7849ed4" title=" " alt="" coords="268,71,483,112"/>
-<area shape="rect" id="node5" href="$classslider_1_1lib_1_1_m_thumb_slider_additional_u_i_1_1_track_listener.html#a74ecacaed8d8069a9a0f2763bfb01b17" title=" " alt="" coords="268,136,483,177"/>
-<area shape="rect" id="node3" href="$classslider_1_1lib_1_1_metal_m_thumb_slider_u_i.html#a9a06f661d3bf24525203c8944b631ba2" title=" " alt="" coords="18,5,207,47"/>
-<area shape="rect" id="node6" href="$classslider_1_1lib_1_1_m_thumb_slider_additional_u_i_1_1_track_listener.html#a56020662fe829cb2dd6c9370bc2d7ef3" title=" " alt="" coords="5,136,220,177"/>
+<area shape="rect" id="node1" title=" " alt="" coords="653,71,868,112"/>
+<area shape="rect" id="node2" href="$classslider_1_1lib_1_1_m_thumb_slider_additional_u_i.html#aa8de5f509d811c8cc87f031a8b82d5ce" title=" " alt="" coords="361,5,575,47"/>
+<area shape="rect" id="node4" href="$classslider_1_1lib_1_1_m_thumb_slider_additional_u_i_1_1_thumb_movement_handler.html#a51b3cdba69bf0e2b2a102e2307a68373" title=" " alt="" coords="333,71,603,112"/>
+<area shape="rect" id="node5" href="$classslider_1_1lib_1_1_m_thumb_slider_additional_u_i_1_1_thumb_movement_handler.html#acd8cbc7cc4d1b56796fade49330cd411" title=" " alt="" coords="331,136,605,177"/>
+<area shape="rect" id="node3" href="$classslider_1_1lib_1_1_metal_m_thumb_slider_u_i.html#a9a06f661d3bf24525203c8944b631ba2" title=" " alt="" coords="49,5,239,47"/>
+<area shape="rect" id="node6" href="$classslider_1_1lib_1_1_m_thumb_slider_additional_u_i_1_1_thumb_movement_handler.html#ab800d9599d2a4fe66e849521181d35a6" title=" " alt="" coords="5,136,283,177"/>
 </map>
