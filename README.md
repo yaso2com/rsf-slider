@@ -34,7 +34,7 @@ https://www.youtube.com/watch?v=lRCUruYo4Ms
 Please do not forget to cite my work using the following bibtex:
 
 
-1. @phdthesis{AlZokari2016,
+1. @phdthesis {AlZokari2016,
   author      = {Yasmin Al-Zokari},
   title       = {Interactive Visualizations Supporting Minimal Cut Set Analysis II},
   type        = {doctoralthesis},
@@ -67,7 +67,7 @@ Please do not forget to cite my work using the following bibtex:
 }
 
 
-4.  @proceedings {563,
+4.  @INPROCEEDINGS {563,
 	title = {SAFETY-DOMINO: A Graphical Metaphor for Supporting Minimal Cut Sets Analysis (**best paper award**)},
 	year = {2012},
 	pages = {63-74},
@@ -78,7 +78,7 @@ Please do not forget to cite my work using the following bibtex:
 }
 
 
-5.  @proceedings {564,
+5.  @INPROCEEDINGS {564,
 	title = {Towards Advanced Visualization \& Interaction Techniques for Fault Tree Analyses comparing existing methods and tools},
 	volume = {6},
 	year = {2012},
@@ -103,7 +103,7 @@ Please do not forget to cite my work using the following bibtex:
 }
 
 
-7.  @proceedings {570,
+7.  @INPROCEEDINGS {570,
 	title = {Enhanced CakES representing Safety Analysis results of Embedded Systems},
 	year = {2011},
 	pages = {793-800},
@@ -113,7 +113,7 @@ Please do not forget to cite my work using the following bibtex:
 }
 
 
-8.  @proceedings {569,
+8.  @INPROCEEDINGS {569,
 	title = {An Enhanced Slider for Safety Analysis},
 	year = {2011},
 	address = {Providence, RI, USA},
@@ -135,7 +135,7 @@ Please do not forget to cite my work using the following bibtex:
 }
 
 
-10. @proceedings {568,
+10. @INPROCEEDINGS {568,
 	title = {Safety-Domino Representing Criticality of Embedded Systems},
 	year = {2011},
 	pages = {21},
@@ -145,11 +145,21 @@ Please do not forget to cite my work using the following bibtex:
 }
 
 
-11. @INPROCEEDINGS{7986573,
+11. @INPROCEEDINGS {7986573,
   author={M. {Al-Rawi} and Y. {Al-Zuqary} and F. B. {Saghezchi} and J. {Yang} and J. {Bastos} and J. {Rodriguez}},
   booktitle={2017 13th International Wireless Communications and Mobile Computing Conference (IWCMC)}, 
   title={Data redundancy may lead to unreliable intrusion detection systems}, 
   year={2017},
-  volume={},
-  number={},
   pages={1897-1902}}
+
+  12. @INPROCEEDINGS {AlZokari-Slider-2020,
+        author = {Yasmin Al-Zokari and Peter Dannenmann and Hans Hagen and Dirk Zeckzer},
+        title = {An Enhanced Interaction and Filterting Widget},
+        booktitle = {International Conferences Computer Graphics, Visualization, Computer Vision and Image Processing 2020},
+        year = {2020},
+        month = {07/2020},
+        pages = {79-90},
+        address = {Zagreb, Croatia},
+        url = {https://www.cgv-conf.org/wp-content/uploads/2020/07/02_202011L010_F074.pdf}
+}
+}
