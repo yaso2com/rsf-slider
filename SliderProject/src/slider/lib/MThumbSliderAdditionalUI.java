@@ -5,13 +5,13 @@
  * This license lets others distribute, remix, adapt, and build upon your work, even commercially,
  * as long as they credit you for the original creation. This is the most accommodating of licenses offered.
  * Recommended for maximum dissemination and use of licensed materials.
+ *
  * https://creativecommons.org/licenses/by/4.0/
  *
  * @author Yasmin Al-Zokari
  * @version 1.0
  * @see https://gitlab.com/yaso2com/rsf-slider
  * @see https://www.youtube.com/playlist?list=PLZ9SRRNo8TbbJa8cjqxdKuYjwshlH_IGI
- * @see The published paper for this work can be found at: https://www.cgv-conf.org/wp-content/uploads/2020/07/02_202011L010_F074.pdf
  */
 package slider.lib;
 
