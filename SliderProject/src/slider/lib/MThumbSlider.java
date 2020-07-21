@@ -3,11 +3,23 @@
  */
 package slider.lib;
 
-import javax.swing.*;
 import java.net.URL;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Dictionary;
+import java.util.Enumeration;
+import java.util.HashMap;
+import java.util.Hashtable;
+import java.util.List;
+import java.util.Map;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+import javax.swing.BoundedRangeModel;
+import javax.swing.DefaultBoundedRangeModel;
+import javax.swing.Icon;
+import javax.swing.ImageIcon;
+import javax.swing.JLabel;
+import javax.swing.JSlider;
 
 /**
  * Multi-Thumb Slider based on JSlider
@@ -27,10 +39,11 @@ public class MThumbSlider
     // Thumb has been moved
     protected int thumbMoved = -1;
     // histogram
-    protected HashMap<Integer, Integer> boxHeight = new HashMap<Integer, Integer>();
-    protected HashMap<Integer, Integer> numberInRange = new HashMap<Integer, Integer>();
+    protected HashMap<Integer, Integer> boxHeight = new HashMap<>();
+    protected HashMap<Integer, Integer> numberInRange = new HashMap<>();
     private boolean recomputeHistogram = false;
     private int maxHistogram = 1;
+    protected Integer[] rangeCounts;
 
     /**
      * Constructor
@@ -67,9 +80,12 @@ public class MThumbSlider
     {
         numberOfThumbs = sliderParameters.getNumberOfThumbs();
 
+        // create array of range counts
+        rangeCounts = new Integer[numberOfThumbs+1];
+
         // create slider models and thumb renderer
-        sliderModels = new ArrayList<BoundedRangeModel>(numberOfThumbs);
-        thumbRenderers = new ArrayList<Icon>(numberOfThumbs);
+        sliderModels = new ArrayList<>(numberOfThumbs);
+        thumbRenderers = new ArrayList<>(numberOfThumbs);
 
         // compute minimum and maximum
         int minimum = sliderParameters.getSliderMinimum();
@@ -569,4 +585,46 @@ public class MThumbSlider
         Collections.sort(tickValues);
         return tickValues;
     }
+
+  /**
+   * Compute range counts
+   */
+  public void setRangeCounts() {
+    for (int i = 0; i < rangeCounts.length; ++i) {
+      rangeCounts[i] = 0;
+    }
+
+    // create histogram
+    for (Map.Entry<Integer, Integer> box : numberInRange.entrySet()) {
+      int count = box.getValue();
+      if (count > 0) {
+        int position = box.getKey();
+        int thumbNumber;
+        for (thumbNumber = 0; thumbNumber < numberOfThumbs; ++thumbNumber) {
+          //System.err.println("Check " + position + " < " + getValueAt(thumbNumber));
+          if (position < getValueAt(thumbNumber)) {
+            rangeCounts[thumbNumber] += count;
+            break;
+          }
+        }
+        if (thumbNumber == numberOfThumbs) {
+            rangeCounts[thumbNumber] += count;          
+        }
+      }
+    }
+    
+    /*
+    for (int position = 0; position < rangeCounts.length; ++position) {
+      System.err.println("Count " + position + " = " + rangeCounts[position]);
+    }
+    */
+  }
+  
+  public Integer [] getRangeCounts() {
+    return rangeCounts;
+  }  
+
+  public void sendMessage() {
+    sliderParameters.sendMessage();
+  }
 }

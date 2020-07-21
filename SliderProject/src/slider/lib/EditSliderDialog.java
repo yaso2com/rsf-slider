@@ -4,11 +4,22 @@
  */
 package slider.lib;
 
-import javax.swing.*;
-import java.awt.*;
+
+import java.awt.Color;
+import java.awt.GridBagConstraints;
+import java.awt.GridBagLayout;
+import java.awt.Insets;
 import java.awt.event.ActionEvent;
 import java.util.ArrayList;
 import java.util.List;
+import javax.swing.JButton;
+import javax.swing.JCheckBox;
+import javax.swing.JColorChooser;
+import javax.swing.JDialog;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import javax.swing.JSpinner;
+import javax.swing.SpinnerNumberModel;
 
 public class EditSliderDialog
         extends JDialog
@@ -23,6 +34,7 @@ public class EditSliderDialog
     protected JCheckBox cbLogScale;
     //
     protected SliderParameters sliderParameters;
+    protected SliderPanel sliderPanel;
 
     // Colors
     private JPanel pColors;// = new JPanel();
@@ -33,14 +45,19 @@ public class EditSliderDialog
      * Constructor
      *
      * @param sliderparam
+     * @param sliderPanel
      */
     public EditSliderDialog(
-            SliderParameters sliderparam
+            SliderParameters sliderparam,
+            SliderPanel sliderPanel
     )
     {
         super();
+        setTitle("Slider Editor");
 
         this.sliderParameters = sliderparam;
+        this.sliderPanel = sliderPanel;
+
         this.setSize(400, 400);
 
         initGUI();
@@ -140,6 +157,7 @@ public class EditSliderDialog
         colorButtons.get(i).setBackground(color);
         sliderParameters.setSliderColorAt(i, color);
         colors = sliderParameters.getSliderColors();
+        sliderPanel.updateMThumbSliderColors(colors);
     }
 
     /**

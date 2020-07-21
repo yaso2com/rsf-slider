@@ -5,13 +5,15 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.List;
+import javax.swing.border.LineBorder;
+import slider.lib.intervalCount.IntervalCountPanel;
 
 @SuppressWarnings("serial")
 /**
  */
 public class SliderPanel
-        extends JPanel
-{
+    extends JPanel
+    implements SliderAction {
 
     // Gui elements
     private JLabel text;
@@ -20,226 +22,215 @@ public class SliderPanel
     // slider
     private SliderParameters sliderParameters = null;
     private MThumbSlider slider = null;
+    private IntervalCountPanel intervalCounts = null;
 
     /**
      * @param sliderParameters
      */
     public SliderPanel(
-            SliderParameters sliderParameters)
-    {
+        SliderParameters sliderParameters
+    ) {
         this.sliderParameters = sliderParameters;
 
-        this.setLayout(new GridBagLayout());
-        GridBagConstraints c = new GridBagConstraints();
+        this.setLayout(new BorderLayout());
+        this.setBorder(new LineBorder(Color.BLACK));
+
+        JPanel centerPanel = new JPanel();
+        centerPanel.setLayout(new GridBagLayout());
+
+        GridBagConstraints gbc = new GridBagConstraints();
 
         this.text = new JLabel(sliderParameters.getLabel());
-        c.gridx = 0;
-        c.gridy = 0;
-        c.insets = new Insets(0, 0, 0, 0);
-        this.add(text, c);
+        gbc.gridx = 0;
+        gbc.gridy = 0;
+        gbc.insets = new Insets(0, 0, 0, 0);
+        centerPanel.add(text, gbc);
 
-        if (sliderParameters.isShowDialog())
-        {
-            this.dialog = new EditSliderDialog(sliderParameters);
+        if (sliderParameters.isShowDialog()) {
+            this.dialog = new EditSliderDialog(sliderParameters, this);
 
             this.bEdit = new JButton("Edit");
-            this.bEdit.addActionListener(new ActionListener()
-            {
-                public void actionPerformed(ActionEvent e)
-                {
+            this.bEdit.addActionListener(new ActionListener() {
+                @Override
+                public void actionPerformed(ActionEvent e) {
                     editButtonClicked(e);
                 }
             });
 
-            c.gridx = 1;
-            c.gridy = 0;
-            c.anchor = GridBagConstraints.EAST;
-            c.insets = new Insets(0, 0, 0, 0);
-            this.add(bEdit, c);
+            gbc.gridx = 1;
+            gbc.gridy = 0;
+            gbc.anchor = GridBagConstraints.EAST;
+            gbc.insets = new Insets(0, 0, 0, 0);
+            centerPanel.add(bEdit, gbc);
         }
 
         this.slider = new MThumbSlider(sliderParameters);
         sliderParameters.setSlider(slider);
         sliderParameters.setMouseListener(slider);
+        sliderParameters.addAction(this);
 
-        //c.weighty = 1.0;   //request any extra vertical space
-        c.gridx = 0;
-        c.gridy = 1;
-        c.gridwidth = 2;
-        c.anchor = GridBagConstraints.SOUTHWEST;
-        c.fill = GridBagConstraints.HORIZONTAL;
-        c.insets = new Insets(0, 0, 0, 0);
-        c.ipady = 120;
-        c.ipadx = 250;
-        //c.gridwidth = 5;//2 columns wide
-        this.add(slider, c);
+        //gbc.weighty = 1.0;   //request any extra vertical space
+        gbc.gridx = 0;
+        gbc.gridy = 1;
+        gbc.gridwidth = 2;
+        gbc.anchor = GridBagConstraints.SOUTHWEST;
+        gbc.fill = GridBagConstraints.HORIZONTAL;
+        gbc.weightx = 1;
+        gbc.insets = new Insets(0, 0, 0, 0);
+        gbc.ipady = 120;
+        gbc.ipadx = 300; //250;
+        //gbc.gridwidth = 5;//2 columns wide
+        centerPanel.add(slider, gbc);
+        this.add(centerPanel, BorderLayout.CENTER);
+
+        intervalCounts = new IntervalCountPanel("Interval Counts");
+        // Show summary values of intervals
+        gbc.gridx = 2;
+        gbc.gridy = 0;
+        gbc.gridwidth = 1;
+        gbc.gridheight = 2;
+        gbc.weightx = 0;
+        gbc.anchor = GridBagConstraints.NORTHWEST;
+        gbc.fill = GridBagConstraints.NONE;
+        gbc.insets = new Insets(5, 5, 5, 5);
+        this.add(intervalCounts, BorderLayout.EAST);
     }
 
-    public void setMThumbSliderColors(int colorCode)
-    {
+    public void setMThumbSliderColors(int colorCode) {
         this.sliderParameters.setSliderColors(colorCode);
+        updateMThumbSliderColors(sliderParameters.getSliderColors());
     }
 
-    public double getMinimum()
-    {
+    public void updateMThumbSliderColors(List<Color> colors) {
+        slider.updateUI();
+        this.intervalCounts.setColors(colors);
+    }
+
+    public double getMinimum() {
         return this.sliderParameters.sliderValueToValue(this.slider.getMinimumValue());
     }
 
-    public double getMaximum()
-    {
+    public double getMaximum() {
         return this.sliderParameters.sliderValueToValue(this.slider.getMaximumValue());
     }
 
-    public int getTicks()
-    {
+    public int getTicks() {
         return this.slider.getTicks();
     }
 
-    public SliderParameters getSliderParameters()
-    {
+    public SliderParameters getSliderParameters() {
         return sliderParameters;
     }
 
     public void setValue(double value,
-                         int index)
-    {
+                         int index) {
         this.slider.setValueAt((int) sliderParameters.valueToSliderValue(value), index, true);
     }
 
-    public double getValue(int index)
-    {
+    public double getValue(int index) {
         return sliderParameters.sliderValueToValue(this.slider.getValueAt(index));
     }
 
-    public int getIntValue(int index)
-    {
+    public int getIntValue(int index) {
         return (int) this.slider.getValueAt(index);
     }
 
     public void setRange(
-            double minimum,
-            double maximum)
-    {
+        double minimum,
+        double maximum) {
         this.sliderParameters.setRange(minimum, maximum);
-        /*
-    this.slider.setMinimum(this.sliderParameters.getSliderMinimum());
-    this.slider.setMaximum(this.sliderParameters.getSliderMaximum());
 
-    try {
-      this.slider.createLabels();
-    } catch (Exception ex) {
-      System.err.println("SliderPanel.setRange -> createLabels");
-    }
-    try {
-      this.slider.updateUI();
-    } catch (Exception ex) {
-      System.err.println("SliderPanel.setRange -> updateUI");
-    }
-         */
-
-        try
-        {
+        try {
             invalidate();
             repaint();
-        }
-        catch (Exception ex)
-        {
+        } catch (Exception ex) {
             System.err.println("SliderPanel.setRange -> invalidate, repaint");
         }
     }
 
-    public void setMinimum(double minimum)
-    {
+    public void setMinimum(double minimum) {
         this.sliderParameters.setMinimum(minimum);
-        /*
-    this.slider.setMinimum(this.sliderParameters.getSliderMinimum());
-    this.slider.setMaximum(this.sliderParameters.getSliderMaximum());
 
-    try {
-      this.slider.createLabels();
-    } catch (Exception ex) {
-      System.err.println("SliderPanel.setMinimum -> createLabels");
-    }
-    try {
-      this.slider.updateUI();
-    } catch (Exception ex) {
-      System.err.println("SliderPanel.setMinimum -> updateUI");
-    }
-         */
-
-        try
-        {
+        try {
             invalidate();
             repaint();
-        }
-        catch (Exception ex)
-        {
+        } catch (Exception ex) {
             System.err.println("SliderPanel.setMinimum -> invalidate, repaint");
         }
     }
 
-    public void setMaximum(double maximum)
-    {
+    public void setMaximum(double maximum) {
         this.sliderParameters.setMaximum(maximum);
-        /*
-    this.slider.setMinimum(this.sliderParameters.getSliderMinimum());
-    this.slider.setMaximum(this.sliderParameters.getSliderMaximum());
 
-    try {
-      this.slider.createLabels();
-    } catch (Exception ex) {
-      System.err.println("SliderPanel.setMaximum -> createLabels");
-    }
-    try {
-      this.slider.updateUI();
-    } catch (Exception ex) {
-      System.err.println("SliderPanel.setMaximum -> updateUI");
-    }
-         */
-
-        try
-        {
+        try {
             invalidate();
             repaint();
-        }
-        catch (Exception ex)
-        {
+        } catch (Exception ex) {
             System.err.println("SliderPanel.setMaximum -> invalidate, repaint");
         }
     }
 
     public void setNumberInRange(
-            List<Integer> box,
-            List<Integer> numberInRange
-    )
-    {
-        this.slider.setNumberInRange(box, numberInRange);
+        List<Integer> box,
+        List<Integer> numberInRange
+    ) {
+        slider.setNumberInRange(box, numberInRange);
+        slider.setRangeCounts();
+        setIntervalCounts(slider.getRangeCounts());
+
         invalidate();
         repaint();
     }
 
-    public int getNumberInRange(int box)
-    {
+    /**
+     * Set interval counts.
+     *
+     * @param rangeCounts range counts
+     */
+    public void setIntervalCounts(Integer[] rangeCounts) {
+        if (sliderParameters.getOrder() == SliderOrder.ASCENDING) {
+            intervalCounts.addEntry(getBackground(), rangeCounts[0]);
+            for (int i = 1; i < rangeCounts.length - 1; ++i) {
+                intervalCounts.addEntry(sliderParameters.getSliderColorAt(i - 1), rangeCounts[i]);
+            }
+            if (rangeCounts.length > 1) {
+                intervalCounts.addEntry(getBackground(), rangeCounts[rangeCounts.length - 1]);
+            }
+        } else {
+            if (rangeCounts.length > 1) {
+                intervalCounts.addEntry(getBackground(), rangeCounts[rangeCounts.length - 1]);
+                for (int i = rangeCounts.length - 2; i >= 1; --i) {
+                    intervalCounts.addEntry(sliderParameters.getSliderColorAt(i - 1), rangeCounts[i]);
+                }
+            }
+            intervalCounts.addEntry(getBackground(), rangeCounts[0]);
+        }
+    }
+
+    public int getNumberInRange(int box) {
         return this.slider.getNumberInRange(box);
     }
 
-    public void paint(Graphics g)
-    {
+    public void paint(Graphics g) {
         super.paint(g);
     }
 
-    private void editButtonClicked(ActionEvent e)
-    {
-        if (sliderParameters.isShowDialog())
-        {
+    private void editButtonClicked(ActionEvent e) {
+        if (sliderParameters.isShowDialog()) {
             sliderParameters.setSlider(slider);
             dialog.setLocation(400, 0);// to have the edit dialog next to the slider dialog not above it
             dialog.setVisible(true);
         }
     }
 
-    public List<Integer> getTickValues()
-    {
+    public List<Integer> getTickValues() {
         return slider.getTickValues();
     }
+
+    @Override
+    public void sendMessage() {
+        intervalCounts.clearEntries();
+        setIntervalCounts(slider.getRangeCounts());
+    }
+
 }

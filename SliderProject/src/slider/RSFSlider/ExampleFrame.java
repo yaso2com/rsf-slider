@@ -38,7 +38,7 @@ public class ExampleFrame
 
     private void initGUI()
     {
-        Dimension dimension = new Dimension(400, 400);
+        Dimension dimension = new Dimension(450, 400);
         setSize(dimension);
         setMinimumSize(dimension);
         setTitle("Slider Example");

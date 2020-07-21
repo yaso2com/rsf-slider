@@ -528,6 +528,12 @@ public class MThumbSliderAdditionalUI
 
                 // repaint slider
                 slider.repaint();
+                
+                // re-count ranges
+                mSlider.setRangeCounts();
+
+                // send message
+                mSlider.sendMessage();
             }
         }
 
