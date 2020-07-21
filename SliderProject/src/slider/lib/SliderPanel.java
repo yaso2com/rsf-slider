@@ -1,5 +1,6 @@
 package slider.lib;
 
+import slider.lib.edit.EditSliderDialog;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
