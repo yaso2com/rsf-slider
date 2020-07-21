@@ -3,6 +3,7 @@
  */
 package slider.lib;
 
+import slider.lib.mThumbSlider.MThumbSlider;
 import java.awt.Color;
 import java.awt.event.MouseAdapter;
 import java.util.ArrayList;

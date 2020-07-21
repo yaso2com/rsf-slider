@@ -1,7 +1,7 @@
 /**
  *
  */
-package slider.lib;
+package slider.lib.mThumbSlider;
 
 import javax.swing.*;
 import javax.swing.event.MouseInputAdapter;
@@ -9,6 +9,7 @@ import javax.swing.plaf.ComponentUI;
 import javax.swing.plaf.metal.MetalLookAndFeel;
 import javax.swing.plaf.metal.MetalSliderUI;
 import java.awt.*;
+import slider.lib.SliderParameters;
 
 /**
  * This class provides the user interface behavior that is dependent of the look and feel.

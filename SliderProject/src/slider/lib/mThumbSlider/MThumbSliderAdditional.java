@@ -1,4 +1,4 @@
-package slider.lib;
+package slider.lib.mThumbSlider;
 
 import java.awt.*;
 

@@ -1,5 +1,6 @@
 package slider.lib;
 
+import slider.lib.mThumbSlider.MThumbSlider;
 import slider.lib.edit.EditSliderDialog;
 import javax.swing.*;
 import java.awt.*;

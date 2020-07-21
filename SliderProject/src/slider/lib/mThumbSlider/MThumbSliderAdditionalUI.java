@@ -13,7 +13,7 @@
  * @see https://gitlab.com/yaso2com/rsf-slider
  * @see https://www.youtube.com/playlist?list=PLZ9SRRNo8TbbJa8cjqxdKuYjwshlH_IGI
  */
-package slider.lib;
+package slider.lib.mThumbSlider;
 
 import javax.swing.*;
 import javax.swing.event.MouseInputAdapter;

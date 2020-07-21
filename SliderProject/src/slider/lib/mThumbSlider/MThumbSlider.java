@@ -1,7 +1,7 @@
 /**
  *
  */
-package slider.lib;
+package slider.lib.mThumbSlider;
 
 import java.net.URL;
 import java.util.ArrayList;
@@ -20,6 +20,7 @@ import javax.swing.Icon;
 import javax.swing.ImageIcon;
 import javax.swing.JLabel;
 import javax.swing.JSlider;
+import slider.lib.SliderParameters;
 
 /**
  * Multi-Thumb Slider based on JSlider
