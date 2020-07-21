@@ -73,13 +73,15 @@ public class EditSliderDialog
     {
 
         SpinnerNumberModel model = (SpinnerNumberModel) newNumberOfThumbs.getModel();
-        int spinner = model.getNumber().intValue();
-        sliderParameters.additionalColors(spinner);
-        sliderParameters.setNumberOfThumbs(spinner);
+        int numberOfThumbs = model.getNumber().intValue();
+        sliderParameters.additionalColors(numberOfThumbs);
+        sliderParameters.setNumberOfThumbs(numberOfThumbs);
 
         updateGui();
 
-        sliderParameters.getSlider().updateThumbs(spinner);
+        sliderParameters.getSlider().updateThumbs(numberOfThumbs);
+        sliderParameters.getSlider().updateRangeCounts();
+        sliderParameters.getSlider().sendMessage();
         sliderParameters.getSlider().updateUI();
 
         sliderParameters.getSlider().invalidate();
@@ -158,6 +160,8 @@ public class EditSliderDialog
         sliderParameters.setSliderColorAt(i, color);
         colors = sliderParameters.getSliderColors();
         sliderPanel.updateMThumbSliderColors(colors);
+        sliderParameters.getSlider().updateRangeCounts();
+        sliderParameters.sendMessage();
     }
 
     /**

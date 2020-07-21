@@ -175,7 +175,7 @@ public class SliderPanel
         List<Integer> numberInRange
     ) {
         slider.setNumberInRange(box, numberInRange);
-        slider.setRangeCounts();
+        slider.updateRangeCounts();
         setIntervalCounts(slider.getRangeCounts());
 
         invalidate();
@@ -187,7 +187,7 @@ public class SliderPanel
      *
      * @param rangeCounts range counts
      */
-    public void setIntervalCounts(Integer[] rangeCounts) {
+    public void setIntervalCounts(int[] rangeCounts) {
         if (sliderParameters.getOrder() == SliderOrder.ASCENDING) {
             intervalCounts.addEntry(getBackground(), rangeCounts[0]);
             for (int i = 1; i < rangeCounts.length - 1; ++i) {
@@ -231,6 +231,7 @@ public class SliderPanel
     public void sendMessage() {
         intervalCounts.clearEntries();
         setIntervalCounts(slider.getRangeCounts());
+        invalidate();
+        repaint();
     }
-
 }
