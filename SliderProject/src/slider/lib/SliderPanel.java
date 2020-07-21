@@ -1,13 +1,20 @@
 package slider.lib;
 
-import slider.lib.mThumbSlider.MThumbSlider;
-import slider.lib.edit.EditSliderDialog;
-import javax.swing.*;
-import java.awt.*;
+import java.awt.BorderLayout;
+import java.awt.Color;
+import java.awt.Graphics;
+import java.awt.GridBagConstraints;
+import java.awt.GridBagLayout;
+import java.awt.Insets;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.List;
+import javax.swing.JButton;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
 import javax.swing.border.LineBorder;
+import slider.lib.mThumbSlider.MThumbSlider;
+import slider.lib.edit.EditSliderDialog;
 import slider.lib.intervalCount.IntervalCountPanel;
 
 @SuppressWarnings("serial")
@@ -17,13 +24,20 @@ public class SliderPanel
     extends JPanel
     implements SliderAction {
 
-    // Gui elements
+    // Name of the panel
     private JLabel text;
+
+    // edit button and panel
     private JButton bEdit;
     private EditSliderDialog dialog = null;
-    // slider
+
+    // slider parameters
     private SliderParameters sliderParameters = null;
+
+    // slider
     private MThumbSlider slider = null;
+
+    // interval count panel
     private IntervalCountPanel intervalCounts = null;
 
     /**
@@ -33,7 +47,11 @@ public class SliderPanel
         SliderParameters sliderParameters
     ) {
         this.sliderParameters = sliderParameters;
-
+        initGUI();
+    }
+    
+    private void initGUI()
+    {
         this.setLayout(new BorderLayout());
         this.setBorder(new LineBorder(Color.BLACK));
 
@@ -67,7 +85,6 @@ public class SliderPanel
         }
 
         this.slider = new MThumbSlider(sliderParameters);
-        sliderParameters.setSlider(slider);
         sliderParameters.setMouseListener(slider);
         sliderParameters.addAction(this);
 
@@ -117,10 +134,10 @@ public class SliderPanel
     public void updateColors(
         List<Color> colors
     ) {
-        slider.updateUI();
         intervalCounts.setColors(sliderParameters.getSliderColors());
         slider.updateRangeCounts();
         slider.sendMessage();
+        slider.updateUI();
     }
 
     public double getMinimum() {
@@ -234,7 +251,6 @@ public class SliderPanel
 
     private void editButtonClicked(ActionEvent e) {
         if (sliderParameters.isShowDialog()) {
-            sliderParameters.setSlider(slider);
             dialog.setLocation(400, 0);// to have the edit dialog next to the slider dialog not above it
             dialog.setVisible(true);
         }

@@ -3,7 +3,6 @@
  */
 package slider.lib;
 
-import slider.lib.mThumbSlider.MThumbSlider;
 import java.awt.Color;
 import java.awt.event.MouseAdapter;
 import java.util.ArrayList;
@@ -18,7 +17,6 @@ import javax.swing.JSlider;
  */
 public class SliderParameters {
 
-    protected MThumbSlider slider = null;
     protected int majorTickSpacing = 10;
     protected int minorTickSpacing = 1;
     protected String label = "";
@@ -167,24 +165,6 @@ public class SliderParameters {
     }
 
     /**
-     * set parent slider
-     *
-     * @param slider
-     */
-    public void setSlider(MThumbSlider slider) {
-        this.slider = slider;
-    }
-
-    /**
-     * get parent slider
-     *
-     * @return
-     */
-    public MThumbSlider getSlider() {
-        return slider;
-    }
-
-    /**
      * @return
      */
     public boolean isLogScale() {
@@ -329,17 +309,6 @@ public class SliderParameters {
 
     public void setCategoricalData(boolean categoricalData) {
         this.categoricalData = categoricalData;
-    }
-
-    public void updateSlider() {
-        if (slider != null) {
-            slider.setMinimum(sliderMinimum);
-            slider.setMaximum(sliderMaximum);
-            slider.setMajorTickSpacing(majorTickSpacing);
-            slider.setMinorTickSpacing(minorTickSpacing);
-            slider.createLabels();
-            slider.updateUI();
-        }
     }
 
     public SliderOrder getOrder() {
