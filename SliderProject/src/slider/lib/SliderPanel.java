@@ -119,37 +119,29 @@ public class SliderPanel
             int numberOfThumbs
         )
     {
-        sliderParameters.additionalColors(numberOfThumbs);
+        sliderParameters.updateColors(numberOfThumbs);
         sliderParameters.setNumberOfThumbs(numberOfThumbs);
 
-        slider.updateThumbs(numberOfThumbs);
-        slider.updateRangeCounts();
-        slider.sendMessage();
-        slider.updateUI();
-
-        slider.invalidate();
-        slider.repaint();
+        slider.updateNumberOfThumbs(numberOfThumbs);
     }
 
     public void updateColors(
         List<Color> colors
     ) {
         intervalCounts.setColors(sliderParameters.getSliderColors());
-        slider.updateRangeCounts();
-        slider.sendMessage();
-        slider.updateUI();
+        slider.updateColors();
     }
 
     public double getMinimum() {
-        return this.sliderParameters.sliderValueToValue(this.slider.getMinimumValue());
+        return sliderParameters.sliderValueToValue(slider.getMinimumValue());
     }
 
     public double getMaximum() {
-        return this.sliderParameters.sliderValueToValue(this.slider.getMaximumValue());
+        return sliderParameters.sliderValueToValue(slider.getMaximumValue());
     }
 
     public int getTicks() {
-        return this.slider.getTicks();
+        return slider.getTicks();
     }
 
     public SliderParameters getSliderParameters() {
@@ -158,7 +150,7 @@ public class SliderPanel
 
     public void setValue(double value,
                          int index) {
-        this.slider.setValueAt((int) sliderParameters.valueToSliderValue(value), index, true);
+        slider.setValueAt((int) sliderParameters.valueToSliderValue(value), index, true);
     }
 
     public double getValue(int index) {
@@ -166,13 +158,15 @@ public class SliderPanel
     }
 
     public int getIntValue(int index) {
-        return (int) this.slider.getValueAt(index);
+        return (int) slider.getValueAt(index);
     }
 
     public void setRange(
         double minimum,
-        double maximum) {
-        this.sliderParameters.setRange(minimum, maximum);
+        double maximum
+    )
+    {
+        sliderParameters.setRange(minimum, maximum);
 
         try {
             invalidate();
@@ -183,7 +177,7 @@ public class SliderPanel
     }
 
     public void setMinimum(double minimum) {
-        this.sliderParameters.setMinimum(minimum);
+        sliderParameters.setMinimum(minimum);
 
         try {
             invalidate();
@@ -194,7 +188,7 @@ public class SliderPanel
     }
 
     public void setMaximum(double maximum) {
-        this.sliderParameters.setMaximum(maximum);
+        sliderParameters.setMaximum(maximum);
 
         try {
             invalidate();
@@ -221,7 +215,9 @@ public class SliderPanel
      *
      * @param rangeCounts range counts
      */
-    public void setIntervalCounts(int[] rangeCounts) {
+    public void setIntervalCounts(
+        int[] rangeCounts
+    ) {
         if (sliderParameters.getOrder() == SliderOrder.ASCENDING) {
             intervalCounts.addEntry(getBackground(), rangeCounts[0]);
             for (int i = 1; i < rangeCounts.length - 1; ++i) {
@@ -242,7 +238,7 @@ public class SliderPanel
     }
 
     public int getNumberInRange(int box) {
-        return this.slider.getNumberInRange(box);
+        return slider.getNumberInRange(box);
     }
 
     public void paint(Graphics g) {

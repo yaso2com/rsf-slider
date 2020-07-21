@@ -3,6 +3,7 @@
  */
 package slider.lib.mThumbSlider;
 
+import java.awt.Color;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.Collections;
@@ -468,6 +469,25 @@ public class MThumbSlider
         Collections.sort(tickValues);
         return tickValues;
     }
+
+        public void updateNumberOfThumbs(
+            int numberOfThumbs
+        )
+    {
+        updateThumbs(numberOfThumbs);
+        updateColors();
+        
+        invalidate();
+        repaint();
+    }
+
+    public void updateColors(
+    ) {
+        updateRangeCounts();
+        sendMessage();
+        updateUI();
+    }
+
 
     /**
      * Compute range counts

@@ -149,7 +149,7 @@ public class SliderParameters {
      *
      * @param n
      */
-    public void additionalColors(int n) {
+    public void updateColors(int n) {
         if (sliderColors != null) {
             if (n < numberOfThumbs) {
                 for (int i = numberOfThumbs; i > n; i--) {
