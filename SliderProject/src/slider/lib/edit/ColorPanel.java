@@ -86,15 +86,21 @@ public class ColorPanel
      */
     private void colorButtonActionPerformed(ActionEvent ev)
     {
+        // get number of color to change
         String ac = ev.getActionCommand();
-        int i = Integer.parseInt(ac);
-        Color color = colors.get(i);
+        int colorNumber = Integer.parseInt(ac);
+
+        // Get color
+        Color color = colors.get(colorNumber);
+
+        // Open color choosing dialog and retrieve new color
         color = JColorChooser.showDialog(null, "Choose Color", color);
-        colorButtons.get(i).setBackground(color);
-        sliderParameters.setSliderColorAt(i, color);
-        colors = sliderParameters.getSliderColors();
-        sliderPanel.updateMThumbSliderColors(colors);
-        sliderParameters.getSlider().updateRangeCounts();
-        sliderParameters.sendMessage();
+
+        // update color of button in panel
+        colorButtons.get(colorNumber).setBackground(color);
+        colors.set(colorNumber, color);
+
+        // update slider colors
+        sliderPanel.updateColors(colors);
     }
 }

@@ -97,14 +97,29 @@ public class SliderPanel
         this.add(intervalCounts, BorderLayout.EAST);
     }
 
-    public void setMThumbSliderColors(int colorCode) {
-        this.sliderParameters.setSliderColors(colorCode);
-        updateMThumbSliderColors(sliderParameters.getSliderColors());
+        public void updateNumberOfThumbs(
+            int numberOfThumbs
+        )
+    {
+        sliderParameters.additionalColors(numberOfThumbs);
+        sliderParameters.setNumberOfThumbs(numberOfThumbs);
+
+        slider.updateThumbs(numberOfThumbs);
+        slider.updateRangeCounts();
+        slider.sendMessage();
+        slider.updateUI();
+
+        slider.invalidate();
+        slider.repaint();
     }
 
-    public void updateMThumbSliderColors(List<Color> colors) {
+    public void updateColors(
+        List<Color> colors
+    ) {
         slider.updateUI();
-        this.intervalCounts.setColors(colors);
+        intervalCounts.setColors(sliderParameters.getSliderColors());
+        slider.updateRangeCounts();
+        slider.sendMessage();
     }
 
     public double getMinimum() {

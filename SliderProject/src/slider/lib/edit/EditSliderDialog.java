@@ -68,25 +68,16 @@ public class EditSliderDialog
         int numberOfThumbs = model.getNumber().intValue();
         
         // update slider parameters colors and thumbs in sliderParameters
-        sliderParameters.additionalColors(numberOfThumbs);
-        sliderParameters.setNumberOfThumbs(numberOfThumbs);
+        sliderPanel.updateNumberOfThumbs(numberOfThumbs);
 
-        // update GUI
+        // update GUI of dialog
         updateColors();
-
-        sliderParameters.getSlider().updateThumbs(numberOfThumbs);
-        sliderParameters.getSlider().updateRangeCounts();
-        sliderParameters.getSlider().sendMessage();
-        sliderParameters.getSlider().updateUI();
-
-        sliderParameters.getSlider().invalidate();
-        sliderParameters.getSlider().repaint();
     }
 
     /**
      * Create Content
      */
-    protected void initGUI()
+    private void initGUI()
     {
         setTitle("Slider Editor");
 

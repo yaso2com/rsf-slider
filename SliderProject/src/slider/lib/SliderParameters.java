@@ -43,7 +43,7 @@ public class SliderParameters {
      */
     public SliderParameters() {
     }
-
+    
     public void setSliderColors(int colorCode) {
         if (sliderColors == null) {
             sliderColors = new ArrayList<>(numberOfThumbs - 1);
