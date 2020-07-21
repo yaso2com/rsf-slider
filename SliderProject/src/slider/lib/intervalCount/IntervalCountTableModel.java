@@ -9,6 +9,7 @@ import java.util.Vector;
 import javax.swing.SwingConstants;
 
 import javax.swing.table.DefaultTableModel;
+import javax.swing.table.TableColumn;
 
 /**
  * TableModel for Data table.
@@ -16,8 +17,6 @@ import javax.swing.table.DefaultTableModel;
  */
 public class IntervalCountTableModel
     extends DefaultTableModel {
-
-    private static final long serialVersionUID = 1;
 
     // parent
     private IntervalCountTable tabelle = null;
@@ -53,21 +52,30 @@ public class IntervalCountTableModel
     private void initTable() {
         if (tabelle != null) {
             tabelle.setModel(this);
+            
+            // add columns for range and for count
             addColumn("Range");
             addColumn("Count");
 
-            tabelle.getColumnModel().getColumn(0).setMinWidth(30);
-            tabelle.getColumnModel().getColumn(0).setMaxWidth(60);
-            tabelle.getColumnModel().getColumn(0).setPreferredWidth(30);
-            tabelle.getColumnModel().getColumn(1).setMinWidth(30);
-            tabelle.getColumnModel().getColumn(1).setMaxWidth(60);
-            tabelle.getColumnModel().getColumn(1).setPreferredWidth(30);
+            // set sizes for the two new columns
+            TableColumn rangeColumn = tabelle.getColumnModel().getColumn(0);
+            rangeColumn.setMinWidth(30);
+            rangeColumn.setMaxWidth(60);
+            rangeColumn.setPreferredWidth(30);
 
+            TableColumn countColumn = tabelle.getColumnModel().getColumn(1);
+            countColumn.setMinWidth(30);
+            countColumn.setMaxWidth(60);
+            countColumn.setPreferredWidth(30);
+
+            // create renderer for colors
             IntervalCountTableCellRenderer tcr = new IntervalCountTableCellRenderer(this);
             tcr.setFormat(new DecimalFormat("#0"));
             tcr.setHorizontalAlignment(SwingConstants.RIGHT);
-            tabelle.getColumnModel().getColumn(0).setCellRenderer(tcr);
-            tabelle.getColumnModel().getColumn(1).setCellRenderer(tcr);
+
+            // set renderer for colors
+            rangeColumn.setCellRenderer(tcr);
+            countColumn.setCellRenderer(tcr);
         }
     }
 
@@ -101,12 +109,12 @@ public class IntervalCountTableModel
     }
 
     /**
-     * Set values of a row.
+     * Add a row to the table.
      *
      * @param color color
      * @param count count
      */
-    void set(
+    void add(
         Color color,
         int count
     ) {
@@ -180,10 +188,13 @@ public class IntervalCountTableModel
         }
     }
 
-    void setColors(List<Color> newColors) {
+    void setColors(
+        List<Color> newColors
+    ) {
         for (int oldColor = 1, newColor = newColors.size() - 1;
              newColor >= 0 && oldColor < colors.size() - 1;
-             ++oldColor, --newColor) {
+             ++oldColor, --newColor)
+        {
             colors.set(oldColor, newColors.get(newColor));
         }
     }

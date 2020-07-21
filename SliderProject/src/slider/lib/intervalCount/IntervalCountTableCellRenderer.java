@@ -6,7 +6,6 @@ import java.awt.Component;
 import java.text.Format;
 
 import javax.swing.JTable;
-import javax.swing.JTextArea;
 import javax.swing.table.DefaultTableCellRenderer;
 
 /** Render a cell containing numbers.
@@ -15,11 +14,10 @@ import javax.swing.table.DefaultTableCellRenderer;
 public class IntervalCountTableCellRenderer
     extends DefaultTableCellRenderer {
 
-    final private JTextArea textArea = new JTextArea();
-
     // Format used for rendering
     private Format format = null;
 
+    // Corresponding table model
     private IntervalCountTableModel tm = null;
 
     /** Constructor.
@@ -53,8 +51,8 @@ public class IntervalCountTableCellRenderer
     ) {
         if ((format != null)
             && (value != null)
-            && (value instanceof Double)) {
-            super.setValue(format.format((Double) value));
+            && (value instanceof Integer)) {
+            super.setValue(format.format((Integer) value));
         } else {
             super.setValue(value);
         }

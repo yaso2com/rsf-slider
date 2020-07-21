@@ -16,7 +16,7 @@ import javax.swing.border.EmptyBorder;
 public class IntervalCountPanel
     extends JPanel {
 
-    // Table
+    // Table displayed in this panel
     private IntervalCountTable table = null;
 
     // Caption

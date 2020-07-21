@@ -16,6 +16,7 @@ import javax.swing.border.LineBorder;
 public class IntervalCountTable
     extends JTable {
 
+    // table model for this table
     private IntervalCountTableModel tableModel = null;
 
     /**
