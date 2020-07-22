@@ -3,7 +3,6 @@
  */
 package slider.lib.mThumbSlider;
 
-import java.awt.Color;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.Collections;
@@ -42,8 +41,8 @@ public class MThumbSlider
     // histogram
     protected HashMap<Integer, Integer> boxHeight = new HashMap<>();
     protected HashMap<Integer, Integer> numberInRange = new HashMap<>();
-    private boolean recomputeHistogram = false;
     private int maxHistogram = 1;
+    // interval counts from thumb positions and histogram
     protected int[] rangeCounts;
 
     /**
@@ -366,7 +365,6 @@ public class MThumbSlider
     public void setMaxHistogram(int maxHistogram) {
         if (maxHistogram > this.maxHistogram) {
             this.maxHistogram = maxHistogram;
-            recomputeHistogram = true;
         }
     }
 
@@ -385,7 +383,7 @@ public class MThumbSlider
     public void setBoxHeight(int box,
                              int value) {
         // System.err.println("setBoxHeigth: " + box + " " + value);
-        this.boxHeight.put(box, new Integer(value));
+        boxHeight.put(box, new Integer(value));
     }
 
     public void setBoxHeightScaled(int box,
@@ -412,7 +410,7 @@ public class MThumbSlider
         //System.out.println("box :" + box + "MCSnoInRange" + MCSnoInRange);
         for (int current = 0; current < box.size(); ++current) {
             this.numberInRange.put(box.get(current), numberInRange.get(current));
-            this.setBoxHeightScaled(box.get(current), numberInRange.get(current));//relative to the Max(of the MCSsNoInRanges)
+            setBoxHeightScaled(box.get(current), numberInRange.get(current));//relative to the Max(of the MCSsNoInRanges)
             // System.out.println("box :" + box.get(current) + "numberInRange: " + numberInRange.get(current));
         }
         invalidate();
@@ -420,7 +418,7 @@ public class MThumbSlider
     }
 
     public Integer getNumberInRange(int box) {
-        return this.numberInRange.get(box);
+        return numberInRange.get(box);
     }
 
     public int computeHistogramHeightScaledByMaximum(int numberInRange) {
@@ -493,7 +491,6 @@ public class MThumbSlider
         sendMessage();
         updateUI();
     }
-
 
     /**
      * Compute range counts
