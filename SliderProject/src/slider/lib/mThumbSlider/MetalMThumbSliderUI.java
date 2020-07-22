@@ -3,12 +3,18 @@
  */
 package slider.lib.mThumbSlider;
 
-import javax.swing.*;
+import java.awt.Color;
+import java.awt.Dimension;
+import java.awt.Graphics;
+import java.awt.Graphics2D;
+import java.awt.Point;
+import java.awt.Rectangle;
+import javax.swing.Icon;
+import javax.swing.JComponent;
+import javax.swing.JSlider;
 import javax.swing.event.MouseInputAdapter;
-import javax.swing.plaf.ComponentUI;
 import javax.swing.plaf.metal.MetalLookAndFeel;
 import javax.swing.plaf.metal.MetalSliderUI;
-import java.awt.*;
 import slider.lib.SliderParameters;
 
 /**
@@ -18,19 +24,20 @@ public class MetalMThumbSliderUI
         extends MetalSliderUI
         implements MThumbSliderAdditional
 {
+    private MThumbSliderAdditionalUI additionalUi;
+    private MouseInputAdapter mThumbTrackListener;
+    private Icon thumbRenderer;
 
-    MThumbSliderAdditionalUI additionalUi;
-    MouseInputAdapter mThumbTrackListener;
-    final MThumbSlider parent;
+    private final MThumbSlider parent;
+    private final SliderParameters sliderParameters;
 
-    public static ComponentUI createUI(JComponent c)
-    {
-        return new MetalMThumbSliderUI((MThumbSlider) c);
-    }
-
-    public MetalMThumbSliderUI(MThumbSlider parent)
+    public MetalMThumbSliderUI(
+        MThumbSlider parent,
+        SliderParameters sliderParameters
+    )
     {
         this.parent = parent;
+        this.sliderParameters = sliderParameters;
     }
 
     @Override
@@ -103,8 +110,6 @@ public class MetalMThumbSliderUI
     {
     }
 
-    Icon thumbRenderer;
-
     @Override
     public void paint(Graphics g,
                       JComponent c)
@@ -165,8 +170,6 @@ public class MetalMThumbSliderUI
 
                 if (slider instanceof MThumbSlider)
                 {
-                    MThumbSlider mThumbSlider = (MThumbSlider) slider;
-                    SliderParameters sliderParameters = mThumbSlider.getSliderParameters();
                     Color fillColor = sliderParameters.getTrackFillColor();
                     t1 = computeX(computeY(t1, thumbRects[0], trackRect), thumbRects[0], trackRect);
                     t2 = computeX(computeY(t2, thumbRects[thumbNum - 1], trackRect), thumbRects[thumbNum - 1], trackRect);
@@ -212,7 +215,7 @@ public class MetalMThumbSliderUI
             thumbRect = thumbRects[i];
             if (clip.intersects(thumbRect))
             {
-                thumbRenderer = ((MThumbSlider) slider).getThumbRendererAt(i);
+                thumbRenderer = parent.getThumbRendererAt(i);
                 if (thumbRenderer != null)
                 {
                     paintThumb(g);
@@ -232,13 +235,13 @@ public class MetalMThumbSliderUI
                           Rectangle trackRect)
     {
         Point p = pOrig;
-        int middleOfThumb = 0;
 
         if (slider.getOrientation() == JSlider.HORIZONTAL)
         {
-            middleOfThumb = thumbRect.x + (thumbRect.width / 2) - trackRect.x;
+            int middleOfThumb = thumbRect.x + (thumbRect.width / 2) - trackRect.x;
             p.x = middleOfThumb;
         }
+
         return p;
     }
 
@@ -247,13 +250,13 @@ public class MetalMThumbSliderUI
                           Rectangle trackRect)
     {
         Point p = pOrig;
-        int middleOfThumb = 0;
 
         if (!(slider.getOrientation() == JSlider.HORIZONTAL))
         {
-            middleOfThumb = thumbRect.y + (thumbRect.height / 2) - trackRect.y;
+            int middleOfThumb = thumbRect.y + (thumbRect.height / 2) - trackRect.y;
             p.y = middleOfThumb;
         }
+
         return p;
     }
 
@@ -329,10 +332,10 @@ public class MetalMThumbSliderUI
         {
             while (value < slider.getMaximum())
             {
-                if (this.parent.isCategoricalData())
+                if (parent.isCategoricalData())
                 {
                     // Check for slider minimum and Maximum?
-                    xPosStart = xPositionForValue(value - slider.getMinorTickSpacing());
+                    //xPosStart = xPositionForValue(value - slider.getMinorTickSpacing());
                     xPosMid = xPositionForValue(value);
                     xPosEnd = xPositionForValue(value + slider.getMinorTickSpacing());
                     //xPosStart += (xPosMid - xPosStart) / 2;
@@ -346,11 +349,11 @@ public class MetalMThumbSliderUI
                 }
 
                 //Get height of the box
-                int height = this.parent.getBoxHeight(value);
+                int height = parent.getBoxHeight(value);
                 // function to get number of elements
                 try
                 {
-                    Integer numberInRange = this.parent.getNumberInRange(value);
+                    Integer numberInRange = parent.getNumberInRange(value);
                     if (numberInRange != null)
                     {
                         paintHistogramBar(g, TICK_BUFFER - 30, xPosStart, xPosEnd, -height,//-1 to begin from the lower end and not from the upper end

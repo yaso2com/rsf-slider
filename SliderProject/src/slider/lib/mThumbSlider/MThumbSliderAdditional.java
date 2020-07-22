@@ -15,7 +15,8 @@ public interface MThumbSliderAdditional
     Rectangle getTrackRect();
 
     /**
-     * Sets the bounding boxs of all thumbs
+     * Gets the size of thumbs
+     * @return the size of the thumb
      */
     Dimension getThumbSize();
 

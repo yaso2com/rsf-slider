@@ -52,13 +52,19 @@ public class MThumbSlider
      * @param sliderParameters slider parameters
      */
     public MThumbSlider(
-        SliderParameters sliderParameters) {// n= number of thumbs in the multithumb slider
+        SliderParameters sliderParameters
+    )
+    {
         // store slider parameters
         this.sliderParameters = sliderParameters;
 
         // create thumbs
         createThumbs();
 
+        init();
+    }
+    
+    private void init() {
         // set properties
         setPaintTicks(true);
         setPaintLabels(true);
@@ -148,7 +154,7 @@ public class MThumbSlider
         //setUI(AssistantUIManager.createUI(this));
         //setUI(new BasicMThumbSliderUI(this));
         //setUI(new MotifMThumbSliderUI(this));
-        setUI(new MetalMThumbSliderUI(this));
+        setUI(new MetalMThumbSliderUI(this, sliderParameters));
     }
 
     public void createLabels() {
