@@ -234,7 +234,7 @@ public class MThumbSliderAdditionalUI
                                     unionOfTwoThumbBodyBoundingBoxes);
 
         mSlider.repaint(unionOfTwoThumbBodyBoundingBoxes);
-
+        // here starts the cascading effect
         switch (slider.getOrientation())
         {
             // this is not used in the examples "a vertical slider, but it is possible"
