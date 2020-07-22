@@ -1,8 +1,0 @@
-<component name="ArtifactManager">
-  <artifact type="jar" build-on-make="true" name="SliderProject:jar">
-    <output-path>$PROJECT_DIR$/dst/artifacts/SliderProject_jar</output-path>
-    <root id="archive" name="SliderProject.jar">
-      <element id="module-output" name="SliderProject" />
-    </root>
-  </artifact>
-</component>
