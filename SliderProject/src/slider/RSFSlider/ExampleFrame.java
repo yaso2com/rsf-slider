@@ -38,7 +38,7 @@ public class ExampleFrame
 
     private void initGUI()
     {
-        Dimension dimension = new Dimension(450, 400);
+        Dimension dimension = new Dimension(950, 250);
         setSize(dimension);
         setMinimumSize(dimension);
         setTitle("Slider Example");
@@ -51,41 +51,50 @@ public class ExampleFrame
         gbc.gridy = 1;
         this.add(upperSlider, gbc);
 
-
+        /*
         gbc = new GridBagConstraints();
         createLowerSlider();
         gbc.gridx = 1;
         gbc.gridy = 2;
         add(lowerSlider, gbc);
-
+        */
     }
 
     private void createUpperSlider()
     {
         SliderParameters sliderParameters = new SliderParameters();
-        sliderParameters.setMaximum(22);
-        sliderParameters.setMinimum(1);
-        sliderParameters.setRange(1, 22);
+        sliderParameters.setMaximum(0);
+        sliderParameters.setMinimum(-20);
+        sliderParameters.setRange(-20, 0);
         sliderParameters.setLabel("Example with 4 thumbs");
         sliderParameters.setShowDialog(true);
         sliderParameters.setNumberOfThumbs(4);
-        sliderParameters.setSliderColors(2);
+        sliderParameters.setSliderColors(0);
+        sliderParameters.setMajorTickSpacing(5);
 
         upperSlider = new SliderPanel(sliderParameters);
+        // thumb positions
+        upperSlider.setValue(-14, 3);
+        upperSlider.setValue(-15, 2);
+        upperSlider.setValue(-16, 1);
+        upperSlider.setValue(-17, 0);
+        upperHistogram();
+    }
+
+    private void upperHistogram()
+    {
+        // histogram
         List<Integer> box = new ArrayList<>();
-        box.add(1);
-        box.add(5);
-        box.add(9);
+        // the box positions
+        box.add(-17);
+        box.add(-16);
+        box.add(-10);
         List<Integer> numberInRange = new ArrayList<>();
 
-        // the histogram values
+        // the histogram bars (box height)
         numberInRange.add(5); // this is fixed we need to change it to the number of the spirals
         numberInRange.add(10);
         numberInRange.add(7);
-
-        upperSlider.setValue(13, 3);
-        upperSlider.setValue(9, 2);
-        upperSlider.setValue(5, 1);
         upperSlider.setNumberInRange(box, numberInRange);
     }
 

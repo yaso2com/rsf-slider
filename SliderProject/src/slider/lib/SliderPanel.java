@@ -1,11 +1,6 @@
 package slider.lib;
 
-import java.awt.BorderLayout;
-import java.awt.Color;
-import java.awt.Graphics;
-import java.awt.GridBagConstraints;
-import java.awt.GridBagLayout;
-import java.awt.Insets;
+import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.List;
@@ -102,6 +97,17 @@ public class SliderPanel
         centerPanel.add(slider, gbc);
         this.add(centerPanel, BorderLayout.CENTER);
 
+        legends(gbc);
+
+        Dimension dimension = new Dimension(900, 200);
+
+        setSize(dimension);
+        setMinimumSize(dimension);
+        setPreferredSize(dimension);
+    }
+
+    private void legends(GridBagConstraints gbc)
+    {
         intervalCounts = new IntervalCountPanel("Interval Counts");
         // Show summary values of intervals
         gbc.gridx = 2;
@@ -112,7 +118,8 @@ public class SliderPanel
         gbc.anchor = GridBagConstraints.NORTHWEST;
         gbc.fill = GridBagConstraints.NONE;
         gbc.insets = new Insets(5, 5, 5, 5);
-        this.add(intervalCounts, BorderLayout.EAST);
+        // comment out if legend should not be shown
+         this.add(intervalCounts, BorderLayout.EAST);
     }
 
         public void updateNumberOfThumbs(
