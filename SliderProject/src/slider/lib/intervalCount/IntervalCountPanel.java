@@ -3,9 +3,13 @@ package slider.lib.intervalCount;
 import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.Dimension;
+import java.awt.GridBagConstraints;
+import java.awt.GridBagLayout;
 import java.util.List;
+import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
+import javax.swing.JTextField;
 import javax.swing.SwingUtilities;
 import javax.swing.border.EmptyBorder;
 
@@ -18,6 +22,8 @@ public class IntervalCountPanel
 
     // Table displayed in this panel
     private IntervalCountTable table = null;
+    private JLabel lSum = new JLabel("sum");
+    private JTextField tfSum = new JTextField();
 
     // Caption
     //private final JLabel caption = new JLabel();
@@ -53,6 +59,25 @@ public class IntervalCountPanel
         jsp.setBorder(new EmptyBorder(0, 0, 0, 0));
 
         this.add(jsp, BorderLayout.CENTER);
+        
+        JPanel southPanel = new JPanel(new GridBagLayout());
+        GridBagConstraints gbc = new GridBagConstraints();
+
+        gbc.weightx = 1;
+        gbc.fill = GridBagConstraints.HORIZONTAL;
+        gbc.gridx = 1;
+        gbc.gridy = 1;
+        gbc.anchor = GridBagConstraints.EAST;
+        southPanel.add(lSum, gbc);
+        
+        gbc.gridx = 2;
+        gbc.anchor = GridBagConstraints.WEST;
+        southPanel.add(tfSum, gbc);
+        tfSum.setEditable(false);
+        tfSum.setEnabled(true);
+        tfSum.setHorizontalAlignment(JTextField.RIGHT);
+        
+        add(southPanel, BorderLayout.SOUTH);
 
         /*
     Dimension size = new Dimension(30, 10);
@@ -78,6 +103,16 @@ public class IntervalCountPanel
                 table.addEntry(color, count);
             }
         });
+    }
+    
+    /**
+    
+    */
+    public void setSum(
+        int sum
+    )
+    {
+        tfSum.setText(Integer.toString(sum));
     }
 
     /**

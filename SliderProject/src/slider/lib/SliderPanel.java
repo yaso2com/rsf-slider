@@ -242,6 +242,13 @@ public class SliderPanel
             }
             intervalCounts.addEntry(getBackground(), rangeCounts[0]);
         }
+        
+        int sum = 0;
+        for(int rangeCount : rangeCounts) {
+            sum += rangeCount;
+        }
+        
+        intervalCounts.setSum(sum);
     }
 
     public int getNumberInRange(int box) {
