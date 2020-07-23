@@ -5,9 +5,7 @@
  */
 package slider.lib.edit;
 
-import java.awt.Color;
-import java.awt.GridBagConstraints;
-import java.awt.Insets;
+import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.util.ArrayList;
 import java.util.List;
@@ -32,14 +30,17 @@ public class ColorPanel
     // Objects for actions: sliderPanel and sliderParameters
     protected SliderParameters sliderParameters;
     protected SliderPanel sliderPanel;
+    protected EditSliderDialog editSliderDialog;
 
     public ColorPanel(
         SliderParameters sliderParameters,
-        SliderPanel sliderPanel
+        SliderPanel sliderPanel,
+        EditSliderDialog editSliderDialog
     )    
     {
         this.sliderParameters = sliderParameters;
         this.sliderPanel = sliderPanel;
+        this.editSliderDialog = editSliderDialog;
         
         updateColors();
     }
@@ -94,9 +95,24 @@ public class ColorPanel
         Color color = colors.get(colorNumber);
 
         // Open color choosing dialog and retrieve new color
+        /*
+        JColorChooser colorChooser = new JColorChooser(color);
+        colorChooser.setLocation(
+                editSliderDialog.getLocationOnScreen().x + editSliderDialog.getWidth(),
+                editSliderDialog.getLocationOnScreen().y
+        );
+        colorChooser.setPreferredSize(
+                new Dimension(
+                        sliderPanel.getWidth()-editSliderDialog.getWidth(),
+                         editSliderDialog.getHeight()
+                )
+        );
+        colorChooser.setVisible(true); //
+        color = colorChooser.getColor();
+        */
         color = JColorChooser.showDialog(null, "Choose Color", color);
 
-        // update color of button in panel
+                // update color of button in panel
         colorButtons.get(colorNumber).setBackground(color);
         colors.set(colorNumber, color);
 

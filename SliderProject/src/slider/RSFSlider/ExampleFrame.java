@@ -78,7 +78,7 @@ public class ExampleFrame
         upperSlider.setValue(-15, 2);
         upperSlider.setValue(-16, 1);
         upperSlider.setValue(-17, 0);
-        upperHistogram();
+        //upperHistogram();
     }
 
     private void upperHistogram()

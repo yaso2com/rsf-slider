@@ -113,7 +113,7 @@ public class EditSliderDialog
 
         if (sliderParameters.hasColor())
         {
-            pColors = new ColorPanel(sliderParameters, sliderPanel);
+            pColors = new ColorPanel(sliderParameters, sliderPanel, this);
 
             pColors.setLayout(new GridBagLayout());
             gbc.gridy = 3;

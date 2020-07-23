@@ -119,7 +119,7 @@ public class SliderPanel
         gbc.fill = GridBagConstraints.NONE;
         gbc.insets = new Insets(5, 5, 5, 5);
         // comment out if legend should not be shown
-         this.add(intervalCounts, BorderLayout.EAST);
+        // this.add(intervalCounts, BorderLayout.EAST);
     }
 
         public void updateNumberOfThumbs(
@@ -254,7 +254,8 @@ public class SliderPanel
 
     private void editButtonClicked(ActionEvent e) {
         if (sliderParameters.isShowDialog()) {
-            dialog.setLocation(400, 0);// to have the edit dialog next to the slider dialog not above it
+            // set position (location) of the edit dialog
+            dialog.setLocation(0, getLocationOnScreen().y + getHeight());// to have the edit dialog next to the slider dialog not above it
             dialog.setVisible(true);
         }
     }
